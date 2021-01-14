@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_alignParentTop="true">
+    <com.whatsapp.WaImageView android:id="@+id/back" android:layout_width="44dp" android:layout_height="48dp" android:src="@drawable/ic_cam_close" android:layout_alignParentLeft="true" android:contentDescription="@string/back" style="@style/ActionBarButtonStyle"/>
+    <RelativeLayout android:id="@+id/tool_bar_extra" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/media_tools" android:layout_toRightOf="@+id/back" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/media_tools" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <com.whatsapp.WaImageView android:id="@+id/undo" android:visibility="invisible" android:layout_width="42dp" android:layout_height="44dp" android:src="@drawable/ic_cam_undo_new" android:contentDescription="@string/undo" style="@style/ActionBarButtonStyle"/>
+        <com.whatsapp.WaImageView android:id="@+id/delete" android:layout_width="42dp" android:layout_height="44dp" android:src="@drawable/ic_cam_delete" android:contentDescription="@string/delete" style="@style/ActionBarButtonStyle"/>
+        <com.whatsapp.WaImageView android:id="@+id/crop" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cam_crop_rotate" android:contentDescription="@string/crop_rotate" style="@style/ActionBarButtonStyle"/>
+        <com.whatsapp.WaImageView android:gravity="center" android:id="@+id/shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cam_sticker" android:scaleType="center" android:contentDescription="@string/doodle_add_sticker"/>
+        <com.whatsapp.WaImageView android:gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cam_text" android:scaleType="center" android:contentDescription="@string/doodle_add_text"/>
+        <com.whatsapp.WaImageView android:gravity="center" android:id="@+id/pen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cam_draw" android:scaleType="center" android:contentDescription="@string/doodle_draw"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/payments_tos_image_section" android:layout_width="137dp" android:layout_height="137dp" android:layout_marginTop="24dp" android:src="@drawable/ic_hero_payments"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/payments_tos_title_and_description_section" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:textSize="23sp" android:textColor="@color/primary_text" android:gravity="center" android:id="@+id/payments_tos_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="28dp" android:layout_marginRight="36dp" android:lineSpacingExtra="6dp" app:fontFamily="sans-serif-light"/>
+            <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:textColor="@color/secondary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_tos_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="36dp" android:layout_marginRight="36dp" android:layout_marginBottom="24dp" android:text="@string/payments_tos_desc_text" android:lineSpacingExtra="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+                <com.whatsapp.components.Button android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/payments_tos_continue" android:text="@string/payments_tos_continue_text" android:maxLines="1" style="@style/WA.Button"/>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleInverse"/>
+            </FrameLayout>
+            <com.whatsapp.WaImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:src="@drawable/bhim_upi_logo"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

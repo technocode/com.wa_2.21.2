@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.components.MainChildCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" app:mcclChildId="@+id/bottom_sheet">
+    <FrameLayout android:id="@+id/content_sheet" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.whatsapp.WaTextView android:textSize="22sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/error" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/click_handler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/caption_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.ui.media.MediaCaptionTextView android:textSize="18sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@+id/caption" android:background="@color/black_alpha_40" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:shadowColor="@color/black" android:shadowDx="1" android:shadowDy="1" android:shadowRadius="2.5" android:lineSpacingMultiplier="1.12" app:rmtvLines="3" app:rmtvLinkBold="true" app:rmtvLinkColor="@color/white" app:rmtvText="@string/read_more"/>
+            <View android:id="@+id/caption_padding" android:background="@color/black_alpha_40" android:layout_width="match_parent" android:layout_height="54dp"/>
+        </LinearLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/control_frame" android:background="@drawable/download_background" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="64dp" android:layout_height="64dp" android:indeterminateOnly="false" app:cpbBackground="@color/transparent" app:cpbColor="@color/white_alpha_60" app:cpbFill="@color/transparent" app:cpbOutlineColor="@color/black_alpha_10" app:cpbOutlineWidth="1dp" app:cpbStrokeWidthFactor="5"/>
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/cancel_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_cancel"/>
+            <com.whatsapp.WaButton android:id="@+id/control_btn" android:text="@string/button_download" style="@style/ConversationRowControlButton.Left"/>
+        </FrameLayout>
+        <View android:id="@+id/status_details_background" android:background="@color/black_alpha_40" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_sheet" android:paddingTop="96dp" android:paddingBottom="144dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:behavior_peekHeight="@dimen/status_footer_peek_height" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/info" android:background="@drawable/ic_center_shadow" android:layout_width="wrap_content" android:layout_height="76dp">
+            <com.whatsapp.WaTextView android:textSize="13sp" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/info_btn" android:paddingTop="0dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="0dp" android:text="@string/info" android:shadowColor="@color/black_alpha_45" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="3" android:drawableTop="@drawable/ic_caret_up" android:textAllCaps="true" style="@style/ActionBarButtonStyle"/>
+            <androidx.recyclerview.widget.RecyclerView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/extra_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.whatsapp.components.MainChildCoordinatorLayout>

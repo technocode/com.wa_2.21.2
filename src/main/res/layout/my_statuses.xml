@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_view" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/status_contact_picker_divider" android:dividerHeight="0.5dp"/>
+    <com.whatsapp.WaTextView android:textSize="17sp" android:textColor="#565656" android:gravity="center" android:id="@android:id/empty" android:padding="32dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleInverse"/>
+    <com.whatsapp.components.FloatingActionButton android:id="@+id/fab" android:src="@drawable/ic_camera" android:contentDescription="@string/menuitem_new_status" app:tint="@color/white" style="@style/WA.FAB"/>
+    <com.whatsapp.components.FloatingActionButton android:id="@+id/fab_aux" android:layout_marginBottom="@dimen/fab_aux_margin_bottom" android:src="@drawable/ic_text_status_compose" android:contentDescription="@string/menuitem_new_text_status" app:tint="@color/fabSecondaryContent" style="@style/WA.FAB.Secondary"/>
+</FrameLayout>

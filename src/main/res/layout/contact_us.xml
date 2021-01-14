@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/primary_surface" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.BidiToolbar android:id="@+id/toolbar" style="@style/Toolbar.Neutral"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <ScrollView android:id="@+id/contact_us_scroll_view" android:background="@color/primary_surface" android:paddingBottom="16dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/topic_section" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.whatsapp.WaTextView android:id="@+id/topic_section_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_us_topic_section_title" android:singleLine="true" android:lineSpacingMultiplier="1.4" style="@style/SettingsSectionTitleText"/>
+                    <FrameLayout android:id="@+id/topic_row" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.whatsapp.WaTextView android:textSize="@dimen/settings_title_text_size" android:textColor="@color/settings_item_title_text" android:layout_gravity="start" android:id="@+id/topic_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingMultiplier="1.5"/>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp">
+                    <com.whatsapp.WaEditText android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="outsideOverlay" android:textSize="16sp" android:textColor="@color/settings_contact_us_describe_problem_text" android:gravity="top|left|center_vertical|center_horizontal|center|start" android:id="@+id/describe_problem_field" android:background="@drawable/describe_problem_edittext_state_list" android:padding="8dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/contact_us_problem_description_hint" android:maxLines="4" android:minLines="4" android:selectAllOnFocus="true" android:capitalize="sentences" android:autoText="true" android:imeOptions="actionDone" android:scrollbarFadeDuration="300" android:scrollbarDefaultDelayBeforeFade="200"/>
+                    <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/settings_contact_us_describe_border_error" android:id="@+id/describe_problem_field_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/send_info_row" android:background="?attr/selectableItemBackground" android:paddingLeft="16dp" android:paddingTop="10dp" android:paddingRight="16dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_weight="1">
+                        <com.whatsapp.WaTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contact_us_send_info" android:maxLines="2" android:lineSpacingMultiplier="1.4" style="@style/SettingsSectionTitleText"/>
+                        <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:textColor="@color/contact_us_subtitle_text" android:id="@+id/send_info_education" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.4"/>
+                    </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatCheckBox android:id="@+id/send_info_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/contact_us_bottom_bar" android:background="@color/primary_surface" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:baselineAligned="false">
+            <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/settings_item_title_text" android:layout_gravity="center_vertical" android:id="@+id/send_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/contact_us_support_response_info" android:lineSpacingMultiplier="1.4"/>
+            </FrameLayout>
+            <com.whatsapp.components.Button android:id="@+id/contact_us_send_button" android:text="@string/send" style="@style/WA.Button"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="16dp" android:paddingRight="16dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:textSize="20sp" android:textColor="@android:color/white" android:id="@+id/call_rating_title" android:background="@drawable/panel_popup_top" android:paddingLeft="24dp" android:paddingTop="32dp" android:paddingRight="24dp" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/call_rating_title" app:backgroundTint="@color/panelPopupTopTint"/>
+        <com.whatsapp.WaLinearLayout android:orientation="vertical" android:background="@drawable/panel_popup_bot" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:wallBackgroundTint="@color/panelPopupBotTint">
+            <LinearLayout android:orientation="vertical" android:id="@+id/rating_options" android:paddingTop="24dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <CheckBox android:id="@+id/call_problem_0_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.whatsapp.WaTextView android:id="@+id/call_problem_0_textview" android:text="Echo Echo Echo Echo Echo Echo Echo Echo Echo Echo Echo Echo " style="@style/Theme.CallProblems"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <CheckBox android:id="@+id/call_problem_1_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.whatsapp.WaTextView android:id="@+id/call_problem_1_textview" android:text="Distortion" style="@style/Theme.CallProblems"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <CheckBox android:id="@+id/call_problem_2_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.whatsapp.WaTextView android:id="@+id/call_problem_2_textview" android:text="No sound" style="@style/Theme.CallProblems"/>
+                </LinearLayout>
+                <com.whatsapp.WaEditText android:textColorHint="@color/voipCallRatingFeedbackHintText" android:id="@+id/feedback" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/user_feedback_hint" android:maxLines="4" android:inputType="textCapSentences"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rating_stars" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="@color/voipCallRatingText" android:gravity="center" android:id="@+id/rating_description" android:paddingTop="24dp" android:paddingBottom="4dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <RatingBar android:layout_gravity="center_horizontal" android:id="@+id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:progressDrawable="@drawable/rating_bar" android:numStars="5" android:stepSize="0.2"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:paddingTop="12dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.whatsapp.WaButton android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_now" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+                <com.whatsapp.WaButton android:id="@+id/submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+            </LinearLayout>
+        </com.whatsapp.WaLinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/eula_layout" android:paddingLeft="@dimen/registration_margins" android:paddingRight="@dimen/registration_margins" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.WaTextView android:textSize="@dimen/registration_eula_title_text_size_landscape" android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/registration_eula_margin_land" android:text="@string/eula_title" style="@style/RegistrationTitle"/>
+    <View style="@style/VerticalWeightedPadding"/>
+    <com.whatsapp.WaImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/eula_logo" android:layout_width="260dp" android:layout_height="@dimen/registration_eula_logo_min_height" android:src="@drawable/ill_eula" android:minHeight="@dimen/registration_eula_logo_min_height" android:layout_weight="5" app:tint="@color/eulaDoodleTint"/>
+    <View style="@style/VerticalWeightedPadding"/>
+    <com.whatsapp.TextEmojiLabel android:gravity="center" android:layout_gravity="bottom" android:id="@+id/eula_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/eula_terms_of_service" android:lineSpacingMultiplier="1.25" style="@style/RegistrationEulaHint"/>
+    <com.whatsapp.components.Button android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/eula_accept" android:layout_width="@dimen/page_button_width" android:layout_marginTop="12dp" android:text="@string/eula_agree" style="@style/WA.Button"/>
+    <View style="@style/VerticalWeightedPadding"/>
+    <include layout="@layout/attribution"/>
+</LinearLayout>

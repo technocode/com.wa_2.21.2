@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="15.33sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/tooltip_text" android:background="@drawable/bubble_open_location" android:paddingLeft="22dp" android:paddingTop="13dp" android:paddingRight="22dp" android:paddingBottom="23dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tool_tip_open_map"/>
+</LinearLayout>

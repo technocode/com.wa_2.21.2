@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.WaImageButton android:id="@+id/order_detail_close_btn" style="@style/OrderScreenCloseBtn"/>
+        <com.whatsapp.WaTextView android:id="@+id/order_detail_title" android:text="@string/your_order" android:layout_alignTop="@+id/order_detail_close_btn" android:layout_alignBottom="@+id/order_detail_close_btn" style="@style/OrderScreenTitle"/>
+        <View android:id="@+id/order_detail_title_divider" android:layout_below="@+id/order_detail_close_btn" style="@style/SectionDivider.Heavy"/>
+        <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/order_detail_title_divider">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:id="@+id/order_detail_quantity" android:layout_marginLeft="@dimen/horizontal_padding" android:layout_marginTop="@dimen/horizontal_padding" style="@style/OrderTotalQuantity"/>
+                <com.whatsapp.WaTextView android:id="@+id/order_detail_estimate_value" android:layout_marginLeft="@dimen/horizontal_padding" style="@style/OrderTotalPrice"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/order_detail_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/horizontal_padding" android:layout_marginBottom="@dimen/horizontal_padding" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                <View android:id="@+id/order_detail_timestamp_divider" android:visibility="gone" android:layout_marginLeft="@dimen/horizontal_padding" android:layout_marginRight="@dimen/horizontal_padding" style="@style/SectionDivider.Heavy"/>
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/catalog_detail_description_color" android:id="@+id/order_detail_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/horizontal_padding" android:layout_marginTop="@dimen/horizontal_padding" android:layout_marginBottom="@dimen/horizontal_padding"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/order_detail_loading_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

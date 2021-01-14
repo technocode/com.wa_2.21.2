@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/selector_orange_gradient" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="68dp">
+        <FrameLayout android:gravity="center_vertical" android:id="@+id/provider_icon_container" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/provider_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/bank_logo_placeholder" android:scaleType="fitXY" android:contentDescription="@string/payments_settings_bank_account_icon"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/provider_details_container" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/list_item_title" android:ellipsize="end" android:id="@+id/account_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:singleLine="true" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_sub_title" android:ellipsize="end" android:id="@+id/account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true" style="@style/ListItemSubtitle"/>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" style="?android:attr/progressBarStyleInverse"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@drawable/payments_divider_gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="56dp" android:layout_marginRight="16dp"/>
+</LinearLayout>

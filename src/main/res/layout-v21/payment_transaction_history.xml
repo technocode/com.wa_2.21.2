@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/toolbar_with_search"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appBarLayout" android:background="@color/primary_surface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/collapsing_filters_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="15">
+                <HorizontalScrollView android:id="@+id/payment_filters" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_collapseMode="1">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.whatsapp.payments.ui.widget.MultiExclusionChipGroup android:id="@+id/payment_filter_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/payment_filter_chip_group_margin" app:singleLine="true"/>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@+id/root" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent" android:transitionGroup="true" app:layout_anchor="@+id/appBarLayout" app:layout_anchorGravity="50" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.whatsapp.StickyHeadersRecyclerView android:id="@+id/transaction_list" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" app:shrvGridSize="0dp"/>
+            <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/payment_transaction_search_no_matches" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="96dp"/>
+            <ScrollView android:id="@android:id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:layout_gravity="center" android:paddingBottom="64dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payments_loading"/>
+            </ScrollView>
+            <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="64dp" android:layout_height="64dp" android:indeterminateOnly="true" app:cpbBackground="@android:color/transparent" app:cpbColor="@color/primary_light"/>
+        </FrameLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

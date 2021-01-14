@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">Bạn không thể thêm mọi người vào cuộc gọi này cho đến khi %s tham gia.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">Chọn tối đa %d người. Họ sẽ có thể tham gia cuộc gọi bất kỳ lúc nào sau khi cuộc gọi bắt đầu. &lt;a href=learn_more_link&gt;Tìm hiểu thêm&lt;/a&gt;</item>
+    </plurals>
+</resources>

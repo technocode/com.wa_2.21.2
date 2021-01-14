@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="one">‏%d کوشش باقی ہے</item>
+        <item quantity="other">‏%d کوششیں باقی ہیں</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="one">‏زیرالتواء درخواست</item>
+        <item quantity="other">‏زیر التواء درخواستیں</item>
+    </plurals>
+    <plurals name="upi_mandate_payment_request_status_time_remaining_to_approve">
+        <item quantity="one">‏آپ کے پاس اس درخواست کو منظور کرنے کیلئے %1$s باقی ہے</item>
+        <item quantity="other">‏آپ کے پاس اس درخواست کو منظور کرنے کیلئے %1$s باقی ہیں</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‏%s کے شامل ہونے تک آپ لوگوں کو اس کال میں شامل نہیں کر سکتے۔</item>
+        <item quantity="other">‏کسی اور کے شامل ہونے تک آپ لوگوں کو اس کال میں شامل نہیں کر سکتے۔</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">‏%d شخص تک منتخب کریں۔ کال شروع ہونے کے بعد وہ کسی بھی وقت اس میں شامل ہو سکیں گے۔ &lt;a href=learn_more_link&gt;مزید جانیں&lt;/a&gt;</item>
+        <item quantity="other">‏%d افراد تک منتخب کریں۔ کال شروع ہونے کے بعد وہ کسی بھی وقت اس میں شامل ہو سکیں گے۔ &lt;a href=learn_more_link&gt;مزید جانیں&lt;/a&gt;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/method_view_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/payment_method_container" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/payment_method_details_container" android:background="?android:attr/selectableItemBackground" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <FrameLayout android:layout_width="72dp" android:layout_height="wrap_content">
+                <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/payment_method_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/bank_logo_placeholder" android:scaleType="fitXY" android:contentDescription="@string/payments_settings_bank_account_icon"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:paddingRight="24dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:ellipsize="end" android:id="@+id/payment_method_bank_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+                <com.whatsapp.CopyableTextView android:textSize="@dimen/settings_subtitle_text_size" android:textColor="@color/settings_item_subtitle_text" android:id="@+id/payment_method_account_id" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <com.whatsapp.WaTextView android:textSize="@dimen/settings_subtitle_text_size" android:textColor="@color/settings_item_subtitle_text" android:id="@+id/not_verified" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/not_verified" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/method_details_alert_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/payment_method_container_ext" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/default_payment_method_container" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/default_payment_method_row" android:background="?android:attr/selectableItemBackground" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="72dp" android:layout_height="wrap_content">
+                <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/default_payment_method_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_settings_unstarred"/>
+            </FrameLayout>
+            <com.whatsapp.WaTextView android:textSize="@dimen/settings_title_text_size" android:textColor="@color/settings_item_title_text" android:id="@+id/default_payment_method_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/default_payment_method_unset" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/widget_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/support_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/help_section" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/help_divider_above" layout="@layout/divider"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/help_row" android:background="?android:attr/selectableItemBackground" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_width="72dp" android:layout_height="wrap_content">
+                <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/help_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_settings_help" android:scaleType="center"/>
+            </FrameLayout>
+            <com.whatsapp.WaTextView android:textSize="@dimen/settings_title_text_size" android:textColor="@color/settings_item_title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/settings_help" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.whatsapp.WaTextView android:textSize="@dimen/settings_subtitle_text_size" android:textColor="@color/settings_item_subtitle_text" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/footer_processed_by_psp" android:paddingLeft="24dp" android:paddingTop="8dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:lineSpacingMultiplier="1.3"/>
+</LinearLayout>

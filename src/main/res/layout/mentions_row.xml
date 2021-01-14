@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="@dimen/mention_picker_row_height">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.components.button.ThumbnailButton android:id="@+id/contact_photo" style="@style/ContactPhoto.Mentions"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingRight="@dimen/list_row_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.whatsapp.TextEmojiLabel android:id="@+id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/ListItemSubtitle"/>
+            <com.whatsapp.TextEmojiLabel android:textAppearance="@style/TextAppearance.ContactPushName" android:layout_gravity="right" android:id="@+id/push_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/separator" style="@style/SectionDivider"/>
+</FrameLayout>

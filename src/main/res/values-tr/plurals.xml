@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‎%s katılana kadar bu aramaya kişi ekleyemezsiniz.</item>
+        <item quantity="other">Başka bir kişi daha katılana kadar bu aramaya kişi ekleyemezsiniz.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">En çok %d kişi seçin. Arama başladıktan sonra istedikleri zaman katılabilirler. &lt;a href=learn_more_link&gt;Daha fazla bilgi&lt;/a&gt;</item>
+    </plurals>
+</resources>

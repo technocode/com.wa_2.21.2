@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.BidiToolbar android:id="@+id/toolbar" style="@style/Toolbar.Neutral"/>
+        <com.whatsapp.PagerSlidingTabStrip android:id="@+id/contact_qr_tab_strip" android:background="@color/neutral_primary" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:pstsDividerColor="@color/transparent" whatsapp:pstsIndicatorColor="@color/qrActivityTabIndicator"/>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/contact_qr_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/contact_qr_preview" android:background="@color/primary_surface" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+</FrameLayout>

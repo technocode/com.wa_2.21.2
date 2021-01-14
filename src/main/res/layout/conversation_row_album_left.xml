@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp">
+        <include layout="@layout/conversation_row_participant_header"/>
+        <include layout="@layout/conversation_row_quoted_frame"/>
+        <FrameLayout android:id="@+id/media_container" android:padding="@dimen/conversation_video_thumb_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <view android:id="@+id/media_grid" android:layout_width="wrap_content" android:layout_height="wrap_content" class="com.whatsapp.conversation.conversationrow.ConversationRowImageAlbum$AlbumGridFrame">
+                <com.whatsapp.WaFrameLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/thumb_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/balloon_incoming_frame" app:waflForegroundTint="@color/bubble_color_incoming">
+                    <include layout="@layout/album_thumbnail_incoming"/>
+                </com.whatsapp.WaFrameLayout>
+                <com.whatsapp.WaFrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/thumb_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/balloon_incoming_frame" app:waflForegroundTint="@color/bubble_color_incoming">
+                    <include layout="@layout/album_thumbnail_incoming"/>
+                </com.whatsapp.WaFrameLayout>
+                <com.whatsapp.WaFrameLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/thumb_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/balloon_incoming_frame" app:waflForegroundTint="@color/bubble_color_incoming">
+                    <include layout="@layout/album_thumbnail_incoming"/>
+                </com.whatsapp.WaFrameLayout>
+                <com.whatsapp.WaFrameLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/thumb_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="@drawable/balloon_incoming_frame" app:waflForegroundTint="@color/bubble_color_incoming">
+                    <include layout="@layout/album_thumbnail_incoming"/>
+                    <com.whatsapp.WaTextView android:id="@+id/more" style="@style/ConversationRowAlbumMoreItems"/>
+                </com.whatsapp.WaFrameLayout>
+            </view>
+            <FrameLayout android:layout_gravity="center" android:id="@+id/control_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:indeterminateOnly="false"/>
+                <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/cancel_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_cancel" app:tint="@color/album_progress_indeterminate"/>
+                <RelativeLayout android:id="@+id/control_btn" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/download_icon" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_download_dark" android:layout_centerVertical="true" app:tint="@color/albumDownloadButtonTint"/>
+                    <com.whatsapp.WaTextView android:textStyle="bold" android:textColor="@color/album_progress_indeterminate" android:gravity="bottom" android:id="@+id/download_size" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/download_icon" android:layout_alignParentTop="true"/>
+                    <com.whatsapp.WaTextView android:textColor="@color/album_progress_indeterminate" android:gravity="top" android:id="@+id/download_item_count" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/download_icon" android:layout_below="@+id/download_size" android:layout_alignLeft="@+id/download_size"/>
+                </RelativeLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

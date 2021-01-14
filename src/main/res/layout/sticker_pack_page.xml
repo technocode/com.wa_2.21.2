@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/emoji_popup_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/sticker_grid" android:paddingBottom="@dimen/picker_footer_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/picker_footer_height" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@+id/pack_loading" android:layout_width="32dp" android:layout_height="32dp" android:indeterminate="true" android:indeterminateOnly="false" app:cpbBackground="@color/emoji_popup_body" app:cpbColor="@color/primary_light" app:cpbStrokeWidthFactor="4"/>
+        <com.whatsapp.WaTextView android:layout_gravity="center_horizontal" android:id="@+id/pack_loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:text="@string/sticker_pack_loading"/>
+        <com.whatsapp.WaButton android:layout_gravity="center_horizontal" android:id="@+id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    </LinearLayout>
+</FrameLayout>

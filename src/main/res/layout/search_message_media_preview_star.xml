@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.WaImageView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/starred_status" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="15dp" android:layout_marginRight="@dimen/search_grid_video_icon_margin_end" android:layout_marginBottom="@dimen/search_grid_video_mark_margin_bottom" android:src="@drawable/message_star_media_gallery"/>

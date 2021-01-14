@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/media_section_height">
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/mediaTimeSeparatorText" android:id="@+id/media_section" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_weight="1" android:textAllCaps="true"/>
+    <CheckBox android:textSize="14sp" android:textColor="@color/mediaTimeSeparatorText" android:id="@+id/media_select_all_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:button="@null" android:drawableRight="?android:attr/listChoiceIndicatorMultiple" app:buttonCompat="@null"/>
+</LinearLayout>

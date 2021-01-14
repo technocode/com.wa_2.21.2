@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.whatsapp.storage.StorageUsageMediaPreviewOverflowOverlayView android:id="@+id/overflow_overlay_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/overflow_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

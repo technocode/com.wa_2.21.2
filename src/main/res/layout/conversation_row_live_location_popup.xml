@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.components.button.ThumbnailButton android:id="@+id/thumb" android:layout_width="72dp" android:layout_height="72dp" android:scaleType="fitCenter"/>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <include layout="@layout/conversation_row_live_location_status"/>
+        <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_location_name" android:textColor="@color/primary_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/live_location_caption" android:paddingTop="4dp" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

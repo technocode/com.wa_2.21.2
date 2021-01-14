@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textColor="?android:attr/textColorSecondary" android:ellipsize="end" android:id="@+id/description" android:paddingLeft="0dp" android:paddingRight="0dp" android:paddingBottom="3dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1" style="@style/WA.TextAppearance.ConversationRowDate"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/date_wrapper" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/WA.TextAppearance.ConversationRowDate"/>
+        <com.whatsapp.WaImageView android:id="@+id/status" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

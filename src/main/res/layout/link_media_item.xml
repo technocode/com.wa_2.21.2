@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="12dp" android:paddingTop="6dp" android:paddingRight="12dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/link_media_background">
+        <LinearLayout android:orientation="vertical" android:id="@+id/web_page_preview_holder" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/suspicious_link_text_color" android:id="@+id/suspicious_link_indicator" android:background="@color/suspicious_link_text_background_color" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/suspicious_link_label" android:drawableLeft="@drawable/suspicious_link" android:drawablePadding="4dp" android:textAllCaps="true" app:drawableTint="@color/suspicious_link_text_color"/>
+            <com.whatsapp.conversation.conversationrow.WebPagePreviewView android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/message_text_holder" android:background="@drawable/selector_orange_gradient" android:paddingLeft="8dp" android:paddingTop="10dp" android:paddingRight="8dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.TextEmojiLabel android:ellipsize="end" android:gravity="left" android:id="@+id/message_text" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" android:layout_weight="1"/>
+                <com.whatsapp.WaImageView android:id="@+id/chevron" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chevron" app:tint="@color/media_link_item_chevron_tint"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.whatsapp.WaFrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:foreground="@drawable/balloon_live_location_incoming_frame" app:waflForegroundTint="@color/primary_surface"/>
+        <com.whatsapp.WaImageView android:id="@+id/starred_status" android:paddingLeft="60dp" android:paddingTop="60dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/message_star_media_gallery"/>
+    </FrameLayout>
+</FrameLayout>

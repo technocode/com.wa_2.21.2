@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/payment_service_container" android:background="@drawable/selector_orange_gradient" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/payment_service_icon" android:layout_width="26dp" android:layout_height="26dp" android:layout_marginLeft="12dp" whatsapp:tbtnForegroundOnly="true" whatsapp:tbtnRadius="-1dp"/>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_title" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:id="@+id/payment_service_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:maxLines="1"/>
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.facebook.shimmer.ShimmerFrameLayout android:id="@+id/payment_service_subtitle_shimmer" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/PaymentLoadingShimmer">
+            <com.whatsapp.WaTextView android:textSize="14sp" android:ellipsize="end" android:id="@+id/payment_service_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:maxLines="1"/>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/expand_services_button" android:background="@drawable/selector_orange_gradient_round_bg" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:src="@drawable/chevron_right" android:scaleType="center"/>
+</LinearLayout>

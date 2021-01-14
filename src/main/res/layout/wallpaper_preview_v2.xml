@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/wallpaper_preview_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@+id/appbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.whatsapp.BidiToolbar android:id="@+id/toolbar" android:layout_height="@dimen/actionbar_height" style="@style/Toolbar.Neutral"/>
+        <View android:id="@+id/separator" style="@style/SectionDivider"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/appbar" android:layout_alignParentBottom="true">
+        <View android:id="@+id/transition_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.whatsapp.collections.MarginCorrectedViewPager android:id="@+id/wallpaper_preview" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/control_holder" android:background="@drawable/wallpaper_confirmation_background" android:paddingLeft="@dimen/wallpaper_overlay_confirmation_padding" android:paddingRight="@dimen/wallpaper_overlay_confirmation_padding" android:paddingBottom="@dimen/wallpaper_overlay_confirmation_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.whatsapp.WaButton android:id="@+id/cancel_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel"/>
+        <com.whatsapp.util.RtlCheckBox android:textSize="16sp" android:textColor="@color/white" android:id="@+id/color_wallpaper_add_doodles" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="4dp" android:checked="true" app:buttonTint="@color/white"/>
+        <com.whatsapp.WaButton android:textColor="@color/wallpaper_set_button_text_color_selector" android:id="@+id/set_wallpaper_button" android:background="@drawable/color_wallpaper_set_background" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="@dimen/wallpaper_overlay_confirmation_padding" android:text="@string/wallpaper_set_wallpaper_button"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:scrollbarStyle="outsideInset" android:id="@android:id/list" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp" android:fadeScrollbars="false"/>
+    <com.whatsapp.WaTextView android:gravity="center" android:id="@android:id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/no_recent_emoji"/>
+</RelativeLayout>

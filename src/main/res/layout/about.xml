@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/background" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:textSize="20sp" android:textStyle="normal" android:textColor="@color/white" android:gravity="center" android:id="@+id/eula_title" android:paddingTop="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/title"/>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="#86a9a8" android:gravity="center" android:id="@+id/version" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp"/>
+        <com.whatsapp.WaImageView android:id="@+id/logo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:src="@drawable/about_logo" android:contentDescription="@string/about_logo_content_description"/>
+        <com.whatsapp.WaTextView android:textSize="15sp" android:textColor="#86a9a8" android:gravity="center" android:paddingLeft="4dp" android:paddingTop="10dp" android:paddingRight="4dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/whatsapp_copyright"/>
+        <com.whatsapp.WaButton android:textSize="17sp" android:textColor="#49d0fc" android:id="@+id/about_licenses" android:background="@drawable/selector_transparent_gray" android:padding="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minWidth="128dp" android:text="@string/view_licenses"/>
+    </LinearLayout>
+</ScrollView>

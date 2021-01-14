@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/send_current_location_btn" android:background="@drawable/selector_orange_gradient" android:layout_width="wrap_content" android:layout_height="@dimen/location_picker_row_height">
+    <FrameLayout android:layout_gravity="left" android:layout_width="@dimen/location_picker_row_height" android:layout_height="@dimen/location_picker_row_height">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/send_current_location_icon" android:background="@drawable/send_current_location_background" android:layout_width="@dimen/location_picker_icon_size" android:layout_height="@dimen/location_picker_icon_size" android:src="@drawable/ic_current_location" android:scaleType="center" app:tint="@color/list_item_verified_title"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="left" android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingLeft="@dimen/location_picker_row_height" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:id="@+id/send_current_location_text" android:text="@string/send_this_location" style="@style/LocationPickerRowTitle"/>
+        <com.whatsapp.WaTextView android:id="@+id/location_description" style="@style/LocationPickerRowSubtitle"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/this_location_divider" android:visibility="gone" style="@style/SectionDivider"/>
+</FrameLayout>

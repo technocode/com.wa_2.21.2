@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/shape_picker_selected_subcategory_background_color"/>
+    <size android:height="@dimen/shape_picker_subcategory_selected_portrait_dimen" android:width="@dimen/shape_picker_subcategory_selected_portrait_dimen"/>
+</shape>

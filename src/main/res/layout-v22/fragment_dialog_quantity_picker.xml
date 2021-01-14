@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="32dp">
+    <NumberPicker android:theme="@style/CartQuantityNumberPickerTheme" android:id="@+id/cart_quantity_picker" android:layout_width="match_parent" android:layout_height="wrap_content" android:selectionDividerHeight="1dp"/>
+</LinearLayout>

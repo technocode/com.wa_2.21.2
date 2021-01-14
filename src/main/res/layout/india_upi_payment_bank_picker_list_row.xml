@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:background="@drawable/selector_orange_gradient" android:paddingLeft="@dimen/card_h_padding" android:paddingRight="@dimen/card_h_padding" android:layout_width="match_parent" android:layout_height="56dp">
+    <FrameLayout android:gravity="center" android:id="@+id/provider_icon_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="13dp" android:layout_alignParentLeft="true">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/provider_icon" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/bank_logo_placeholder" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="23dp" android:layout_toRightOf="@+id/provider_icon_container">
+        <com.whatsapp.TextEmojiLabel android:textSize="16sp" android:textColor="@color/list_item_title" android:gravity="center_vertical" android:id="@+id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?android:attr/progressBarStyleInverse"/>
+</RelativeLayout>

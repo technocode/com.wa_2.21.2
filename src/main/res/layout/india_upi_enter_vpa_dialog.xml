@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textColor="@color/primary_text" android:id="@+id/title_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:layout_marginRight="24dp" android:text="@string/upi_enter_vpa_title" style="@style/Base.TextAppearance.AppCompat.Title"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="22dp" android:layout_marginTop="16dp" android:layout_marginRight="22dp">
+        <com.whatsapp.WaEditText android:textSize="16sp" android:id="@+id/account_id_handle" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/upi_enter_vpa_hint" android:lines="1" android:singleLine="true" android:maxLength="255" android:layout_weight="17"/>
+        <ProgressBar android:id="@+id/progress" android:visibility="gone" android:layout_width="0dp" android:layout_height="32dp" android:layout_weight="3" style="?android:attr/progressBarStyleInverse"/>
+    </LinearLayout>
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/red_button_text" android:id="@+id/error_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:minHeight="28dp" android:text="@string/payment_invalid_vpa_error_text"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginRight="2dp" android:layout_marginBottom="8dp">
+        <com.whatsapp.components.Button android:layout_gravity="start" android:id="@+id/close_dialog_button" android:text="@string/cancel" app:fontFamily="sans-serif-medium" style="@style/WA.Button.Borderless"/>
+        <com.whatsapp.components.Button android:layout_gravity="end" android:id="@+id/primary_payment_button" android:text="@string/payment_vpa_verify" style="@style/WA.Button.Borderless"/>
+    </FrameLayout>
+</LinearLayout>

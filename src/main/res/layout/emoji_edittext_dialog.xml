@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.KeyboardPopupLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:theme="@style/Theme.App" android:id="@+id/emoji_edit_text_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" style="@style/FullScreenDialogTitle">
+            <com.whatsapp.WaTextView android:gravity="left" android:id="@+id/dialog_title" style="@style/FullScreenDialogTitleText"/>
+            <com.whatsapp.WaTextView android:gravity="left" android:id="@+id/dialog_subtitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Theme.ActionBar.SubtitleTextStyle"/>
+        </LinearLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:id="@+id/subject_layout" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:paddingLeft="13dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ViewStub android:id="@+id/stub_button_before_text" android:inflatedId="@+id/stub_button_before_text" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="10dp"/>
+                    <RelativeLayout android:id="@+id/text_and_counter" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/emoji_btn" android:layout_toRightOf="@+id/stub_button_before_text" android:layout_centerVertical="true">
+                        <com.whatsapp.WaEditText android:ellipsize="end" android:id="@+id/edit_text" android:paddingRight="@dimen/counter_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" android:inputType="textCapSentences"/>
+                        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/edit_text_counter" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/counter_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginRight="10dp" android:layout_alignBottom="@+id/edit_text" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <com.whatsapp.WaImageButton android:id="@+id/emoji_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ib_emoji" android:layout_alignBottom="@+id/text_and_counter" android:layout_alignParentRight="true" android:contentDescription="@string/emoji_button_description" app:tint="@color/ibEmojiIconTint" style="@style/ActionBarButtonStyle"/>
+                </RelativeLayout>
+                <com.whatsapp.WaTextView android:id="@+id/dialog_footer" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/ok_cancel"/>
+        <com.whatsapp.emoji.search.EmojiSearchContainer android:id="@+id/emoji_search_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.whatsapp.KeyboardPopupLayout>

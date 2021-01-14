@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/parent_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/qrcode_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7.5dp">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <FrameLayout android:id="@+id/frame_bounds" android:background="@drawable/display_qrcode_white_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginTop="40dp" android:layout_marginRight="24dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.whatsapp.WaImageView android:id="@+id/contact_photo_background" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginTop="4dp" android:src="@drawable/primary_color_circle" android:contentDescription="@null"/>
+                    <com.whatsapp.WaImageView android:id="@+id/contact_photo" android:layout_width="@dimen/mid_avatar_size" android:layout_height="@dimen/mid_avatar_size" android:layout_marginLeft="4dp" android:layout_marginTop="8dp" android:src="@drawable/avatar_contact" android:contentDescription="@string/contact_profile_photo"/>
+                </FrameLayout>
+                <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="@color/list_item_title" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/user_account_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" app:fontFamily="sans-serif-medium"/>
+                <com.whatsapp.CopyableTextView android:textSize="12sp" android:textColor="@color/list_item_sub_title" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/user_wa_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:fontFamily="sans-serif" app:toastString="@string/vpa_copied_to_clipboard"/>
+                <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/list_item_sub_title" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/user_wa_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:fontFamily="sans-serif"/>
+                <com.whatsapp.payments.ui.widget.IndiaUpiDisplaySecureQrCodeView android:id="@+id/display_qr_code_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </FrameLayout>
+        <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/list_item_sub_title" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/scan_to_pay_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="26dp" android:layout_marginRight="24dp" android:layout_marginBottom="16dp" android:text="@string/scan_this_code_to_pay_user" android:maxLines="1" android:singleLine="true" app:fontFamily="sans-serif"/>
+    </LinearLayout>
+</ScrollView>

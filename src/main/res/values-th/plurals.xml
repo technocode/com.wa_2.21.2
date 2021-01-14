@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">คุณไม่สามารถเพิ่มสมาชิกในสายนี้ได้จนกว่า %s จะเข้าร่วม</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">เลือกได้สูงสุด %d คน บุคคลดังกล่าวจะสามารถเข้าร่วมสายได้ทุกเมื่อหลังจากที่การโทรเริ่มต้น &lt;a href=learn_more_link&gt;เรียนรู้เพิ่มเติม&lt;/a&gt;</item>
+    </plurals>
+</resources>

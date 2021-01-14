@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.InfoCard xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/live_location_card" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/InfoCard">
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="68dp">
+        <FrameLayout android:paddingLeft="@dimen/info_screen_padding" style="@style/FlatCardHeader">
+            <com.whatsapp.WaTextView android:id="@+id/media_title" android:text="@string/contact_info_live_location" style="@style/FlatCardTitle"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/info_screen_padding" android:paddingTop="10dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="17sp" android:textColor="@color/list_item_title" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/live_location_info" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+            <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/livelocation_indicator" android:paddingLeft="20dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_live_location"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.whatsapp.InfoCard>

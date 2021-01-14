@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/settingsBackgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.settings.SettingsRowIconText android:id="@+id/faq_preference" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingsRowIconTextIcon="@drawable/ic_settings_help" app:settingsRowIconTextText="@string/settings_faq" style="?attr/settingsRowIconText"/>
+        <com.whatsapp.settings.SettingsRowIconText android:id="@+id/contact_us_preference" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingsRowIconTextIcon="@drawable/ic_settings_contacts" app:settingsRowIconTextSubText="@string/contact2" app:settingsRowIconTextText="@string/contact1" style="?attr/settingsRowIconText"/>
+        <com.whatsapp.settings.SettingsRowIconText android:id="@+id/terms_and_privacy_preference" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingsRowIconTextIcon="@drawable/ic_settings_terms_policy" app:settingsRowIconTextText="@string/settings_terms_and_privacy_policy" style="?attr/settingsRowIconText"/>
+        <com.whatsapp.settings.SettingsRowIconText android:id="@+id/about_preference" android:layout_width="match_parent" android:layout_height="wrap_content" app:settingsRowIconTextIcon="@drawable/ic_settings_info" app:settingsRowIconTextText="@string/settings_about" style="?attr/settingsRowIconText"/>
+    </LinearLayout>
+</ScrollView>

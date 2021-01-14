@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/title_container" android:paddingLeft="@dimen/info_screen_padding" style="@style/FlatCardHeader">
+        <com.whatsapp.WaTextView android:id="@+id/media_card_title" style="@style/FlatCardTitle"/>
+        <com.whatsapp.WaTextView android:id="@+id/media_card_info" android:includeFontPadding="false" whatsapp:drawableTint="@color/mediaCardChevronTint" style="@style/FlatCardInfo"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/media_card_thumb_container" android:paddingTop="12dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <HorizontalScrollView android:gravity="center_vertical" android:id="@+id/media_card_scroller" android:scrollbars="none" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:overScrollMode="never">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/media_card_thumbs" android:paddingLeft="14dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="@dimen/medium_thumbnail_size"/>
+        </HorizontalScrollView>
+        <com.whatsapp.WaTextView android:gravity="center" android:id="@+id/media_card_error" android:paddingLeft="14dp" android:paddingRight="14dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/medium_thumbnail_size"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/media_card_empty" android:background="@drawable/selector_orange_gradient" android:paddingLeft="@dimen/info_screen_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/info_screen_row">
+        <com.whatsapp.WaTextView android:layout_gravity="center_vertical" android:id="@+id/media_card_empty_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/ListItemTitle"/>
+        <com.whatsapp.WaTextView android:id="@+id/media_card_empty_info" android:includeFontPadding="false" whatsapp:drawableTint="@color/mediaCardChevronTint" style="@style/FlatCardInfo"/>
+    </LinearLayout>
+</merge>

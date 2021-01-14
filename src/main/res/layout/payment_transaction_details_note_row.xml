@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/selector_orange_gradient" android:padding="@dimen/payment_settings_default_margin" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/conversations_row_height">
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/settings_item_subtitle_text" android:id="@+id/notes_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transaction_detail_note_label" style="@style/ListItemTitle"/>
+        <com.whatsapp.text.ReadMoreTextView android:textColor="@color/settings_item_title_text" android:gravity="left" android:id="@+id/payment_note_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_marginRight="@dimen/payment_settings_default_margin" android:singleLine="false" android:drawablePadding="4dp" android:layout_below="@+id/notes_title" app:rmtvLines="2" app:rmtvLinkColor="@color/link_color" app:rmtvText="@string/read_more" style="@style/ListItemTitle"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="right" android:orientation="vertical" android:id="@+id/color_picker_container" android:paddingTop="@dimen/color_picker_container_padding_top" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="@dimen/color_picker_container_margin_right">
+    <com.whatsapp.doodle.ColorPickerView android:layout_gravity="right" android:id="@+id/color_picker" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="25dp" android:paddingBottom="10dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" app:cpvStrokeMax="@dimen/doodle_max_stroke" app:cpvStrokeMin="@dimen/doodle_min_stroke" app:cpvWidth="10dp"/>
+</LinearLayout>

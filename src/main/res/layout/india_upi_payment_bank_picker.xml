@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/toolbar_with_search"/>
+    <ListView android:id="@+id/bank_picker_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:choiceMode="none" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+    <com.whatsapp.TextEmojiLabel android:textSize="16sp" android:textColor="@color/primary_text" android:gravity="center" android:id="@+id/bank_picker_empty_tv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

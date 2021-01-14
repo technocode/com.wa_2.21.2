@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/content" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.collections.observablelistview.ObservableListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/HomeActivityList"/>
+    <FrameLayout android:gravity="center" android:id="@android:id/empty" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.WaTextView android:textSize="17sp" android:textColor="@color/secondary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/welcome_calls_message" android:paddingLeft="32dp" android:paddingTop="48dp" android:paddingRight="32dp" android:paddingBottom="96dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Text"/>
+        <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/search_no_matches" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="96dp"/>
+        <FrameLayout android:id="@+id/calls_empty_no_contacts" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/contacts_empty_permission_denied" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/init_calls_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleInverse"/>
+    </FrameLayout>
+</FrameLayout>

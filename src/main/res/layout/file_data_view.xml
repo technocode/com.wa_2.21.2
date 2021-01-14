@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/display" android:background="@drawable/file_preview_linear_layout_background" android:layout_width="@dimen/file_preview_display_width" android:layout_height="@dimen/file_preview_display_height" android:layout_marginLeft="5dp" android:layout_marginTop="12dp" android:layout_marginRight="5dp" android:layout_marginBottom="12dp">
+    <FrameLayout android:id="@+id/image_frame_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.whatsapp.WaImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitStart" android:adjustViewBounds="true"/>
+        <com.whatsapp.WaImageView android:id="@+id/overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/file_preview_overlay" android:adjustViewBounds="true"/>
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/icon" android:layout_width="@dimen/file_preview_icon_width" android:layout_height="@dimen/file_preview_icon_height" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:adjustViewBounds="true"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:paddingLeft="12dp" android:paddingTop="8dp" android:paddingRight="12dp" android:paddingBottom="8dp" android:layout_width="@dimen/file_preview_data_width" android:layout_height="@dimen/file_preview_data_height">
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:ellipsize="end" android:id="@+id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:lineSpacingExtra="18dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:id="@+id/page_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="18dp"/>
+            <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:id="@+id/bullet" android:paddingLeft="4sp" android:paddingRight="4sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contacts_help_bullet" android:lineSpacingExtra="18dp"/>
+            <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:id="@+id/file_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="18dp"/>
+        </LinearLayout>
+        <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:id="@+id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="18dp"/>
+    </LinearLayout>
+</LinearLayout>

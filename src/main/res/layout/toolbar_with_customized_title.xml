@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.BidiToolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/Toolbar.Popup" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <com.whatsapp.TextEmojiLabel android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/toolbar_customized_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" style="@style/Theme.ActionBar.TitleTextStyle.Condensed"/>
+</com.whatsapp.BidiToolbar>

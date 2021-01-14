@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="right" android:layout_gravity="top" android:id="@+id/emoji_view" android:visibility="gone" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="230dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@color/emoji_popup_border" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <include android:id="@+id/sticker_picker_header" layout="@layout/sticker_picker_header"/>
+        <include android:id="@+id/gif_picker_header" layout="@layout/gif_picker_header"/>
+        <include android:id="@+id/emoji_group_layout" layout="@layout/emoji_picker_header"/>
+        <FrameLayout android:background="@color/emoji_popup_body" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.viewpager.widget.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/sticker_pager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/gif_pager" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:id="@+id/fallback_divider" android:background="@color/black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:alpha="0.1"/>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/emoji_tip" android:background="@color/emoji_popup_body" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer_toolbar_cont">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <com.whatsapp.WaTextView android:textSize="16sp" android:gravity="center" android:layout_gravity="bottom" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/skin_tone_emoji_tip" android:lineSpacingMultiplier="1.25"/>
+            </FrameLayout>
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/all_samples" android:background="@drawable/panel" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <com.whatsapp.WaImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/sample_current" android:background="@color/emoji_popup_elevated" android:padding="8dp" android:layout_width="@dimen/emoji_picker_item" android:layout_height="@dimen/emoji_picker_item" android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <com.whatsapp.WaButton android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:text="@string/ok_got_it" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/gif_trending" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:background="@color/emoji_popup_border" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/gif_trending_grid" android:background="@color/gif_search_trending_background" android:paddingLeft="4dp" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/footer_toolbar_cont" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="@dimen/picker_footer_height" android:layout_alignParentBottom="true">
+        <com.whatsapp.emoji.EmojiPopupFooter android:id="@+id/footer_toolbar" android:background="@color/emoji_popup_elevated" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.whatsapp.WaImageView android:layout_gravity="left" android:id="@+id/search_button" android:visibility="gone" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/ic_search_normal" android:contentDescription="@string/search" style="@style/ActionBarButtonStyle"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/emoji_tab" android:visibility="visible" android:layout_width="40dp" android:layout_height="match_parent" android:layout_marginRight="6dp" android:src="@drawable/ic_emoticon_selected" android:contentDescription="@string/emoji_picker" style="@style/ActionBarButtonStyle"/>
+                <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/gif_tab" android:visibility="visible" android:layout_width="40dp" android:layout_height="match_parent" android:layout_marginRight="6dp" android:src="@drawable/ic_gif_normal" android:contentDescription="@string/gif_search" style="@style/ActionBarButtonStyle"/>
+                <FrameLayout android:id="@+id/sticker_tab" android:visibility="gone" android:clipChildren="false" android:layout_width="40dp" android:layout_height="match_parent">
+                    <com.whatsapp.WaImageView android:id="@+id/sticker_tab_icon" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/ic_sticker_normal" android:contentDescription="@string/sticker_tab_content_description" style="@style/ActionBarButtonStyle"/>
+                    <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/sticker_onboarding_badge" android:visibility="gone" android:clickable="false" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/sticker_store_halo_pulse" android:importantForAccessibility="no"/>
+                </FrameLayout>
+            </LinearLayout>
+            <com.whatsapp.WaImageView android:layout_gravity="right" android:id="@+id/delete_symbol_tb" android:visibility="gone" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/emoji_x" android:contentDescription="@string/backspace" style="@style/ActionBarButtonStyle"/>
+        </com.whatsapp.emoji.EmojiPopupFooter>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/gif_trending_additions" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/footer_toolbar_cont">
+        <View android:background="@color/emoji_popup_border" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/body_light_gray" android:gravity="center" android:layout_gravity="center" android:id="@+id/no_results" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/gif_search_no_results"/>
+        <FrameLayout android:id="@+id/progress_container" android:background="@color/gif_search_trending_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/gif_trending_progress" android:layout_width="36dp" android:layout_height="36dp"/>
+        </FrameLayout>
+        <include layout="@layout/gif_search_retry_panel"/>
+    </FrameLayout>
+</RelativeLayout>

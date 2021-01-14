@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/emoji_group_layout" android:background="@color/emoji_popup_body" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_recent_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_recent" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_recent_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_people_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_people" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_people_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_nature_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_nature" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_nature_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_food_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_food" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_food_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_activity_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_activity" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_activity_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_travel_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_travel" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_travel_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_objects_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_objects" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_objects_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_symbols_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_symbols" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_symbols_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/emoji_flags_btn" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/selector_emoji_flags" android:scaleType="center" app:tint="@color/emojiPickerIconsFocusedTint"/>
+            <View android:layout_gravity="bottom" android:id="@+id/emoji_flags_marker" android:layout_width="match_parent" android:layout_height="2dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

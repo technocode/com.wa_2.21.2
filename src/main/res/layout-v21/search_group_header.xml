@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title" android:paddingLeft="@dimen/search_item_horizontal_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/search_header_height" android:includeFontPadding="false" android:textAllCaps="true" android:letterSpacing="0.1" app:fontFamily="sans-serif-medium"/>
+</merge>

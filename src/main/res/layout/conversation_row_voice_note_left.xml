@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/conversation_row_root" android:layout_width="317dp" android:layout_height="wrap_content" android:layout_marginRight="40dp">
+        <include layout="@layout/conversation_row_quoted_frame"/>
+        <include layout="@layout/conversation_row_web_page_preview_frame"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <include layout="@layout/conversation_row_participant_header_with_more_padding"/>
+                <com.whatsapp.search.views.itemviews.AudioPlayerView android:layout_gravity="center_vertical" android:id="@+id/conversation_row_audio_player_view" android:paddingTop="0dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:playButton_marginLeft="4dp" whatsapp:playButton_size="54dp" whatsapp:progressSpinner_size="44dp"/>
+                <com.whatsapp.search.views.itemviews.AudioPlayerMetadataView android:layout_gravity="bottom" android:paddingLeft="58dp" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:dateWrapper_marginLeft="3dp" whatsapp:hasStatusView="false"/>
+            </FrameLayout>
+            <com.whatsapp.search.views.itemviews.VoiceNoteProfileAvatarView android:id="@+id/conversation_row_voice_note_profile_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" whatsapp:micOverlay_background="@drawable/mic_background_incoming" whatsapp:micOverlay_backgroundTint="@color/selector_incoming_balloon" whatsapp:micOverlay_marginBottom="5dp" whatsapp:micOverlay_marginLeft="12dp" whatsapp:profileFrame_paddingLeft="10dp" whatsapp:profileView_layoutSize="62dp" whatsapp:profileView_padding="7dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/forward" style="@style/ForwardButton"/>
+</merge>

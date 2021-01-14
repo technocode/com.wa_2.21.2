@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/panel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageButton android:gravity="center" android:id="@+id/control_btn" android:background="@color/transparent" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/inline_audio_play" android:scaleType="center" android:contentDescription="@string/play" app:tint="@color/audioControlButtonTint"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxHeight="16dp" android:indeterminateOnly="false" android:indeterminateDrawable="@drawable/progress_indeterminate_horizontal_holo" android:progressDrawable="@drawable/download_progress" android:minHeight="16dp" android:layout_weight="1"/>
+        <com.whatsapp.WaTextView android:textColor="@color/secondary_text" android:layout_gravity="center" android:id="@+id/duration" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0:34" android:lines="1" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

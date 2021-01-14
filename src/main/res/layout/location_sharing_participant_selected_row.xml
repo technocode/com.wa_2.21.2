@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="@dimen/live_location_selected_row_height">
+    <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/avatar" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="26dp" android:src="@drawable/avatar_contact" android:scaleType="fitCenter" android:contentDescription="@string/contact_profile_photo"/>
+    <com.whatsapp.TextEmojiLabel android:textSize="16sp" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle"/>
+    <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+    <com.whatsapp.TextEmojiLabel android:textAppearance="@style/TextAppearance.ContactPushName" android:ellipsize="none" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/push_name" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="other">‎%d upaya tersisa</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="other">Permintaan tertunda</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">Anda tidak dapat menambahkan peserta ke panggilan ini sampai %s bergabung.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">Pilih hingga %d peserta. Mereka dapat bergabung kapan saja setelah panggilan dimulai. &lt;a href=learn_more_link&gt;Pelajari selengkapnya&lt;/a&gt;</item>
+    </plurals>
+</resources>

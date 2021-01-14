@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.whatsapp.WaImageView android:id="@+id/business_hours_icon" android:src="@drawable/ic_business_hours" android:layout_weight="0" app:tint="@color/business_icon" style="@style/BusinessProfileFieldIcon"/>
+    <com.whatsapp.biz.BusinessHoursContentView android:id="@+id/business_hours_content_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.whatsapp.WaImageView android:id="@+id/business_hours_chevron_icon" android:paddingLeft="12dp" android:paddingTop="@dimen/business_field_view_top_bottom_padding" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_chevron_down" android:layout_weight="0" app:tint="@color/contactInfoBusinessProfileIconTint"/>
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/card_h_padding" android:paddingTop="16dp" android:paddingRight="@dimen/card_h_padding" android:paddingBottom="@dimen/card_v_padding2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/card_h_padding2" android:layout_marginRight="@dimen/card_h_padding2">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/gdrive_looking_for_backup_progress_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/card_v_padding" android:indeterminate="true" android:indeterminateOnly="true" android:indeterminateTint="@color/primary_light" android:indeterminateTintMode="src_atop" style="?android:attr/progressBarStyleLarge"/>
+            <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="@color/backupRestoreLookingForBackupsText" android:layout_gravity="center" android:id="@+id/gdrive_lookup_for_backups_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</ScrollView>

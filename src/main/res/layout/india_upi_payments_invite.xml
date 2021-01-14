@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:layout_width="137dp" android:layout_height="137dp" android:layout_marginTop="46dp" android:src="@drawable/ic_hero_payments" android:contentDescription="@string/payment_logo"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:textSize="23sp" android:textColor="@color/primary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_invite_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="28dp" android:layout_marginRight="36dp" android:lineSpacingExtra="6dp" app:fontFamily="sans-serif-light"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:textColor="@color/secondary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_invite_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="28dp" android:layout_marginRight="36dp" android:layout_marginBottom="25dp" android:lineSpacingExtra="6dp"/>
+            <com.whatsapp.components.Button android:id="@+id/payments_invite_button" android:layout_width="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="@style/WA.Button.Secondary"/>
+            <com.whatsapp.components.Button android:id="@+id/send_to_vpa" android:layout_width="match_parent" android:layout_margin="16dp" android:layout_marginTop="12dp" android:text="@string/send_to_another_upi_id" style="@style/WA.Button.Borderless"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

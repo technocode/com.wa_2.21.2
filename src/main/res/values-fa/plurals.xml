@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‏تا زمانی که %s به تماس ملحق نشود نمی‌توانید افراد دیگری را اضافه کنید.</item>
+        <item quantity="other">‏تا زمانی که فرد دیگری به تماس ملحق نشود نمی‌توانید افراد دیگری را اضافه کنید.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">‏تا %d نفر را انتخاب کنید. بعد از شروع تماس می‌تواند در هر زمانی به آن ملخق شود. &lt;a href=learn_more_link&gt;بیشتر بدانید&lt;/a&gt;</item>
+        <item quantity="other">‏تا %d نفر را انتخاب کنید. بعد از شروع تماس می‌توانند در هر زمانی به آن ملخق شوند. &lt;a href=learn_more_link&gt;بیشتر بدانید&lt;/a&gt;</item>
+    </plurals>
+</resources>

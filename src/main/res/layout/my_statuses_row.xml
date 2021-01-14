@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="@dimen/conversations_row_height">
+    <FrameLayout android:id="@+id/contact_selector" android:paddingLeft="@dimen/list_row_padding" android:layout_width="@dimen/contact_selector_width" android:layout_height="@dimen/conversations_row_height" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <com.whatsapp.ContactStatusThumbnail android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/contact_photo" android:padding="2.5dp" android:layout_width="@dimen/status_thumbnail_size" android:layout_height="@dimen/status_thumbnail_size" android:scaleType="centerCrop" whatsapp:cstSeenColor="@color/status_seen" whatsapp:cstUnseenColor="@color/status_unseen" whatsapp:tbtnBorderSize="2.5dp" whatsapp:tbtnForegroundOnly="false" whatsapp:tbtnRadius="@dimen/small_avatar_radius"/>
+        <com.whatsapp.SelectionCheckView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/selection_check" android:layout_width="@dimen/selection_check_image_size" android:layout_height="@dimen/selection_check_image_size" android:layout_marginRight="8dp" android:layout_marginBottom="8dp"/>
+    </FrameLayout>
+    <LinearLayout android:id="@+id/buttons" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.whatsapp.WaImageView android:id="@+id/overflow_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_more_shadow" whatsapp:tint="@color/statusesMoreIconTint" style="@style/ActionBarButtonStyle"/>
+        <com.whatsapp.WaImageView android:id="@+id/retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_video_upload" android:contentDescription="@string/retry" whatsapp:tint="@color/primary_light" style="@style/ActionBarButtonStyle"/>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progress" android:padding="12dp" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:indeterminate="true" style="?android:attr/progressBarStyleLarge"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/buttons" android:layout_toRightOf="@+id/contact_selector" android:layout_centerVertical="true">
+        <com.whatsapp.WaTextView android:layout_gravity="left" android:id="@+id/views_count" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/listItemTitle"/>
+        <com.whatsapp.WaTextView android:layout_gravity="left" android:id="@+id/date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/listItemSubtitle"/>
+    </LinearLayout>
+</RelativeLayout>

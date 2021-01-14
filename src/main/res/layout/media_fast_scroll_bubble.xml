@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textColor="@color/fastScrollDateText" android:gravity="center" android:id="@+id/fast_scroll_date" android:background="@drawable/fastscroll_media_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

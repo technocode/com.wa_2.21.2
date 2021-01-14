@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingLeft="112dp" android:paddingTop="56dp" android:paddingRight="28dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/contactPickerStatusPrivacyHintText" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="right" android:id="@+id/hint" android:background="@drawable/ic_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_privacy_tip" app:backgroundTint="@color/contactPickerStatusPrivacyHintTint"/>
+</FrameLayout>

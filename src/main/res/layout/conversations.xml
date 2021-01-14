@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@android:id/content" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.collections.observablelistview.ObservableListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/HomeActivityList"/>
+    <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/search_no_matches" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="true" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="96dp"/>
+    <FrameLayout android:id="@+id/banner_holder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tab_height"/>
+    <FrameLayout android:id="@+id/conversations_empty_no_contacts" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/conversations_empty_permission_denied" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/conversations_empty_nux" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

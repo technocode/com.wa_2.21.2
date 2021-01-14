@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/hint_text" android:gravity="center" android:id="@+id/search_no_matches" android:paddingLeft="12dp" android:paddingRight="12dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/search_no_results_found"/>
+</FrameLayout>

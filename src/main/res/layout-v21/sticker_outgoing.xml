@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/media_container" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.stickers.StickerView android:id="@+id/sticker_image" android:layout_width="125dp" android:layout_height="125dp" android:contentDescription="@string/sticker_message_content_description"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/control_frame" android:background="@drawable/download_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="64dp" android:layout_height="64dp" android:indeterminateOnly="false" android:indeterminateTint="@android:color/white" android:indeterminateTintMode="src_atop"/>
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/cancel_download" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_cancel" android:contentDescription="@string/cancel"/>
+            <com.whatsapp.WaButton android:id="@+id/control_btn" style="@style/ConversationRowControlButton.Right"/>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/date_wrapper" android:background="@drawable/balloon_outgoing_normal_stkr" android:paddingLeft="@dimen/conversation_row_sticker_date_padding_horizontal" android:paddingRight="@dimen/conversation_row_sticker_date_padding_horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/conversation_row_sticker_date_wrapper_overlap">
+        <com.whatsapp.WaTextView android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/WA.TextAppearance.ConversationRowDate"/>
+        <com.whatsapp.WaImageView android:id="@+id/status" android:paddingLeft="4dp" android:layout_width="19dp" android:layout_height="10dp" android:scaleType="center"/>
+    </LinearLayout>
+</merge>

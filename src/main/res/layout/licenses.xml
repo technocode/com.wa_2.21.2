@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/secondary_text" android:id="@+id/licenses_view" android:background="@color/primary_surface" android:padding="6dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</ScrollView>

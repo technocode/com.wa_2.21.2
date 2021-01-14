@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.whatsapp.WaImageView android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/contact_photo_pos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_location_shadow"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingBottom="7dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_width="@dimen/small_avatar_shadow_background_size" android:layout_height="@dimen/small_avatar_shadow_background_size" android:src="@drawable/ic_live_location_places" app:tint="@color/live_location_live_location_marker_background_tint"/>
+            <com.whatsapp.components.button.ThumbnailButton android:layout_gravity="center" android:id="@+id/contact_photo" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:scaleType="fitCenter" app:tbtnBorderColor="@color/live_location_live_location_marker_border" app:tbtnBorderSize="1dp" app:tbtnForegroundOnly="false" app:tbtnRadius="@dimen/small_avatar_radius"/>
+        </FrameLayout>
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:background="@drawable/primary_color_circle" android:layout_width="4dp" android:layout_height="4dp" android:layout_marginTop="1dp" android:scaleType="center"/>
+    </LinearLayout>
+</FrameLayout>

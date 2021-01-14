@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.components.MainChildCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/bottom_sheet_parent" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:mcclChildId="@+id/bottom_sheet">
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_sheet" android:background="?attr/voipBottomSheetBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/call_upgrade_row" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/call_control_bottom_sheet_call_upgrade_row_height">
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/voip_requesting_upgrade_to_video" android:layout_weight="1" android:lineSpacingExtra="3sp" android:fontFamily="sans-serif"/>
+                <com.whatsapp.components.Button android:theme="@style/VoipSheetCancelButton" android:textSize="14sp" android:textColor="@color/white_alpha_87" android:id="@+id/upgrade_cancel" android:background="@drawable/btn_default" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginLeft="14dp" android:layout_marginRight="14dp" android:text="@string/cancel"/>
+            </LinearLayout>
+            <View android:layout_gravity="bottom" android:background="@color/white_alpha_8" style="@style/SectionDivider"/>
+        </LinearLayout>
+        <FrameLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.voipcalling.VoipCallControlBottomSheetDragIndicator android:layout_gravity="center_horizontal" android:id="@+id/call_controls_sheet_drag_indicator" android:paddingLeft="68dp" android:paddingTop="10dp" android:paddingRight="68dp" android:paddingBottom="4dp" android:layout_width="164dp" android:layout_height="26dp"/>
+            <FrameLayout android:gravity="center" android:id="@+id/call_controls_btns_container" android:layout_width="match_parent" android:layout_height="@dimen/call_control_bottom_sheet_btn_stub_height"/>
+        </FrameLayout>
+        <View android:layout_gravity="top" android:background="@color/white_alpha_8" style="@style/SectionDivider"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/participant_list" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</com.whatsapp.components.MainChildCoordinatorLayout>

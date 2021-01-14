@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.WaImageView android:layout_gravity="start" android:id="@+id/close" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="16dp" android:src="@drawable/ic_close" android:tint="@color/secondary_text" android:contentDescription="@string/close"/>
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/logo" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/smb_about_logo" android:contentDescription="@string/smb_about_logo_content_description"/>
+            <com.whatsapp.WaTextView android:textSize="20sp" android:textColor="@color/primary_text" android:layout_gravity="center" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/biz_profile_education_title" app:fontFamily="sans-serif-medium"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/biz_profile_education_description_1" android:lineSpacingExtra="6sp"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/biz_profile_education_description_2" android:lineSpacingExtra="6sp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/upsell_tooltip" android:background="@drawable/business_profile_upsell_tooltip" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="24dp">
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/biz_profile_education_upsell_title" app:fontFamily="sans-serif-medium"/>
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/secondary_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/biz_profile_education_title_upsell_description" android:lineSpacingExtra="6sp"/>
+                <com.whatsapp.WaTextView android:textAppearance="?android:attr/actionMenuTextAppearance" android:textSize="16sp" android:textColor="@color/accent_light" android:layout_gravity="center" android:id="@+id/upsell_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="@string/biz_profile_education_upsell_button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/emoji_popup_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/sticker_grid" android:paddingBottom="@dimen/picker_footer_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/body_light_gray" android:gravity="center" android:layout_gravity="center" android:id="@+id/empty" android:paddingBottom="44dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/sticker_picker_no_stickers"/>
+</FrameLayout>

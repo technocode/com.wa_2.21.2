@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/content" android:background="@drawable/selector_orange_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/primary_action_btn" android:background="@drawable/selector_orange_gradient" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/primary_action_icon" android:layout_width="@dimen/small_list_row_height" android:src="@drawable/ic_action_message" style="@style/ListItemActionButton"/>
+            <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingTop="@dimen/small_list_row_padding" android:paddingBottom="@dimen/small_list_row_padding" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.whatsapp.WaTextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle"/>
+                <com.whatsapp.WaTextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+            </LinearLayout>
+            <CheckBox android:id="@+id/cbx" android:background="@drawable/selector_orange_gradient" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:checked="true"/>
+        </LinearLayout>
+        <com.whatsapp.WaImageView android:id="@+id/secondary_action_btn" android:layout_width="55dp" android:src="@drawable/ic_action_call" android:contentDescription="@string/audio_call" style="@style/ListItemActionButton"/>
+        <com.whatsapp.WaImageView android:id="@+id/third_action_btn" android:layout_width="55dp" android:src="@drawable/ic_action_videocall" android:contentDescription="@string/video_call" style="@style/ListItemActionButton"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@drawable/divider_gray" android:layout_width="match_parent" android:layout_height="0dp"/>
+</LinearLayout>

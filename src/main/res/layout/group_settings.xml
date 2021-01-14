@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/dimmed_background" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View style="@style/ListTopShadow"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/restricted_mode_layout" style="@style/ContactInfoRow.GroupSetting">
+            <com.whatsapp.WaTextView android:id="@+id/restricted_mode_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_settings_restricted_mode_title" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_info" android:gravity="left" android:id="@+id/restricted_mode_info" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <View android:id="@+id/restricted_mode_separator" style="@style/FlatCardSeparator"/>
+        <LinearLayout android:id="@+id/announcement_group_layout" style="@style/ContactInfoRow.GroupSetting">
+            <com.whatsapp.WaTextView android:id="@+id/announcement_group_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_settings_announcement_title" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_info" android:gravity="left" android:id="@+id/announcement_group_info" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View style="@style/ListBottomShadow"/>
+    <View android:id="@+id/frequently_forwarded_divider_top" style="@style/ListTopShadow"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/frequently_forwarded_layout" style="@style/ContactInfoRow.GroupSetting">
+            <com.whatsapp.WaTextView android:id="@+id/frequently_forwarded_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_info" android:gravity="left" android:id="@+id/frequently_forwarded_info" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/frequently_forwarded_divider_bottom" style="@style/ListBottomShadow"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/manage_admins_group" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View style="@style/ListTopShadow"/>
+        <FrameLayout android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textAppearance="@style/ListItemTitle" android:id="@+id/manage_admins" android:text="@string/edit_group_admins" style="@style/ContactInfoRow.GroupSetting"/>
+        </FrameLayout>
+        <View style="@style/ListBottomShadow"/>
+    </LinearLayout>
+</LinearLayout>

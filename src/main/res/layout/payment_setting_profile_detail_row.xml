@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:id="@+id/profile_image" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="16dp" android:src="@drawable/avatar_contact" android:scaleType="fitXY" android:contentDescription="@string/qr_settings_description"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/profile_info_container" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:textSize="16sp" android:ellipsize="end" android:id="@+id/profile_payment_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_sub_title" android:id="@+id/profile_payment_handler" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.whatsapp.WaImageView android:id="@+id/qr_code_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:src="@drawable/ic_scan_qr" android:scaleType="fitXY" android:contentDescription="@string/qr_settings_description"/>
+    </LinearLayout>
+</merge>

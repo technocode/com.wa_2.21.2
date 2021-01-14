@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.qrcode.QrScannerView android:id="@+id/camera" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.qrcode.QrScannerOverlay android:id="@+id/overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" whatsapp:qsoShape="2"/>
+    </FrameLayout>
+</RelativeLayout>

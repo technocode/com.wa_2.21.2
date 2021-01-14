@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‏לא ניתן להוסיף אנשים לשיחה זו עד להצטרפות %s .</item>
+        <item quantity="other">‏לא ניתן להוסיף אנשים לשיחה זו עד שמישהו אחר יצטרף.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">‏יש לבחור עד אדם %d. הוא יוכל להצטרף לשיחה בכל עת לאחר שהיא התחילה. &lt;a href=learn_more_link&gt;למד/י עוד&lt;/a&gt;</item>
+        <item quantity="other">‏יש לבחור עד %d אנשים. הם יוכלו להצטרף לשיחה בכל עת לאחר שהיא התחילה. &lt;a href=learn_more_link&gt;למד/י עוד&lt;/a&gt;</item>
+    </plurals>
+</resources>

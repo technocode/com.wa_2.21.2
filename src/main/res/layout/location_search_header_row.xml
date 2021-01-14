@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/business_row_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36dp">
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/current_location" android:background="@color/primary_surface" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/current_location" android:drawableLeft="@drawable/btn_send_current_location" android:drawablePadding="8dp"/>
+</FrameLayout>

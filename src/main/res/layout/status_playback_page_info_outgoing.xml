@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="48dp" style="@style/ActionBarButtonStyle">
+    <com.whatsapp.WaImageView android:id="@+id/status_playback_views_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_views"/>
+    <com.whatsapp.WaTextView android:textColor="@color/white" android:id="@+id/read_receipt_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/black_alpha_45" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="3"/>
+</LinearLayout>

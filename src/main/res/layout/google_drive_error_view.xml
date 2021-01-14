@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/google_drive_backup_error_info_view" android:background="@color/googleDriveErrorBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/google_drive_backup_error_text_views" android:background="?attr/selectableItemBackground" android:paddingTop="9dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:background="@drawable/primary_color_circle" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@drawable/ic_backup_error" android:scaleType="center" android:cropToPadding="false" app:tint="@color/googleDriveErrorIconTint"/>
+        <com.whatsapp.WaTextView android:textSize="13sp" android:textColor="@color/googleDriveErrorText" android:id="@+id/google_drive_backup_error_info" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.whatsapp.WaImageView android:id="@+id/cancel_error_view" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="21dp" android:layout_marginRight="29dp" android:src="@drawable/inline_audio_cancel" android:contentDescription="@string/tb_banner_dismiss" android:alpha="0.5"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/picture" android:layout_width="54dp" android:layout_height="54dp" android:src="@drawable/audio_message_thumb" android:scaleType="fitCenter"/>
+    <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/icon" android:paddingBottom="12sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_audio" android:scaleType="center"/>
+    <FrameLayout android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/visualizer_frame" android:layout_width="50dp" android:layout_height="42dp" android:layout_marginTop="4dp">
+        <com.whatsapp.conversation.conversationrow.WaveformVisualizerView android:id="@+id/visualizer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <com.whatsapp.WaTextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/duration" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" style="@style/WA.TextAppearance.ConversationRowDate"/>
+</merge>

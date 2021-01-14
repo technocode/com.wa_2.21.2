@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‎%s qoşulana qədər bu zəngə heç kimi əlavə edə bilməzsiniz.</item>
+        <item quantity="other">Başqa kimsə qoşulana qədər bu zəngə heç kimi əlavə edə bilməzsiniz.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">‎%d nəfərə qədər şəxs seçin. Onlar başladıqdan sonra istənilən vaxt zəngə qoşula biləcək. &lt;a href=learn_more_link&gt;Ətraflı öyrənin&lt;/a&gt;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Sa ei saa sellesse kõnesse inimesi lisada enne, kui %s liitub.</item>
+        <item quantity="other">Sa ei saa sellesse kõnesse inimesi lisada enne, kui keegi teine liitub.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Vali %d inimene. Ta saab pärast kõne algust igal ajal sellega liituda. &lt;a href=learn_more_link&gt;Lisateave&lt;/a&gt;</item>
+        <item quantity="other">Vali kuni %d inimest. Nad saavad pärast kõne algust igal ajal sellega liituda. &lt;a href=learn_more_link&gt;Lisateave&lt;/a&gt;</item>
+    </plurals>
+</resources>

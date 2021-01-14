@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="78dp">
+    <RelativeLayout android:id="@+id/call_row_container" android:background="@drawable/joinable_call_row_background" android:layout_width="match_parent" android:layout_height="72dp" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:layout_marginBottom="1dp">
+        <com.whatsapp.ui.voip.MultiContactThumbnail android:layout_gravity="center" android:id="@+id/multi_contact_photo" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:layout_marginLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" whatsapp:mctPhotoSpacing="0.75dp" whatsapp:mctRadius="27dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toLeftOf="@+id/join_container" android:layout_toRightOf="@+id/multi_contact_photo" android:layout_centerVertical="true">
+            <com.whatsapp.WaTextView android:textSize="17sp" android:textColor="@color/voip_joinable_call_log_title" android:ellipsize="end" android:id="@+id/participant_names" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:singleLine="false" style="?attr/listItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="15sp" android:textColor="@color/joinable_call_row_ongoing_label" android:id="@+id/ongoing_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/voip_joinable_ongoing"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/join_container" android:background="@drawable/joinable_call_log_button_background" android:layout_width="34dp" android:layout_height="34dp" android:layout_marginLeft="20dp" android:layout_marginRight="11dp" android:layout_alignParentRight="true" android:layout_centerInParent="true">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/call_type_icon" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_voip_calls_tab_video_indicator" android:tint="@color/white"/>
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:theme="@style/WaTextInputLayoutAppearance.Purple" android:id="@+id/default_text_input_layout" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:hintEnabled="true"/>

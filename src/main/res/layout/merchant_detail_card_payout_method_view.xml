@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/product_margin_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/card_icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:src="@drawable/ic_card" android:scaleType="fitXY"/>
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:ellipsize="end" android:id="@+id/card_number" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/product_margin_16dp" android:singleLine="true" style="@style/ListItemTitle"/>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:id="@+id/call_row_container" android:layout_width="match_parent" android:layout_height="@dimen/conversations_row_height">
+    <FrameLayout android:id="@+id/contact_selector" android:layout_width="@dimen/contact_selector_width" android:layout_height="@dimen/conversations_row_height" android:layout_alignParentLeft="true">
+        <com.whatsapp.components.button.ThumbnailButton android:layout_gravity="center" android:id="@+id/contact_photo" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:scaleType="fitCenter" whatsapp:tbtnForegroundOnly="true" whatsapp:tbtnRadius="@dimen/small_avatar_radius"/>
+        <com.whatsapp.ui.voip.MultiContactThumbnail android:layout_gravity="center" android:id="@+id/multi_contact_photo" android:visibility="gone" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" whatsapp:mctPhotoSpacing="0.75dp" whatsapp:mctRadius="27dp"/>
+    </FrameLayout>
+    <com.whatsapp.SelectionCheckView android:id="@+id/selection_check" android:layout_width="@dimen/selection_check_image_size" android:layout_height="@dimen/selection_check_image_size" android:layout_marginLeft="@dimen/selection_check_margin_left" android:layout_marginTop="@dimen/selection_check_margin_top" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:paddingRight="@dimen/list_row_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/call_btns_container" android:layout_toRightOf="@+id/contact_selector" android:layout_centerVertical="true">
+        <com.whatsapp.TextEmojiLabel android:layout_gravity="left" android:id="@+id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/listItemTitle"/>
+        <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/call_type_icon" android:layout_width="16dp" android:layout_height="16dp"/>
+            <com.whatsapp.WaTextView android:layout_gravity="center_vertical" android:id="@+id/count" android:paddingLeft="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?attr/listItemSubtitle"/>
+            <com.whatsapp.WaTextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/date_time" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="?attr/listItemSubtitle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/call_btns_container" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+        <com.whatsapp.WaImageView android:gravity="center" android:id="@+id/voice_call" android:background="@drawable/selector_orange_gradient" android:layout_width="64dp" android:layout_height="@dimen/conversations_row_height" android:src="@drawable/ic_action_call" android:scaleType="center" android:contentDescription="@string/call" whatsapp:tint="?attr/primaryIconColor"/>
+        <com.whatsapp.WaImageView android:gravity="center" android:id="@+id/video_call" android:background="@drawable/selector_orange_gradient" android:layout_width="64dp" android:layout_height="@dimen/conversations_row_height" android:src="@drawable/ic_action_videocall" android:scaleType="center" android:contentDescription="@string/video_call" whatsapp:tint="?attr/primaryIconColor"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@drawable/conversations_list_divider" android:layout_width="wrap_content" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

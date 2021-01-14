@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.qrcode.QrScannerView android:id="@+id/camera" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true"/>
+    <com.whatsapp.WaTextView android:textSize="20sp" android:textColor="@color/secondary_text" android:gravity="center" android:id="@+id/hint" android:background="@color/gray_activity" android:padding="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-light"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/hint">
+        <View android:id="@+id/shade" android:background="#80000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.whatsapp.qrcode.QrScannerOverlay android:id="@+id/overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" whatsapp:qsoShape="2"/>
+        <FrameLayout android:padding="32dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.whatsapp.BoundedLinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/education" android:background="@drawable/panel" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxWidth="350dp" android:maxHeight="350dp" whatsapp:wallBackgroundTint="@color/background_panel_tint">
+                <com.whatsapp.qrcode.QrEducationView android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <com.whatsapp.components.Button android:id="@+id/ok" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="10dp" android:text="@string/ok" style="@style/WA.Button"/>
+            </com.whatsapp.BoundedLinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/map_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/conversation_row_location_map_height" android:layout_centerVertical="true">
+    <com.whatsapp.WaImageView android:id="@+id/map_thumb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <com.whatsapp.WaButton android:id="@+id/map_button" android:background="@drawable/selector_orange_gradient" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/map_holder" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

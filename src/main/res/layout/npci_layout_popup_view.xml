@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="56dp">
+    <com.whatsapp.WaButton android:textSize="14sp" android:textColor="#ffff00" android:gravity="center" android:id="@+id/popup_button" android:background="?attr/selectableItemBackground" android:padding="0dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/npci_dismiss" android:layout_alignParentRight="true"/>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/npci_text_primary_light" android:gravity="center_vertical" android:id="@+id/popup_text" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxLines="2" android:layout_toLeftOf="@+id/popup_button" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

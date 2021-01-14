@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Nuk mund të shtosh persona në këtë telefonatë derisa të bashkohet %s.</item>
+        <item quantity="other">Nuk mund të shtosh persona në këtë telefonatë derisa të bashkohet dikush tjetër.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Zgjidh deri në %d person. Ai do të mund të bashkohet në telefonatë në çdo kohë pasi të ketë filluar. &lt;a href=learn_more_link&gt;Mëso më shumë&lt;/a&gt;</item>
+        <item quantity="other">Zgjidh deri në %d persona. Ata do të mund të bashkohen në telefonatë në çdo kohë pasi të ketë filluar. &lt;a href=learn_more_link&gt;Mëso më shumë&lt;/a&gt;</item>
+    </plurals>
+</resources>

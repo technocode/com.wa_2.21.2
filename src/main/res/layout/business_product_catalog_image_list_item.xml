@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.biz.catalog.CatalogListImageFrame xmlns:android="http://schemas.android.com/apk/res/android" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaImageView android:id="@+id/catalog_image_list_image_view" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/business_product_catalog_image_description"/>
+</com.whatsapp.biz.catalog.CatalogListImageFrame>

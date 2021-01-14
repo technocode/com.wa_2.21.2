@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.WaTextView android:ellipsize="marquee" android:id="@+id/location_typeahead_dropdown_item_text" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true" style="?android:attr/spinnerDropDownItemStyle"/>
+    <com.whatsapp.WaTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/location_typeahead_dropdown_item_current_location" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/current_location" android:drawableLeft="@drawable/btn_send_current_location" android:drawablePadding="8dp" style="?android:attr/spinnerDropDownItemStyle"/>
+</FrameLayout>

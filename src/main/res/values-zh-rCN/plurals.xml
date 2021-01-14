@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">在 %s 加入之前，您无法将其他人添加到这个通话中。</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">最多可选择 %d 人。他们将可以在通话开始后的任何时间加入通话。&lt;a href=learn_more_link&gt;了解更多&lt;/a&gt;</item>
+    </plurals>
+</resources>

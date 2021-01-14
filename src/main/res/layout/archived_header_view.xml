@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/conversations_text_gray" android:gravity="center" android:id="@+id/conversations_archived_row_tv" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <View android:layout_gravity="bottom" android:paddingBottom="1dp" style="@style/SectionDivider"/>
+</merge>

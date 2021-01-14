@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/empty_row_unclickable" android:layout_width="match_parent" android:layout_height="67dp">
+    <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="@color/primary_text" android:gravity="center" android:id="@+id/tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/search_no_matches"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="96dp">
+    <com.whatsapp.SquareImageView android:id="@+id/thumbnail" android:layout_width="match_parent" android:layout_height="96dp" android:scaleType="centerCrop" app:sivSelector="@drawable/selector_orange_gradient"/>
+    <com.whatsapp.WaImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:src="@drawable/ic_gallery_video_overlay" android:scaleType="center"/>
+    <View android:layout_gravity="bottom" android:background="@drawable/gallery_album_overlay" android:layout_width="match_parent" android:layout_height="70dp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom" android:orientation="horizontal" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="24dp" android:layout_height="24dp" android:scaleType="centerCrop"/>
+        <com.whatsapp.TextEmojiLabel android:textSize="13sp" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="left" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+        <com.whatsapp.WaTextView android:textSize="11sp" android:textColor="@color/white" android:ellipsize="marquee" android:id="@+id/count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</FrameLayout>

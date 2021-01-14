@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_gravity="center" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/registration_margins" android:paddingTop="@dimen/registration_margins" android:paddingRight="@dimen/registration_margins" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="36dp" android:text="@string/clock_wrong_title" style="@style/RegistrationTitle"/>
+            <com.whatsapp.WaImageView android:gravity="top" android:layout_width="130dp" android:layout_height="130dp" android:src="@drawable/ic_dateisinaccurate"/>
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/body_gray" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:text="@string/clock_wrong"/>
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/body_light_gray" android:gravity="center" android:id="@+id/clock_wrong_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp"/>
+                <com.whatsapp.components.Button android:layout_gravity="center" android:id="@+id/close" android:layout_marginBottom="24dp" android:text="@string/adjust_date" style="@style/WA.Button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

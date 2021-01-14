@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <WebView android:id="@+id/web_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:id="@+id/bottom_button_container" android:background="@color/accent_highlight" android:paddingLeft="24dp" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="56dp">
+        <com.whatsapp.WaTextView android:textSize="14sp" android:id="@+id/does_not_match_button" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

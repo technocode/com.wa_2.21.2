@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.doodle.shapepicker.ShapeItemView android:id="@+id/shape_item_view" android:layout_width="@dimen/doodle_shape_picker_grid_size" android:layout_height="@dimen/doodle_shape_picker_grid_size" android:scaleType="fitCenter" android:contentDescription="@string/emoji_button_description"/>
+</LinearLayout>

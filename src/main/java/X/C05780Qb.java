@@ -1,0 +1,114 @@
+package X;
+
+import com.whatsapp.util.Log;
+import java.io.File;
+
+/* renamed from: X.0Qb  reason: invalid class name and case insensitive filesystem */
+public class C05780Qb {
+    public final File A00;
+    public final File A01;
+    public final File A02;
+    public final File A03;
+    public final File A04;
+    public final File A05;
+    public final File A06;
+    public final File A07;
+    public final File A08;
+    public final File A09;
+    public final File A0A;
+    public final File A0B;
+    public final File A0C;
+    public final File A0D;
+    public final File A0E;
+    public final File A0F;
+    public final File A0G;
+    public final File A0H;
+    public final File A0I;
+    public final File A0J;
+    public final File A0K;
+    public final File A0L;
+    public final File A0M;
+    public final File A0N;
+
+    public C05780Qb(AnonymousClass089 r7) {
+        File file = r7.A02.A02;
+        File file2 = new File(file, "Media");
+        AnonymousClass089.A03(file2, false);
+        this.A08 = file2;
+        File file3 = new File(file, ".Shared");
+        AnonymousClass089.A03(file3, true);
+        this.A03 = file3;
+        AnonymousClass00G r4 = r7.A03;
+        File file4 = new File(r4.A00.getFilesDir(), ".Shared");
+        AnonymousClass089.A03(file4, false);
+        this.A07 = file4;
+        File file5 = new File(this.A08, AnonymousClass089.A08);
+        AnonymousClass089.A03(file5, false);
+        this.A01 = file5;
+        File file6 = new File(this.A08, AnonymousClass089.A07);
+        AnonymousClass089.A03(file6, false);
+        this.A00 = file6;
+        File file7 = new File(this.A08, AnonymousClass089.A0F);
+        AnonymousClass089.A03(file7, true);
+        this.A0M = file7;
+        File file8 = new File(this.A08, AnonymousClass089.A0E);
+        AnonymousClass089.A03(file8, false);
+        this.A0L = file8;
+        File file9 = new File(this.A08, AnonymousClass089.A0B);
+        AnonymousClass089.A03(file9, false);
+        this.A05 = file9;
+        File file10 = new File(this.A08, AnonymousClass089.A0A);
+        AnonymousClass089.A03(file10, false);
+        this.A02 = file10;
+        File file11 = new File(this.A08, "WallPaper");
+        AnonymousClass089.A03(file11, false);
+        this.A0N = file11;
+        File file12 = new File(this.A08, AnonymousClass089.A0C);
+        AnonymousClass089.A03(file12, false);
+        this.A0E = file12;
+        File file13 = new File(this.A08, ".Statuses");
+        AnonymousClass089.A03(file13, true);
+        this.A0K = file13;
+        File file14 = new File(r4.A00.getFilesDir(), "ViewOnce");
+        AnonymousClass089.A03(file14, true);
+        this.A06 = file14;
+        File file15 = new File(this.A08, AnonymousClass089.A09);
+        if (file15.exists()) {
+            C006803i.A0n(file15);
+            Log.i("fmessageio/initExternalStorageDirectory calls dir removed");
+        }
+        File file16 = new File(this.A01, "Sent");
+        AnonymousClass089.A03(file16, true);
+        this.A0G = file16;
+        File file17 = new File(this.A00, "Sent");
+        AnonymousClass089.A03(file17, true);
+        this.A0F = file17;
+        File file18 = new File(this.A0L, "Sent");
+        AnonymousClass089.A03(file18, true);
+        this.A0J = file18;
+        File file19 = new File(this.A05, "Sent");
+        AnonymousClass089.A03(file19, true);
+        this.A0I = file19;
+        File file20 = new File(this.A02, "Sent");
+        AnonymousClass089.A03(file20, true);
+        this.A0H = file20;
+        File file21 = new File(this.A01, "Private");
+        AnonymousClass089.A03(file21, true);
+        this.A0A = file21;
+        File file22 = new File(this.A00, "Private");
+        AnonymousClass089.A03(file22, true);
+        this.A09 = file22;
+        File file23 = new File(this.A0L, "Private");
+        AnonymousClass089.A03(file23, true);
+        this.A0D = file23;
+        File file24 = new File(this.A05, "Private");
+        AnonymousClass089.A03(file24, true);
+        this.A0C = file24;
+        File file25 = new File(this.A02, "Private");
+        AnonymousClass089.A03(file25, true);
+        this.A0B = file25;
+        File file26 = new File(this.A08, AnonymousClass089.A0D);
+        AnonymousClass089.A03(file26, true);
+        this.A04 = file26;
+    }
+}

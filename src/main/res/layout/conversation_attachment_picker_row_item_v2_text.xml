@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.text.CondensedTextView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/text" style="@style/AttachPickerLabelV2"/>

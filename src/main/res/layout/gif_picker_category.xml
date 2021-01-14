@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="36dp">
+    <com.whatsapp.WaTextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/selector_gif_picker_heading" android:gravity="center" android:id="@+id/gif_category_title" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="2dp" android:lines="1" android:layout_weight="1" android:textAllCaps="true"/>
+    <View android:layout_gravity="bottom" android:id="@+id/gif_cat_marker" android:background="@color/picker_underline_color" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

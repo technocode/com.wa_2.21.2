@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:src="@drawable/ic_fbpay_lock" app:tint="@color/fb_pay_hub_icon_tint"/>

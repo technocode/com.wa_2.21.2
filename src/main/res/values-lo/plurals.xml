@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">ທ່ານບໍ່ສາມາດເພີ່ມຄົນອື່ນເຂົ້າການໂທນີ້ໄດ້ຈົນກວ່າ %s ຈະເຂົ້າຮ່ວມ.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">ສາມາດເລືອກໄດ້ສູງສຸດ %d ຄົນ. ພວກເຂົາສາມາດເຂົ້າຮ່ວມການໂທໄດ້ທຸກເວລາຫຼັງຈາກສາຍເລີ່ມໄປແລ້ວ. &lt;a href=learn_more_link&gt;ສຶກສາເພີ່ມເຕີມ&lt;/a&gt;</item>
+    </plurals>
+</resources>

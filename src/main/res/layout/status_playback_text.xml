@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.status.playback.widget.TextStatusContentView android:textSize="@dimen/status_text_size" android:textColor="@color/white" android:gravity="center" android:id="@+id/message_text" android:paddingLeft="@dimen/status_text_h_padding" android:paddingTop="@dimen/status_text_v_padding" android:paddingRight="@dimen/status_text_h_padding" android:paddingBottom="@dimen/status_text_v_padding" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

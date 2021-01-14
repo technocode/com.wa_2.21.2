@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/upi_id_details_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:id="@+id/avatar" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="16dp" android:src="@drawable/avatar_contact" android:scaleType="center" android:contentDescription="@string/contact_profile_photo"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:id="@+id/vpa_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/payment_vpa_name_loading"/>
+                <com.whatsapp.CopyableTextView android:textSize="16sp" android:textColor="@color/secondary_text" android:id="@+id/account_id_handle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:toastString="@string/vpa_copied_to_clipboard"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@+id/payment_separator" android:background="@drawable/list_separator_top" android:layout_width="match_parent" android:layout_height="@dimen/payment_settings_card_separator_height"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/new_payment_container" android:background="@color/primary_surface" android:paddingLeft="@dimen/info_screen_padding" android:layout_width="match_parent" android:layout_height="@dimen/info_screen_row">
+            <com.whatsapp.WaTextView android:textSize="16dp" android:textColor="@color/primary_surface" android:gravity="center" android:id="@+id/payment_drawable_text" android:background="@drawable/payment_filled_circle_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="26dp"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_payment"/>
+        </LinearLayout>
+        <View android:background="@drawable/list_separator_top" android:layout_width="match_parent" android:layout_height="@dimen/payment_settings_card_separator_height"/>
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/block_vpa_btn" android:background="@color/primary_surface" android:paddingLeft="@dimen/info_screen_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/info_screen_row">
+            <com.whatsapp.WaImageView android:id="@+id/block_vpa_icon" android:layout_width="@dimen/small_list_avatar_size" android:layout_height="@dimen/small_list_avatar_size" android:layout_marginRight="@dimen/small_list_avatar_padding" android:src="@drawable/ic_spam_block" android:scaleType="center" android:contentDescription="@string/block"/>
+            <com.whatsapp.WaTextView android:textSize="17sp" android:id="@+id/block_vpa_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/block"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

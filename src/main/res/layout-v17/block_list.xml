@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@android:id/list" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:choiceMode="none"/>
+    <ScrollView android:id="@+id/block_list_empty" android:paddingTop="@dimen/settings_list_padding_top" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="36dp" android:paddingTop="24dp" android:paddingRight="36dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/settings_privacy_blocked_contacts" android:scaleType="center"/>
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:id="@+id/block_list_primary_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/no_blocked_contacts" app:fontFamily="sans-serif-medium"/>
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:gravity="center_horizontal" android:id="@+id/block_list_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textAlignment="center"/>
+            </LinearLayout>
+            <View android:background="@color/settings_divider" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/settings_item_subtitle_text" android:id="@+id/block_list_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="14dp" android:layout_marginRight="36dp" android:layout_marginBottom="16dp" android:text="@string/block_list_info" android:lineSpacingMultiplier="1.3"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaImageView android:id="@+id/icon" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_alert" android:tint="@color/red_error"/>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/red_error" android:ellipsize="end" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/transaction_invoice_url_note" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:text="@string/upi_mandate_update_status" android:singleLine="true"/>
+</LinearLayout>

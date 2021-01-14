@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/horizontal_padding" android:paddingTop="6dp" android:paddingRight="@dimen/horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/contacts_help_instructions" android:lineSpacingMultiplier="1" style="@style/Text.Description"/>
+            <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.whatsapp.WaTextView android:textStyle="bold" android:paddingRight="8dp" android:layout_width="wrap_content" android:text="@string/contacts_help_bullet" style="@style/Text.Steps"/>
+                    <com.whatsapp.WaTextView android:layout_width="wrap_content" android:text="@string/contacts_help_step_1" style="@style/Text.Steps"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.whatsapp.WaTextView android:textStyle="bold" android:paddingRight="8dp" android:layout_width="wrap_content" android:text="@string/contacts_help_bullet" style="@style/Text.Steps"/>
+                    <com.whatsapp.WaTextView android:layout_width="wrap_content" android:text="@string/contacts_help_step_2" style="@style/Text.Steps"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

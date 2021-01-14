@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingLeft="8dp" android:paddingTop="20dp" android:paddingRight="8dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/progress_bar" android:layout_width="48dp" android:layout_height="48dp"/>
+        <com.whatsapp.WaTextView android:textSize="15sp" android:layout_gravity="center" android:id="@+id/message_text_view" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-8dp">
+        <com.whatsapp.WaButton android:id="@+id/cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="?android:attr/buttonBarButtonStyle"/>
+        <com.whatsapp.WaButton android:id="@+id/add_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_third_party_sticker_pack_positive" style="?android:attr/buttonBarButtonStyle"/>
+        <com.whatsapp.WaButton android:id="@+id/ok_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" style="?android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

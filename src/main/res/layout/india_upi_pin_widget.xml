@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/change_upi_pin_container" android:background="?android:attr/selectableItemBackground" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="72dp" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/change_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_settings_pin" android:contentDescription="@string/edit_info"/>
+        </FrameLayout>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:id="@+id/change_upi_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/payments_change_upi_pin_title" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/reset_upi_pin_container" android:background="?android:attr/selectableItemBackground" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="72dp" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/reset_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_settings_reset" android:contentDescription="@string/reset_text"/>
+        </FrameLayout>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:layout_gravity="center_vertical" android:id="@+id/reset_upi_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/forgot_upi_pin" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/check_balance_container" android:background="?android:attr/selectableItemBackground" android:paddingTop="16dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="72dp" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/check_balance_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bank_logo_placeholder" android:contentDescription="@string/check_balance_title"/>
+        </FrameLayout>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:layout_gravity="center_vertical" android:id="@+id/check_balance_pin" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/check_balance_title" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

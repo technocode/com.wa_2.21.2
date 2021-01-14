@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/emoji_popup_body" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/sticker_grid" android:paddingBottom="@dimen/picker_footer_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ScrollView android:layout_gravity="center_vertical" android:id="@+id/empty" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:paddingBottom="44dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center_horizontal" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginBottom="16dp" android:src="@drawable/sticker_sad_cuppy"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/body_light_gray" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sticker_picker_no_sent_stickers"/>
+            <com.whatsapp.components.Button android:layout_gravity="center_horizontal" android:id="@+id/get_stickers_button" android:visibility="invisible" android:layout_marginTop="4dp" android:text="@string/sticker_picker_get_stickers" style="@style/WA.Button.Borderless"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

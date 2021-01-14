@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.KeyboardPopupLayout android:id="@+id/cart" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.WaImageButton android:id="@+id/cart_close_btn" style="@style/OrderScreenCloseBtn"/>
+        <com.whatsapp.WaTextView android:id="@+id/order_detail_title" android:text="@string/your_cart" android:layout_alignTop="@+id/cart_close_btn" android:layout_alignBottom="@+id/cart_close_btn" style="@style/OrderScreenTitle"/>
+        <View android:id="@+id/cart_title_divider" android:layout_below="@+id/cart_close_btn" style="@style/SectionDivider.Heavy"/>
+        <include layout="@layout/fragment_cart_contents"/>
+        <include layout="@layout/fragment_cart_empty"/>
+    </com.whatsapp.KeyboardPopupLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

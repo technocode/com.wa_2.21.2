@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Ní féidir leat daoine a chur leis an nglao seo go dtí go dtéann %s isteach ann.</item>
+        <item quantity="other">Ní féidir leat daoine a chur leis an nglao seo go dtí go dtéann duine éigin isteach ann.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Roghnaigh suas le %d duine amháin. Beidh sé/sí in ann dul isteach sa ghlao am ar bith tar éis dó tosú. &lt;a href=learn_more_link&gt;Tuilleadh faisnéise&lt;/a&gt;</item>
+        <item quantity="two">Roghnaigh suas le %d dhuine. Beidh siad in ann dul isteach sa ghlao am ar bith tar éis dó tosú. &lt;a href=learn_more_link&gt;Tuilleadh faisnéise&lt;/a&gt;</item>
+        <item quantity="few">Roghnaigh suas le %d dhuine. Beidh siad in ann dul isteach sa ghlao am ar bith tar éis dó tosú. &lt;a href=learn_more_link&gt;Tuilleadh faisnéise&lt;/a&gt;</item>
+        <item quantity="many">Roghnaigh suas le %d nduine. Beidh siad in ann dul isteach sa ghlao am ar bith tar éis dó tosú. &lt;a href=learn_more_link&gt;Tuilleadh faisnéise&lt;/a&gt;</item>
+        <item quantity="other">Roghnaigh suas le %d duine. Beidh siad in ann dul isteach sa ghlao am ar bith tar éis dó tosú. &lt;a href=learn_more_link&gt;Tuilleadh faisnéise&lt;/a&gt;</item>
+    </plurals>
+</resources>

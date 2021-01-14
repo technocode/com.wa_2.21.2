@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+        <FrameLayout android:id="@+id/left_decoration" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/image" android:visibility="gone" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp"/>
+            <androidx.appcompat.widget.AppCompatRadioButton android:layout_gravity="center_vertical" android:id="@+id/radio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32dp"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:textIsSelectable="false" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:id="@+id/description" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:maxLines="4" android:singleLine="false" android:textIsSelectable="false" style="@style/ListItemSubtitle.V2"/>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatRadioButton android:id="@+id/right_radio" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@+id/divider" android:background="@color/divider_gray" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp"/>
+</FrameLayout>

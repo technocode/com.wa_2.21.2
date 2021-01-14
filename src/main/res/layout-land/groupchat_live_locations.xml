@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+        <FrameLayout android:id="@+id/map_holder" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.whatsapp.WaImageView android:id="@+id/my_location" android:background="@drawable/map_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/btn_myl" android:scaleType="center" android:layout_alignParentRight="true" android:contentDescription="@string/move_your_location"/>
+        <com.whatsapp.WaImageView android:id="@+id/zoom_out" android:background="@drawable/map_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/btn_locations_zoom_reset" android:scaleType="center" android:layout_below="@+id/my_location" android:layout_alignParentRight="true" android:contentDescription="@string/live_location_zoom_out"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/status_panel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.whatsapp.WaImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/shadow_send_location" android:scaleType="fitXY"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/live_location_status_bar_text" android:gravity="center" android:id="@+id/status" android:background="@color/live_location_status_bar_background" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.whatsapp.WaImageView android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/shadow_send_location_landscape" android:scaleType="fitXY" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/user_list" android:paddingTop="1dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/landscape_selected_list_holder" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/selected_list_title_holder" android:background="@color/accent_dark" android:paddingLeft="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="48dp">
+                <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/selected_cancel" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="26dp" android:src="@drawable/btn_cancel" android:scaleType="centerInside" android:contentDescription="@string/close" app:tint="@color/white"/>
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/selected_list_title" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Text"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/selected_list" android:background="@color/primary_surface" android:paddingTop="1dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

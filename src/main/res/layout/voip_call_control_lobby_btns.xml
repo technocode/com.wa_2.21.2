@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/list_row_padding" android:paddingTop="18dp" android:paddingRight="@dimen/list_row_padding" android:paddingBottom="18dp" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.components.Button android:theme="@style/VoipCallLobbyNegativeButton" android:id="@+id/negative_button" style="@style/VoipLobbyActionButton"/>
+    <com.whatsapp.components.Button android:theme="@style/VoipCallLobbyPositiveButton" android:id="@+id/positive_button" style="@style/VoipLobbyActionButton"/>
+</LinearLayout>

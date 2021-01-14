@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_text_row_tv" android:textStyle="italic" android:textColor="@color/conversationRowRevokedText" android:gravity="left" android:layout_gravity="left" android:id="@+id/expired_text" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="2dp" app:drawableTint="@color/conversationRowRevokedText"/>
+</merge>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="one">‎%d ప్రయత్నం మిగిలి ఉంది</item>
+        <item quantity="other">‎%d ప్రయత్నాలు మిగిలి ఉన్నాయి</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="one">పెండింగ్‌లో ఉన్న అభ్యర్థన</item>
+        <item quantity="other">పెండింగ్‌లో ఉన్న అభ్యర్థనలు</item>
+    </plurals>
+    <plurals name="upi_mandate_payment_request_status_time_remaining_to_approve">
+        <item quantity="one">ఈ అభ్యర్థనను ఆమోదించేందుకు మీకు %1$s ఉంది</item>
+        <item quantity="other">ఈ అభ్యర్థనను ఆమోదించేందుకు మీకు %1$s ఉన్నాయి</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‎%s జాయిన్ అయ్యే వరకు మీరు ఈ కాల్‌కు వ్యక్తులను జోడించలేరు.</item>
+        <item quantity="other">ఎవరైనా జాయిన్ అయ్యే వరకు మీరు ఈ కాల్‌కు వ్యక్తులను జోడించలేరు.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">‎%d వ్యక్తి వరకు ఎంచుకోండి. కాల్ ప్రారంభమయ్యాక వారు ఎప్పుడైనా జాయిన్ కాగలుగుతారు. &lt;a href=learn_more_link&gt;మరింత తెలుసుకోండి&lt;/a&gt;</item>
+        <item quantity="other">‎%d వ్యక్తుల వరకు ఎంచుకోండి. కాల్ ప్రారంభమయ్యాక వారు ఎప్పుడైనా జాయిన్ కాగలుగుతారు. &lt;a href=learn_more_link&gt;మరింత తెలుసుకోండి&lt;/a&gt;</item>
+    </plurals>
+</resources>

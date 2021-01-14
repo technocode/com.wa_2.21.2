@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.WaFrameLayout android:id="@+id/footer" android:background="@drawable/panel_bot" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:waflBackgroundTint="@color/background_panel_tint">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/logout_all" android:background="@drawable/selector_orange_gradient" android:paddingLeft="@dimen/list_row_padding" android:paddingRight="@dimen/list_row_padding" android:layout_width="match_parent" android:layout_height="@dimen/group_participant_row_height">
+            <com.whatsapp.WaImageView android:layout_width="@dimen/thumbnail_size" android:layout_height="@dimen/thumbnail_size" android:layout_marginTop="@dimen/thumbnail_padding" android:layout_marginRight="@dimen/thumbnail_padding_right" android:layout_marginBottom="@dimen/thumbnail_padding" android:src="@drawable/active_connections_logout" android:scaleType="center"/>
+            <com.whatsapp.WaTextView android:textColor="@color/link_color" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="@dimen/group_participant_row_height" android:text="@string/delete_all_qr" android:layout_weight="1" style="@style/ListItemTitle"/>
+        </LinearLayout>
+    </com.whatsapp.WaFrameLayout>
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/hint_text" android:gravity="center" android:id="@+id/hint" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

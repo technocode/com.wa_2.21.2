@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/transaction_info_root" android:background="@drawable/transaction_details_root_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/transaction_details_scroller" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="3">
+            <LinearLayout android:orientation="vertical" android:id="@+id/transaction_details_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="36dp"/>
+        </ScrollView>
+        <View android:id="@+id/transaction_details_expanded_space" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/transaction_bar_root" android:background="#1b3281" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="36dp" android:foreground="?attr/selectableItemBackground">
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/npci_text_primary_light" android:gravity="center" android:id="@+id/transaction_bar_title" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/npci_text_primary_light" android:gravity="center" android:id="@+id/transaction_bar_info" android:layout_width="wrap_content" android:layout_height="match_parent" android:text=""/>
+        <com.whatsapp.WaImageView android:id="@+id/transaction_bar_arrow" android:padding="6dp" android:layout_width="36dp" android:layout_height="match_parent" android:src="@drawable/ic_keyboard_arrow_down" app:tint="@color/npci_text_primary_light"/>
+    </LinearLayout>
+    <View android:background="#d7d7d7" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="36dp" android:alpha="0.9"/>
+</FrameLayout>

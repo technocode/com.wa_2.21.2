@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="40dp" android:paddingRight="40dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:background="@drawable/panel_popup_top" android:layout_width="match_parent" android:layout_height="136dp" android:src="@drawable/voip_app_update_dialog_header" android:scaleType="center"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/panel_popup_bot" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="20sp" android:textColor="@color/primary_text" android:id="@+id/voip_app_update_dialog_title" android:paddingLeft="24dp" android:paddingTop="20dp" android:paddingRight="24dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/voip_app_update_dialog_title" android:lineSpacingMultiplier="1.25" android:fontFamily="sans-serif-medium"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/secondary_text" android:id="@+id/voip_app_update_dialog_content" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/voip_app_update_dialog_content" android:lineSpacingMultiplier="1.3"/>
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.whatsapp.WaButton android:textSize="14sp" android:textColor="@color/accent_dark" android:id="@+id/cancel" android:padding="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:fontFamily="sans-serif-medium" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+                <com.whatsapp.WaButton android:textSize="14sp" android:textColor="@color/accent_dark" android:id="@+id/upgrade" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/accent_dark" android:text="@string/upgrade" android:drawableLeft="@drawable/sticker_playstore" android:drawablePadding="6dp" android:fontFamily="sans-serif-medium" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

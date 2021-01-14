@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/conversation_row_root" android:layout_width="@dimen/conversation_row_document_width" android:layout_height="wrap_content" android:layout_marginLeft="40dp">
+        <include layout="@layout/conversation_row_quoted_frame"/>
+        <include layout="@layout/conversation_row_web_page_preview_frame"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="62dp">
+            <com.whatsapp.conversation.conversationrow.ConversationRowAudioPreview android:id="@+id/conversation_row_audio_preview" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <com.whatsapp.search.views.itemviews.AudioPlayerView android:id="@+id/conversation_row_audio_player_view" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:layout_toRightOf="@+id/conversation_row_audio_preview" whatsapp:seekbar_marginLeft="10dp"/>
+            <com.whatsapp.search.views.itemviews.AudioPlayerMetadataView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/conversation_row_audio_preview" android:layout_alignLeft="@+id/conversation_row_audio_player_view" android:layout_alignRight="@+id/conversation_row_audio_player_view" android:layout_alignParentBottom="true" whatsapp:dateWrapper_marginLeft="8dp" whatsapp:dateWrapper_paddingRight="7dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/forward" style="@style/ForwardButton"/>
+</merge>

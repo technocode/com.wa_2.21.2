@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Huwezi kuongeza watu kwenye simu hii hadi %s ajiunge.</item>
+        <item quantity="other">Huwezi kuongeza watu kwenye simu hii hadi mtu mwingine ajiunge.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Chagua angalau mtu %d. Ataweza kujiunga na simu wakati wowote baada ya kuanza. &lt;a href=learn_more_link&gt;Pata maelezo zaidi&lt;/a&gt;</item>
+        <item quantity="other">Chagua hadi watu %d. Wataweza kujiunga na simu wakati wowote baada ya kuanza. &lt;a href=learn_more_link&gt;Pata maelezo zaidi&lt;/a&gt;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@null" android:id="@+id/biz_search_strict_mode" android:title="@string/biz_search_menu_strict_mode" android:checkable="true"/>
+</menu>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/web_page_preview_container" android:paddingLeft="@dimen/status_text_h_padding" android:paddingTop="@dimen/status_text_v_padding" android:paddingRight="@dimen/status_text_h_padding" android:paddingBottom="@dimen/status_text_v_padding" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/web_page_preview" android:background="@drawable/balloon_centered_shadow" android:padding="19dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp">
+        <FrameLayout android:id="@+id/suspicious_link_indicator_holder" android:paddingBottom="4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/suspicious_link_indicator"/>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/url_preview" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.conversation.conversationrow.WebPagePreviewView android:id="@+id/link_preview_frame" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <com.whatsapp.TextEmojiLabel android:textSize="17sp" android:textColor="@color/link_color" android:gravity="left" android:id="@+id/url_text" android:paddingTop="6dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

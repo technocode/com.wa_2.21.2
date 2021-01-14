@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/conversations_row_height">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/row_content" android:paddingLeft="@dimen/list_row_padding" android:paddingRight="@dimen/list_row_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:id="@+id/call_type_icon" android:paddingTop="6sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/call_type_icon">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:gravity="left" android:id="@+id/call_type" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/ListItemTitle"/>
+                <com.whatsapp.WaTextView android:id="@+id/call_duration" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:gravity="left" android:id="@+id/call_date" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/ListItemSubtitle"/>
+                <com.whatsapp.WaTextView android:textSize="14sp" android:id="@+id/call_data" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:background="?attr/settingsBackgroundColor" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingTop="8dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="?attr/settingsTitleAccentColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="14dp" android:layout_marginRight="24dp" android:layout_marginBottom="8dp" android:text="@string/select_status_recipients_title" app:fontFamily="sans-serif-medium"/>
+            <RadioGroup android:paddingLeft="34dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RadioButton android:theme="?attr/settingsRadioButtonStyle" android:id="@+id/my_contacts_btn" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <RadioButton android:theme="?attr/settingsRadioButtonStyle" android:id="@+id/black_list_btn" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <RadioButton android:theme="?attr/settingsRadioButtonStyle" android:id="@+id/white_list_btn" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </RadioGroup>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="?attr/settingsSubtitleTextColor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="16dp" android:layout_marginRight="24dp" android:text="@string/select_status_recipients_explanation"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/bottom_button_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.components.Button android:layout_gravity="center_horizontal" android:id="@+id/confirm_change_btn" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/done" style="@style/WA.Button"/>
+    </FrameLayout>
+</LinearLayout>

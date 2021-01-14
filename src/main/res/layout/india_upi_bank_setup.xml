@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/hero_payments" android:layout_width="137dp" android:layout_height="137dp" android:layout_marginTop="46dp" android:src="@drawable/ic_hero_payments" android:contentDescription="@string/payment_logo"/>
+        <com.whatsapp.WaTextView android:textSize="23sp" android:textColor="@color/primary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_add_bank_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="40dp" android:layout_marginRight="36dp" android:text="@string/payments_banks_list_wait_message" android:lineSpacingExtra="6dp" app:fontFamily="sans-serif-light"/>
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/secondary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_add_bank_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="78dp" android:layout_marginRight="36dp" android:layout_marginBottom="24dp" android:text="@string/register_wait_message" android:lineSpacingExtra="6dp"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" style="?android:attr/progressBarStyleInverse"/>
+    </LinearLayout>
+</ScrollView>

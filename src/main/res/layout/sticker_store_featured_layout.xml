@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/sticker_store_featured" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/store_recycler_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/store_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp"/>
+        <com.whatsapp.WaTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/sticker_store_progress_loading"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center_horizontal" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginBottom="16dp" android:src="@drawable/sticker_sad_cuppy"/>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:layout_gravity="center_horizontal" android:id="@+id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sticker_store_featured_empty"/>
+    </LinearLayout>
+</FrameLayout>

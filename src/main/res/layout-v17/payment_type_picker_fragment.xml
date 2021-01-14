@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageButton android:layout_gravity="center" android:id="@+id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@drawable/ic_back" android:contentDescription="@string/back" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" app:tint="@color/dark_gray" style="?attr/actionButtonStyle"/>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/payments_header_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:text="@string/payment_type_picker_title" app:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/buying_goods_and_services_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="16dp" android:src="@drawable/cart" android:scaleType="fitXY" app:tint="#128c7e"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:textSize="16sp" android:ellipsize="end" android:id="@+id/buying_goods_and_services_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:id="@+id/buying_goods_and_services_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/buying_goods_and_services_check" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_settings_check" app:tint="@color/payments_type_checked"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/sending_to_friends_and_family_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:padding="5dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="16dp" android:src="@drawable/ic_contacts_storage_usage" android:scaleType="fitXY" app:tint="#128c7e"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:textSize="16sp" android:ellipsize="end" android:id="@+id/sending_to_friends_and_family_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:id="@+id/sending_to_friends_and_family_hint_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/sending_to_friends_and_family_check" android:paddingLeft="16dp" android:paddingRight="16dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_settings_check" app:tint="@color/payments_type_checked"/>
+    </LinearLayout>
+</LinearLayout>

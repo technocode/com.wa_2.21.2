@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingTop="16dp" android:paddingBottom="16dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/product_margin_16dp" android:paddingRight="@dimen/product_margin_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/list_item_title_v2" android:id="@+id/title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/upi_mandate_bottom_sheet_pay_title" android:layout_weight="1"/>
+        <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_fbpay_lock_gray" app:tint="@color/fb_pay_hub_icon_tint"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/accept_mandate_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/product_margin_16dp" android:paddingTop="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.components.button.ThumbnailButton android:enabled="false" android:id="@+id/profile_picture" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="22dp" android:src="@drawable/avatar_contact" android:scaleType="fitCenter" app:tbtnForegroundOnly="false" app:tbtnRadius="40dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upi_mandate_bottom_sheet_pay_sub_title_to_vpa"/>
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:id="@+id/to_vpa" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/payment_method_container" android:background="@drawable/selector_orange_gradient" android:padding="@dimen/product_margin_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/payment_method_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="22dp" android:src="@drawable/av_bank" android:scaleType="fitCenter" android:contentDescription="@string/payments_settings_bank_account_icon"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/upi_mandate_bottom_sheet_pay_sub_title_payment_method"/>
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:id="@+id/payment_method_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/mandate_info_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/product_margin_16dp" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/product_margin_16dp"/>
+        <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginTop="4dp"/>
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/dark_gray" android:paddingLeft="@dimen/product_margin_16dp" android:paddingRight="@dimen/product_margin_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/product_margin_16dp" android:text="@string/upi_mandate_payment_bottom_sheet_approve_payment_note" app:fontFamily="sans-serif-medium"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/update_mandate_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/product_margin_16dp" android:layout_marginTop="8dp" android:layout_marginRight="@dimen/product_margin_16dp"/>
+    <com.whatsapp.components.Button android:id="@+id/positive_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/upi_mandate_payment_bottom_sheet_approve_payment_cta" style="@style/WA.Button"/>
+    <com.whatsapp.components.Button android:id="@+id/negative_button" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/upi_mandate_payment_bottom_sheet_decline_payment_cta" style="@style/WA.Button.Secondary"/>
+    <com.whatsapp.WaImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_margin="16dp" android:src="@drawable/bhim_upi_logo"/>
+</LinearLayout>

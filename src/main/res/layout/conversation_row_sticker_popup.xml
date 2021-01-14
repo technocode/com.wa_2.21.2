@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.stickers.StickerView android:layout_gravity="center" android:id="@+id/popup_sticker_view" android:layout_width="@dimen/popup_notification_sticker_size" android:layout_height="@dimen/popup_notification_sticker_size"/>
+</FrameLayout>

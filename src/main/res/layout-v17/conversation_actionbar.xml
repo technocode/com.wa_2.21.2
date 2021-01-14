@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/custom_view" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize">
+    <LinearLayout android:enabled="false" android:orientation="horizontal" android:id="@+id/back" android:paddingLeft="@dimen/conversation_navigation_up_padding" android:paddingRight="@dimen/conversation_navigation_up_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/abc_action_bar_up_description" android:paddingStart="@dimen/conversation_navigation_up_padding" android:paddingEnd="@dimen/conversation_navigation_up_padding" style="@style/ActionBarButtonStyle">
+        <com.whatsapp.WaImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/whatsapp_toolbar_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" app:srcCompat="?attr/homeAsUpIndicator"/>
+        <FrameLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0dp">
+            <com.whatsapp.WaImageView android:id="@+id/conversation_contact_photo" android:layout_width="35dp" android:layout_height="35dp" android:scaleType="fitCenter"/>
+            <View android:id="@+id/transition_start" android:layout_width="35dp" android:layout_height="35dp"/>
+            <ViewStub android:layout_gravity="center" android:id="@+id/change_photo_progress_stub" android:layout="@layout/conversation_actionbar_progress" android:layout_width="35dp" android:layout_height="35dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/ephemeral_status" android:background="@drawable/primary_color_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ephemeral" android:layout_alignRight="@+id/back" android:layout_alignBottom="@+id/back" app:backgroundTint="@color/primary" app:tint="@color/screen_title_text"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/conversation_contact" android:background="?attr/selectableItemBackground" android:paddingLeft="4dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="2dp" android:clickable="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_toRightOf="@+id/back" android:layout_centerVertical="true" android:animateLayoutChanges="true" android:paddingStart="4dp" android:paddingEnd="0dp" style="@style/ConversationTitleGroup">
+        <FrameLayout android:layout_gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.TextEmojiLabel android:ellipsize="end" android:gravity="left" android:layout_gravity="left" android:id="@+id/conversation_contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:singleLine="true" style="@style/Theme.ActionBar.TitleTextStyle.Condensed"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/conversation_contact_status_holder" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
+            <LinearLayout android:gravity="left" android:layout_gravity="left" android:orientation="horizontal" android:id="@+id/business_holder" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.whatsapp.TextEmojiLabel android:id="@+id/business_name" style="@style/BusinessName.Conversation"/>
+                <com.whatsapp.WaTextView android:id="@+id/business_separator" style="@style/BusinessSeparator.Conversation"/>
+            </LinearLayout>
+            <com.whatsapp.WaTextView android:ellipsize="end" android:gravity="left" android:id="@+id/conversation_contact_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:singleLine="true" style="@style/Theme.ActionBar.SubtitleTextStyle"/>
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

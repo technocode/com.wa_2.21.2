@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">u kan ikke legge til personer i anropet før %s blir med.</item>
+        <item quantity="other">Du kan ikke legge til personer i anropet før noen andre blir med.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Velg opptil %d person. Vedkommende vil kunne bli med i anropet når som helst etter at det er begynt. &lt;a href=learn_more_link&gt;Lær mer&lt;/a&gt;</item>
+        <item quantity="other">Velg opptil %d personer. De vil kunne bli med i anropet når som helst etter at det er begynt. &lt;a href=learn_more_link&gt;Lær mer&lt;/a&gt;</item>
+    </plurals>
+</resources>

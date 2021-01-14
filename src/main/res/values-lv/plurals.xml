@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Jūs nevarat šim zvanam pievienot cilvēkus, kamēr nav pievienojies %s cilvēks.</item>
+        <item quantity="other">Jūs nevarat šim zvanam pievienot cilvēkus, kamēr nav pievienojušies %s cilvēki.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Izvēlieties maks. %d cilvēku. Viņi varēs pievienoties zvanam jebkurā brīdī pēc tā sākuma. &lt;a href=learn_more_link&gt;Uzzināt vairāk&lt;/a&gt;</item>
+        <item quantity="other">Izvēlieties maks. %d cilvēkus. Viņi varēs pievienoties zvanam jebkurā brīdī pēc tā sākuma. &lt;a href=learn_more_link&gt;Uzzināt vairāk&lt;/a&gt;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">‏لا يمكنك إضافة مشاركين إلى هذه المكالمة إلى حين انضمام %s.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="zero">‏اختر %d شخص بحد أقصى، وسيتمكن من الانضمام إلى المكالمة في أي وقت بعد بدايتها. &lt;a href=learn_more_link&gt;معرفة المزيد&lt;/a&gt;</item>
+        <item quantity="one">‏اختر شخصًا %d بحد أقصى، وسيتمكن من الانضمام إلى المكالمة في أي وقت بعد بدايتها. &lt;a href=learn_more_link&gt;معرفة المزيد&lt;/a&gt;</item>
+        <item quantity="two">‏اختر شخصين %d بحد أقصى، وسيتمكن من الانضمام إلى المكالمة في أي وقت بعد بدايتها. &lt;a href=learn_more_link&gt;معرفة المزيد&lt;/a&gt;</item>
+        <item quantity="few">‏اختر %d أشخاص بحد أقصى، وسيتمكنوا من الانضمام إلى المكالمة في أي وقت بعد بدايتها. &lt;a href=learn_more_link&gt;معرفة المزيد&lt;/a&gt;</item>
+        <item quantity="many">‏اختر %d شخصًا بحد أقصى، وسيتمكنوا من الانضمام إلى المكالمة في أي وقت بعد بدايتها. &lt;a href=learn_more_link&gt;معرفة المزيد&lt;/a&gt;</item>
+        <item quantity="other">‏اختر %d شخص بحد أقصى، وسيتمكنوا من الانضمام إلى المكالمة في أي وقت بعد بدايتها. &lt;a href=learn_more_link&gt;معرفة المزيد&lt;/a&gt;</item>
+    </plurals>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.search.views.itemviews.VoiceNoteProfileAvatarView android:id="@+id/search_row_voice_note_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" whatsapp:micOverlay_background="@drawable/mic_background_incoming" whatsapp:micOverlay_backgroundTint="@color/selector_incoming_balloon" whatsapp:micOverlay_marginLeft="40dp" whatsapp:profileView_layoutSize="48dp"/>
+    <FrameLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.search.views.itemviews.AudioPlayerView android:layout_gravity="center_vertical" android:id="@+id/search_row_voice_note_controls" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:playButton_size="54dp" whatsapp:progressSpinner_size="44dp" whatsapp:seekbarContainer_paddingRight="12dp"/>
+        <com.whatsapp.search.views.itemviews.AudioPlayerMetadataView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/search_row_voice_note_metadata" android:paddingLeft="54dp" android:layout_width="wrap_content" android:layout_height="wrap_content" whatsapp:dateWrapper_paddingRight="7dp" whatsapp:hasStatusView="false"/>
+    </FrameLayout>
+</merge>

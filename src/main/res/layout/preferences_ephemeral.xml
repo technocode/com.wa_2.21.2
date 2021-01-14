@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.BidiToolbar android:id="@+id/toolbar" style="@style/Toolbar.Neutral"/>
+    <ScrollView android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:background="@drawable/ephemeral_icon_background" android:padding="22dp" android:layout_width="112dp" android:layout_height="112dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:src="@drawable/ephemeral_timer" android:tint="@color/ephemeral_setting_timer"/>
+            <com.whatsapp.TextEmojiLabel android:textSize="16sp" android:textColor="@color/primary_text" android:id="@+id/ephemeral_details" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:lineSpacingExtra="4dp"/>
+            <View android:layout_width="match_parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" style="@style/SectionDivider.Heavy"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:id="@+id/expiring_setting_title" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="11dp" android:text="@string/ephemeral_setting"/>
+            <RadioGroup android:orientation="vertical" android:id="@+id/ephemeral_radio_group" android:paddingLeft="32dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

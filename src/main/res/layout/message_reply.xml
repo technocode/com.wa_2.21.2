@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.KeyboardPopupLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_ccl" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/main" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/voice_recorder_decor" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/bottom_sheet" android:fitsSystemWindows="true" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/mention_attach" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginBottom="-5dp" android:layout_above="@+id/conversation_entry_holder"/>
+            <FrameLayout android:id="@+id/conversation_entry_holder" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <include layout="@layout/conversation_entry"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.whatsapp.KeyboardPopupLayout>

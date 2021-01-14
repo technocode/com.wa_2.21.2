@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_link_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:textSize="15sp" android:textColor="@color/list_item_title" android:id="@+id/share_link_description" android:paddingLeft="16dp" android:paddingTop="24dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/link_btn" android:background="@drawable/selector_orange_gradient" android:paddingLeft="16dp" android:paddingTop="32dp" android:paddingRight="16dp" android:paddingBottom="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:background="@drawable/green_circle" android:layout_width="54dp" android:layout_height="54dp" android:src="@drawable/ic_invite_link" android:scaleType="center"/>
+            <com.whatsapp.WaTextView android:gravity="left" android:id="@+id/link" android:paddingLeft="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="false" android:layout_weight="1" style="@style/ListItemSubtitle"/>
+        </LinearLayout>
+        <View android:layout_marginLeft="16dp" android:layout_marginBottom="4dp" style="@style/SectionDivider"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@+id/cart_items_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/footer" android:layout_below="@+id/cart_title_divider">
+        <RelativeLayout android:paddingTop="@dimen/horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:id="@+id/cart_total_quantity" android:layout_width="match_parent" android:layout_marginLeft="@dimen/horizontal_padding" android:layout_toLeftOf="@+id/add_more_btn" style="@style/OrderTotalQuantity"/>
+            <com.whatsapp.WaTextView android:id="@+id/cart_estimated_value" android:layout_marginLeft="@dimen/horizontal_padding" android:maxLines="2" android:singleLine="false" android:layout_toLeftOf="@+id/add_more_btn" android:layout_below="@+id/cart_total_quantity" android:layout_alignParentLeft="true" style="@style/OrderTotalPrice"/>
+            <com.whatsapp.components.Button android:id="@+id/add_more_btn" android:layout_width="wrap_content" android:layout_marginRight="@dimen/horizontal_padding" android:text="@string/add_more" android:layout_alignParentRight="true" style="@style/WA.Button.Secondary"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/cart_items_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/horizontal_padding" android:layout_marginBottom="@dimen/horizontal_padding" android:layout_below="@+id/cart_estimated_value" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include layout="@layout/conversation_entry"/>
+</merge>

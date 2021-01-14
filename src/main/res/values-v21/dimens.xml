@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="conversation_floating_date_offset">2dp</dimen>
+    <dimen name="input_layout_buttons_margin">3.25dp</dimen>
+    <dimen name="input_layout_buttons_positioning_margin">1dp</dimen>
+    <dimen name="input_layout_voice_animation_margin_bottom">5.25dp</dimen>
+    <dimen name="notification_content_margin_start">0dp</dimen>
+    <dimen name="notification_main_column_padding_top">0dp</dimen>
+    <dimen name="notification_media_narrow_margin">12dp</dimen>
+</resources>

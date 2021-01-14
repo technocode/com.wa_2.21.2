@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="left" android:orientation="horizontal" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="56dp">
+    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/ongoing_media_control_btn" android:background="@color/transparent" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/inline_audio_play" android:scaleType="center" android:contentDescription="@string/play" app:tint="@color/audioControlButtonTint"/>
+    <TextView android:textSize="14sp" android:layout_gravity="center_vertical" android:id="@+id/ongoing_media_text" android:paddingLeft="8dp" android:focusable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/TextAppearance.Compat.Notification.Line2"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="?attr/listSectionBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/list_section_divider_status" style="?attr/listSectionDivider"/>
+    <com.whatsapp.WaTextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" style="?attr/listSectionTitleText"/>
+    <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/muted_statuses_icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="16dp" app:tint="@color/primary_light"/>
+</FrameLayout>

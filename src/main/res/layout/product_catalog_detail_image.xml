@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/product_detail_image_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.components.button.ThumbnailButton android:layout_gravity="center" android:id="@+id/product_detail_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/business_product_catalog_image_description"/>
+</FrameLayout>

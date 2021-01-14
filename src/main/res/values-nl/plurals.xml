@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">U kunt pas anderen toevoegen aan deze oproep als %s deelneemt.</item>
+        <item quantity="other">U kunt pas anderen toevoegen aan deze oproep als iemand anders deelneemt.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Kies tot %d persoon. Deze kan deelnemen aan de oproep nadat die is begonnen. &lt;a href=learn_more_link&gt;Meer informatie&lt;/a&gt;</item>
+        <item quantity="other">Kies tot %d personen. Deze kunnen deelnemen aan de oproep nadat die is begonnen. &lt;a href=learn_more_link&gt;Meer informatie&lt;/a&gt;</item>
+    </plurals>
+</resources>

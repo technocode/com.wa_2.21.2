@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.BidiToolbar android:id="@+id/toolbar" style="@style/Toolbar.Neutral"/>
+    <ScrollView android:background="@color/dimmed_background" android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="1">
+        <com.whatsapp.qrcode.contactqr.ContactQrContactCardView android:gravity="center" android:id="@+id/group_qr_card" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

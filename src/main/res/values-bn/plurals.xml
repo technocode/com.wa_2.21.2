@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="other">আর %d বার চেষ্টা করতে পারবেন</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="other">বাকি থাকা অনুরোধ</item>
+    </plurals>
+    <plurals name="upi_mandate_payment_request_status_time_remaining_to_approve">
+        <item quantity="other">আপনাকে %1$s মধ্যে এই অনুরোধের অনুমোদন করতে হবে</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‎%s যোগদান না করা পর্যন্ত আপনি এই কলে লোকজনকে যোগ করতে পারবেন না।</item>
+        <item quantity="other">অন্য কেউ যোগদান না করা পর্যন্ত আপনি এই কলে লোকজনকে যোগ করতে পারবেন না।</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">সর্বাধিক %d জন ব্যক্তিকে বেছে নিন। কল শুরু হওয়ার পর যেকোনও সময় তিনি যোগ \10দিতে পারবেন। &lt;a href=learn_more_link&gt;আরও জানুন&lt;/a&gt;</item>
+        <item quantity="other">সর্বাধিক %d জন ব্যক্তিকে বেছে নিন। কল শুরু হওয়ার পর যেকোনও সময় তারা যোগ দিতে পারবেন। &lt;a href=learn_more_link&gt;আরও জানুন&lt;/a&gt;</item>
+    </plurals>
+</resources>

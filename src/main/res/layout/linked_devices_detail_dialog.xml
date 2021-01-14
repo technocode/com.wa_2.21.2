@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaImageView android:id="@+id/device_icon" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginLeft="24dp" android:layout_marginTop="22dp" android:layout_marginRight="24dp" android:layout_marginBottom="14dp" android:src="@drawable/active_connections_unknown" android:scaleType="fitCenter"/>
+    <com.whatsapp.WaTextView android:textSize="20sp" android:textColor="@color/primary_text" android:id="@+id/device_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="12dp"/>
+    <View android:background="@color/divider_gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:id="@+id/status_container" style="@style/LinkedDevicesDetailDialogContainer">
+        <com.whatsapp.WaImageView android:id="@+id/status_icon" android:src="@drawable/ic_device_last_active" style="@style/LinkedDevicesDetailIcon"/>
+        <com.whatsapp.WaTextView android:id="@+id/status_text" style="@style/LinkedDevicesDetailText"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/location_container" style="@style/LinkedDevicesDetailDialogContainer">
+        <com.whatsapp.WaImageView android:id="@+id/location_icon" android:src="@drawable/ic_device_location" style="@style/LinkedDevicesDetailIcon"/>
+        <com.whatsapp.WaTextView android:id="@+id/location_text" style="@style/LinkedDevicesDetailText"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/sync_container" style="@style/LinkedDevicesDetailDialogContainer">
+        <com.whatsapp.WaImageView android:id="@+id/sync_icon" android:src="@drawable/ic_device_syncing" style="@style/LinkedDevicesDetailIcon"/>
+        <com.whatsapp.WaTextView android:id="@+id/sync_text" style="@style/LinkedDevicesDetailText"/>
+    </LinearLayout>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/hint_text" android:id="@+id/logged_out_device_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="8dp" android:layout_marginRight="24dp"/>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/red_button_text" android:layout_gravity="right" android:id="@+id/logout_text" android:paddingLeft="18dp" android:paddingTop="18dp" android:paddingRight="18dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/log_out" android:textAllCaps="true" whatsapp:fontFamily="sans-serif-medium"/>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/accent_dark" android:layout_gravity="right" android:id="@+id/close_text" android:paddingLeft="18dp" android:paddingTop="9dp" android:paddingRight="18dp" android:paddingBottom="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/close" android:textAllCaps="true" whatsapp:fontFamily="sans-serif-medium"/>
+</LinearLayout>

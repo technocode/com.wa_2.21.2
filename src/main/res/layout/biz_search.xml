@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.Dark" android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/Toolbar.Popup">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginRight="18dp" android:layout_marginBottom="12dp">
+            <com.whatsapp.WaEditText android:id="@+id/search_term_text" android:paddingLeft="10dp" android:layout_marginBottom="8dp" android:hint="@string/search_hint" android:drawableLeft="@drawable/ic_search_normal" android:drawablePadding="12dp" style="@style/SearchToolbarTextView"/>
+            <com.whatsapp.WaTextView android:id="@+id/search_location_text" android:hint="@string/current_location" android:drawableLeft="@drawable/btn_send_current_location" style="@style/SearchToolbarTextView"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.WaTextView android:textSize="18sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/search_informative_text" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:id="@+id/progress_bar_layout" android:background="@drawable/primary_color_circle" android:padding="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+            <ProgressBar android:id="@+id/progress_bar" android:layout_width="32dp" android:layout_height="32dp"/>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_result" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

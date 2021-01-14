@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffe561" android:padding="@dimen/product_margin_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="#f00b1820" android:id="@+id/header_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</FrameLayout>

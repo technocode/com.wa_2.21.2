@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="@dimen/contact_picker_row_height">
+    <LinearLayout android:background="@drawable/call_full_info_button_background" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="@dimen/small_list_avatar_padding" android:layout_marginTop="@dimen/small_list_avatar_padding" android:layout_marginRight="@dimen/small_list_avatar_padding">
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@+id/call_full_info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/call_full_info_button_text_margin" android:text="@string/voip_joinable_call_is_fall_info" android:fontFamily="sans-serif-regular" style="@style/ListItemTitle"/>
+        <Space android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:id="@+id/call_full_info_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/call_full_info_button_icon_margin" android:scaleType="center" whatsapp:srcCompat="@drawable/ic_info_white_24dp" whatsapp:tint="@color/white"/>
+    </LinearLayout>
+</FrameLayout>

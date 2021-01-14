@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Dokud se k hovoru nepřipojí %s, nemůžete přidávat další uživatele.</item>
+        <item quantity="other">Dokud se k hovoru někdo nepřipojí, nemůžete přidávat další uživatele.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Můžete zvolit %d uživatele. K hovoru se bude moct připojit kdykoli po jeho zahájení. &lt;a href=learn_more_link&gt;Další informace&lt;/a&gt;</item>
+        <item quantity="few">Můžete zvolit maximálně %d uživatele. K hovoru se budou moct připojit kdykoli po jeho zahájení. &lt;a href=learn_more_link&gt;Další informace&lt;/a&gt;</item>
+        <item quantity="other">Můžete zvolit maximálně %d uživatelů. K hovoru se budou moct připojit kdykoli po jeho zahájení. &lt;a href=learn_more_link&gt;Další informace&lt;/a&gt;</item>
+    </plurals>
+</resources>

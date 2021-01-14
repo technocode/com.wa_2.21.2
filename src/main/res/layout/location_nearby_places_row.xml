@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/nearby_places_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36dp">
+    <com.whatsapp.WaTextView android:textSize="14sp" android:gravity="left" android:id="@+id/nearby_places" android:paddingLeft="16dp" android:paddingTop="11dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/location_nearby_places"/>
+</FrameLayout>

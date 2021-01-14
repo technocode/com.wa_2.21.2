@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@color/outdatedAppBannerBackground" android:paddingLeft="16dp" android:paddingTop="11dp" android:paddingRight="48dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:textColor="@color/outdatedAppBannerText" android:id="@+id/app_update_banner_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="3dp" android:fontFamily="sans-serif"/>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/app_update_banner_close" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/ic_close" android:contentDescription="@string/close" app:tint="@color/outdatedAppBannerCloseIconTint" style="@style/ActionBarButtonStyle"/>
+</merge>

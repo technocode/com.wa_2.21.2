@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="?android:attr/selectableItemBackground" android:padding="24dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.WaImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:src="@drawable/ic_action_delete" app:tint="@color/red_button_text"/>
+    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/red_button_text" android:id="@+id/remove_custom_wallpaper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallpaper_remove_custom_wallpaper"/>
+</LinearLayout>

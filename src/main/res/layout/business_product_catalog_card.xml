@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.ui.media.MediaCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/product_catalog_media_card_view" android:layout_width="match_parent" android:layout_height="match_parent" app:icContentColor="@color/primary_surface" app:mcInfo="@string/business_product_catalog_see_all" app:mcTitle="@string/business_product_catalog_section_title" style="@style/InfoCard"/>

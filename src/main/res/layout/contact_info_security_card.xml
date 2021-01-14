@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.InfoCard xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/contact_info_security_card" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/InfoCard">
+    <LinearLayout android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/contact_info_row_divider" android:showDividers="middle">
+        <com.whatsapp.ListItemWithRightIcon android:id="@+id/ephemeral_msg_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:listItemWithRightIconIcon="@drawable/ic_group_ephemeral" app:listItemWithRightIconTitle="@string/ephemeral_setting"/>
+        <com.whatsapp.ListItemWithRightIcon android:id="@+id/encryption_info_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:listItemWithRightIconIcon="@drawable/ic_ee_indicator_yes" app:listItemWithRightIconTitle="@string/contact_encryption"/>
+    </LinearLayout>
+</com.whatsapp.InfoCard>

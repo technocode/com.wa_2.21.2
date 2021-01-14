@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:gravity="center" android:id="@+id/control_button_container" android:layout_width="32dp" android:layout_height="32dp">
+        <com.whatsapp.WaImageButton android:gravity="center" android:id="@+id/control_btn" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/inline_audio_play" android:scaleType="center" android:contentDescription="@string/play" whatsapp:tint="@color/audioControlButtonTint"/>
+        <com.whatsapp.CircularProgressBar android:layout_gravity="center" android:id="@+id/progress_bar_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminateOnly="false"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/controls" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.VoiceNoteSeekBar android:id="@+id/audio_seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:vnsbThumbSize="12dp" whatsapp:vnsbTrackWidth="3dp" style="@style/VoiceNoteSeekBar"/>
+    </FrameLayout>
+</merge>

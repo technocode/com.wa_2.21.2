@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.components.CircularRevealView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:layout_gravity="center_horizontal" android:id="@+id/paper_clip_layout" android:background="@android:color/transparent" android:paddingBottom="4dp" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="1.5dp">
+    <com.whatsapp.BoundedLinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/content" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="@dimen/conversation_attachment_container_max_height" whatsapp:wallBackgroundTint="@color/attachmentPickerBackgroundTint">
+        <com.whatsapp.conversation.ConversationAttachmentContentView android:id="@+id/conversation_content_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.whatsapp.BoundedLinearLayout>
+</com.whatsapp.components.CircularRevealView>

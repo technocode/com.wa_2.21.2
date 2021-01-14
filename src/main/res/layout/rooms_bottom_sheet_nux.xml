@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.components.MaxHeightLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/container" android:paddingLeft="25dp" android:paddingTop="21dp" android:paddingRight="25dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaImageView android:layout_gravity="center_horizontal" android:id="@+id/illustration" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <com.whatsapp.WaTextView android:textAppearance="@style/WA.TextAppearance.AlertDialogTitle" android:textColor="@color/primary_text" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="12dp" android:lineSpacingMultiplier="1.1"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textAppearance="@style/WA.TextAppearance.AlertDialogMessage" android:textColor="@color/primary_text" android:id="@+id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:lineSpacingMultiplier="1.2"/>
+            <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:id="@+id/dialog_submessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.3"/>
+        </LinearLayout>
+    </ScrollView>
+    <com.whatsapp.WaButton android:layout_gravity="center_horizontal" android:id="@+id/continue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginBottom="17dp" android:text="@string/rooms_continue_in_messenger" style="@style/WA.Button.Borderless"/>
+</com.whatsapp.components.MaxHeightLinearLayout>

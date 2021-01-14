@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/image_preview_content">
+    <com.whatsapp.gallerypicker.OnZoomListenerPhotoView android:id="@+id/photo" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="4dp" android:bottomRightRadius="4dp"/>
+        <solid android:color="@color/live_location_expired_background"/>
+    </shape>
+</inset>

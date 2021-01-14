@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/main_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:minHeight="30dp">
+        <include layout="@layout/conversation_row_participant_header_with_padding"/>
+        <LinearLayout android:layout_gravity="left" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="left|center_vertical|center_horizontal|center" android:background="@drawable/primary_color_circle" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="10dp" android:src="@drawable/ic_msg_clock" android:scaleType="center"/>
+            <com.whatsapp.components.TextAndDateLayout android:layout_gravity="right" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:textStyle="italic" android:textColor="@color/unsupportedMessageText" android:layout_gravity="left" android:id="@+id/message_text" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/decryption_placeholder_message_text"/>
+                <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/date_wrapper" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.whatsapp.WaTextView android:id="@+id/date" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/WA.TextAppearance.ConversationRowDate"/>
+                </LinearLayout>
+            </com.whatsapp.components.TextAndDateLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

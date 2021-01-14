@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="@dimen/small_list_row_height">
+    <com.whatsapp.components.button.ThumbnailButton android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/contact_photo" android:layout_width="@dimen/small_list_avatar_size" android:layout_height="@dimen/small_list_avatar_size" android:scaleType="fitCenter" whatsapp:tbtnForegroundOnly="true" whatsapp:tbtnRadius="@dimen/small_avatar_radius"/>
+    <LinearLayout android:gravity="left" android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingLeft="56dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.TextEmojiLabel android:id="@+id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle"/>
+        <com.whatsapp.WaTextView android:gravity="center_vertical" android:id="@+id/date_time" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+    </LinearLayout>
+</FrameLayout>

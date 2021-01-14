@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/black_alpha_54" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.whatsapp.doodle.DoodleEditText android:textSize="28sp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/text" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:imeOptions="actionDone"/>
+    </FrameLayout>
+    <com.whatsapp.doodle.ColorPickerComponent android:id="@+id/color_picker_component" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="right" android:id="@+id/picker_button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/title_bar_text_entry_top_margin" android:layout_marginRight="48dp">
+        <com.whatsapp.WaImageView android:id="@+id/font_picker_btn" android:layout_width="48dp" android:layout_height="48dp" android:contentDescription="@string/doodle_change_font" style="@style/ActionBarButtonStyle"/>
+        <com.whatsapp.WaTextView android:textSize="24dp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/font_picker_preview" android:layout_width="48dp" android:layout_height="48dp" android:text="@string/font_style_selector" android:contentDescription="@string/font_style_description"/>
+    </FrameLayout>
+</FrameLayout>

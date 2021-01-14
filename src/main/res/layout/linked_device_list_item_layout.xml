@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:id="@+id/device_icon" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/active_connections_unknown" android:scaleType="fitCenter"/>
+            <com.whatsapp.WaImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/sync_badge" android:background="@drawable/circular_background_primary" android:padding="1.4dp" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/ic_device_sync_badge"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_weight="1">
+            <com.whatsapp.WaTextView android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle.V2"/>
+            <com.whatsapp.WaTextView android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" style="@style/ListItemSubtitle.V2"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

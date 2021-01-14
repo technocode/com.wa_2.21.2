@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/settings_bank_info_bg" android:paddingLeft="16dp" android:paddingTop="12dp" android:paddingRight="16dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginBottom="18dp">
+        <com.whatsapp.CircleWaImageView android:id="@+id/bank_logo" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="16dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/settings_item_title_text" android:gravity="left" android:autoLink="phone" android:id="@+id/contact_bank_details" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/settings_item_subtitle_text" android:gravity="left" android:id="@+id/contact_bank_payment_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

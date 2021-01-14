@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:minHeight="30dp">
+        <include layout="@layout/conversation_row_participant_header"/>
+        <com.whatsapp.TextEmojiLabel android:textAppearance="@style/WA.TextAppearance.ConversationRowMessage" android:textSize="17sp" android:id="@+id/title" android:paddingLeft="@dimen/conversation_row_inner_item_padding" android:paddingRight="@dimen/product_margin_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:fontFamily="sans-serif-medium"/>
+        <com.whatsapp.TextEmojiLabel android:textAppearance="@style/WA.TextAppearance.ConversationRowMessage" android:id="@+id/description" android:paddingLeft="@dimen/conversation_row_inner_item_padding" android:paddingRight="@dimen/product_margin_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/date_wrapper" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:id="@+id/date" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/WA.TextAppearance.ConversationRowDate"/>
+        </LinearLayout>
+        <View android:id="@+id/button_div" style="@style/SectionDivider.Heavy"/>
+        <FrameLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/button" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.TextEmojiLabel android:textColor="@color/multi_element_button" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/button_content" android:layout_width="wrap_content" android:maxLines="1" android:drawablePadding="@dimen/button_inset_vertical" app:drawableTint="@color/multi_element_button" style="@style/ConversationSharedContactButton"/>
+        </FrameLayout>
+    </LinearLayout>
+</merge>

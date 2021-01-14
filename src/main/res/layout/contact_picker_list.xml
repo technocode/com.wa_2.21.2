@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.collections.observablelistview.ObservableListView android:id="@android:id/list" android:background="@color/list_background" android:paddingLeft="@dimen/contact_list_padding_left" android:paddingRight="@dimen/contact_list_padding_right" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@android:color/transparent" android:divider="@drawable/conversations_list_divider" android:dividerHeight="0.5dp" android:headerDividersEnabled="false" android:footerDividersEnabled="true"/>
+    <FrameLayout android:gravity="center" android:id="@android:id/empty" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/contacts_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:id="@+id/contacts_empty_permission_denied" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/init_contacts_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        <com.whatsapp.WaTextView android:textSize="18sp" android:textColor="?android:attr/textColorPrimary" android:gravity="center" android:id="@+id/search_no_matches" android:paddingLeft="12dp" android:paddingTop="96dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</FrameLayout>

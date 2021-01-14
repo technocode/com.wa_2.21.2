@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.WaImageButton android:id="@+id/speaker_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_voip_speaker_control" android:contentDescription="@string/voip_call_speakerphone_toggle_description" style="?attr/voipBottomSheetInCallBtnStyle"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/bluetooth_btn_layout" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.WaImageButton android:id="@+id/bluetooth_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_voip_bluetooth_control" android:contentDescription="@string/voip_call_bluetooth_toggle_description" style="?attr/voipBottomSheetInCallBtnStyle"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/chat_btn_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.WaImageButton android:id="@+id/chat_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_chat" android:contentDescription="@string/voip_call_goto_chat_description" style="?attr/voipBottomSheetInCallBtnStyle"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/toggle_video_btn_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.WaImageButton android:id="@+id/toggle_video_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_voip_video_control" style="?attr/voipBottomSheetInCallBtnStyle"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.WaImageButton android:id="@+id/mute_btn" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_voip_mute_control" android:contentDescription="@string/voip_call_mute_toggle_description" style="?attr/voipBottomSheetInCallBtnStyle"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/info_btn_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.WaImageButton android:id="@+id/info_btn" android:layout_width="48dp" android:layout_height="48dp" android:contentDescription="@string/voip_call_call_info_btn_description" app:srcCompat="@drawable/ic_info_white_24dp" style="?attr/voipBottomSheetInCallBtnStyle"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/end_call_btn_layout" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.WaImageButton android:layout_gravity="center" android:id="@+id/footer_end_call_btn" android:background="@drawable/end_call" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_voip_end_call_control" android:contentDescription="@string/voip_call_end_button_description" app:tint="@color/white"/>
+    </FrameLayout>
+</merge>

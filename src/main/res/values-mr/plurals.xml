@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="other">अजून %d वेळा प्रयत्न करू शकता</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="one">विनंती पेंडिंग आहे</item>
+        <item quantity="other">विनंत्या पेंडिंग आहेत</item>
+    </plurals>
+    <plurals name="upi_mandate_payment_request_status_time_remaining_to_approve">
+        <item quantity="one">तुमच्याकडे या विनंतीला मंजुरी देण्यासाठी %1$s आहे</item>
+        <item quantity="other">तुमच्याकडे या विनंतीला मंजुरी देण्यासाठी %1$s आहेत</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">‎%s सामील होईपर्यंत तुम्ही या कॉलमध्ये लोकांना जोडू शकत नाही.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">कमाल %d व्यक्ती निवडा. कॉल सुरू झाल्यानंतर ती व्यक्ती कधीही त्या कॉलमध्ये सामील होऊ शकते. &lt;a href=learn_more_link&gt;अधिक जाणून घ्या&lt;/a&gt;</item>
+        <item quantity="other">कमाल %d व्यक्ती निवडा. कॉल सुरू झाल्यानंतर या व्यक्ती कधीही त्या कॉलमध्ये सामील होऊ शकतात. &lt;a href=learn_more_link&gt;अधिक जाणून घ्या&lt;/a&gt;</item>
+    </plurals>
+</resources>

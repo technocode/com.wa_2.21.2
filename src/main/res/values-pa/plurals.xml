@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="one">‎%d ਕੋਸ਼ਿਸ਼ ਬਾਕੀ ਹੈ</item>
+        <item quantity="other">‎%d ਕੋਸ਼ਿਸ਼ਾਂ ਬਾਕੀ ਹਨ</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="one">ਬਾਕੀ ਬਚੀ ਬੇਨਤੀ</item>
+        <item quantity="other">ਬਾਕੀ ਬਚੀਆਂ ਬੇਨਤੀਆਂ</item>
+    </plurals>
+    <plurals name="upi_mandate_payment_request_status_time_remaining_to_approve">
+        <item quantity="one">ਇਸ ਬੇਨਤੀ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰਨ ਲਈ ਤੁਹਾਡੇ ਕੋਲ %1$s ਹੈ</item>
+        <item quantity="other">ਇਸ ਬੇਨਤੀ ਨੂੰ ਮਨਜ਼ੂਰ ਕਰਨ ਲਈ ਤੁਹਾਡੇ ਕੋਲ %1$s ਹਨ</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">ਜਦੋਂ ਤੱਕ %s ਕਾਲ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਹੁੰਦੇ ਉਦੋਂ ਤੱਕ ਤੁਸੀਂ ਹੋਰ ਲੋਕਾਂ ਨੂੰ ਇਸ ਕਾਲ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਕਰ ਸਕਦੇ।</item>
+        <item quantity="other">ਜਦੋਂ ਤੱਕ ਕੋਈ ਹੋਰ ਕਾਲ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਹੁੰਦਾ ਉਦੋਂ ਤੱਕ ਤੁਸੀਂ ਹੋਰ ਲੋਕਾਂ ਨੂੰ ਇਸ ਕਾਲ ਵਿੱਚ ਸ਼ਾਮਲ ਨਹੀਂ ਕਰ ਸਕਦੇ।</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">ਵੱਧ ਤੋਂ ਵੱਧ %d ਵਿਅਕਤੀ ਚੁਣੋ। ਕਾਲ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ ਬਾਅਦ ਉਹ ਕਿਸੇ ਵੀ ਸਮੇਂ ਇਸ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋ ਸਕਣਗੇ। &lt;a href=learn_more_link&gt;ਹੋਰ ਜਾਣੋ&lt;/a&gt;</item>
+        <item quantity="other">ਵੱਧ ਤੋਂ ਵੱਧ %d ਵਿਅਕਤੀਆਂ ਨੂੰ ਚੁਣੋ। ਕਾਲ ਸ਼ੁਰੂ ਹੋਣ ਤੋਂ ਬਾਅਦ ਉਹ ਕਿਸੇ ਵੀ ਸਮੇਂ ਇਸ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋ ਸਕਣਗੇ। &lt;a href=learn_more_link&gt;ਹੋਰ ਜਾਣੋ&lt;/a&gt;</item>
+    </plurals>
+</resources>

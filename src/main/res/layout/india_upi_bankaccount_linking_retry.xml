@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/retry_button_container">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/hero_account" android:layout_width="103dp" android:layout_height="103dp" android:layout_marginTop="20dp" android:src="@drawable/ic_hero_account" android:contentDescription="@string/payment_logo"/>
+            <com.whatsapp.WaTextView android:textSize="23sp" android:textColor="@color/primary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/bankaccount_linking_retry_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="28dp" android:layout_marginRight="36dp" android:layout_marginBottom="28dp" android:text="@string/bankaccount_linking_retry_title_text" android:lineSpacingExtra="6dp" app:fontFamily="sans-serif-light"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/secondary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/bankaccount_linking_retry_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="10dp" android:layout_marginRight="36dp" android:layout_marginBottom="26dp" android:text="@string/bankaccount_linking_retry_desc_text" android:lineSpacingExtra="6dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/failure_reasons_bullet_list_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+                <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/secondary_text" android:id="@+id/failure_reasons_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/retry_button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@drawable/payments_divider_gray" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <com.whatsapp.components.Button android:layout_gravity="center_horizontal" android:id="@+id/retry_button" android:layout_marginTop="17dp" android:layout_marginBottom="17dp" android:text="@string/payments_try_again" style="@style/WA.Button"/>
+    </LinearLayout>
+</RelativeLayout>

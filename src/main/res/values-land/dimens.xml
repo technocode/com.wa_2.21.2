@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="attribution_bottom_padding">14dp</dimen>
+    <dimen name="pref_profile_photo_size">120dp</dimen>
+    <dimen name="pref_profile_photo_top_padding">16dp</dimen>
+    <dimen name="settings_2fa_disabled_logo_margin_top">24dp</dimen>
+    <dimen name="settings_change_number_overview_body_top_margin">24dp</dimen>
+    <dimen name="settings_delete_logo_margin_top">16dp</dimen>
+    <dimen name="user_notice_modal_bullets_horizontal_margin">0dp</dimen>
+    <dimen name="user_notice_modal_default_icon_size">24dp</dimen>
+    <dimen name="user_notice_modal_horizontal_padding">54dp</dimen>
+    <dimen name="user_notice_modal_server_icon_size">48dp</dimen>
+</resources>

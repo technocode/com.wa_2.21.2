@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/main_inner_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ViewSwitcher android:id="@+id/view_switcher" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/switcherLayout1" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/fragment_transparent_divider" android:showDividers="middle"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/switcherLayout2" android:paddingLeft="16dp" android:paddingTop="20dp" android:paddingRight="16dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@drawable/fragment_transparent_divider" android:showDividers="middle"/>
+    </ViewSwitcher>
+</LinearLayout>

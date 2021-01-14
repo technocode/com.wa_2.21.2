@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp">
+        <include layout="@layout/conversation_row_quoted_frame"/>
+        <include layout="@layout/conversation_row_web_page_preview_frame"/>
+        <include android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/template_message_title_video"/>
+        <com.whatsapp.conversation.conversationrow.DynamicButtonsRowContentLayout android:id="@+id/dynamic_reply_buttons_message_content" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/forward" android:contentDescription="@string/forward_to" style="@style/ForwardButton"/>
+    <com.whatsapp.conversation.conversationrow.DynamicButtonsLayout android:id="@+id/dynamic_reply_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</merge>

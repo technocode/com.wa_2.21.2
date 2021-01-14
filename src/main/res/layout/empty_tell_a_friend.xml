@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/horizontal_padding" android:paddingTop="?attr/actionBarSize" android:paddingRight="@dimen/horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="24sp" android:gravity="center" android:paddingTop="20dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/invite_friends" style="@style/Text"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:gravity="center" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/welcome_ask_your_friends" style="@style/Text"/>
+            <com.whatsapp.components.Button android:id="@+id/invite_button_tell_a_friend" android:layout_width="match_parent" android:layout_marginBottom="20dp" android:text="@string/tell_a_friend" style="@style/WA.Button"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:gravity="center" android:id="@+id/subtitle_tell_a_friend" android:paddingBottom="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/Text.Field"/>
+        </LinearLayout>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View style="@style/SectionDivider"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/content" android:background="@drawable/selector_orange_gradient" android:paddingLeft="68dp" android:paddingTop="@dimen/small_list_row_padding" android:paddingRight="8dp" android:paddingBottom="@dimen/small_list_row_padding" android:layout_width="match_parent" android:layout_height="@dimen/small_list_row_height">
+        <com.whatsapp.WaTextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle"/>
+        <com.whatsapp.WaTextView android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/subtitle_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/vcard_click_to_see" style="@style/ListItemSubtitle"/>
+    </LinearLayout>
+</LinearLayout>

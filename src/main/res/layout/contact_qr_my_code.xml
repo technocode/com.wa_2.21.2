@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/dimmed_background" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <com.whatsapp.qrcode.contactqr.ContactQrContactCardView android:gravity="center" android:id="@+id/contact_qr_card" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</FrameLayout>

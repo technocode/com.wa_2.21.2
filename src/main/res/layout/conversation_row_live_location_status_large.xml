@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/live_location_label_holder" android:background="@drawable/gray_bottom_radius_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="32dp">
+    <FrameLayout android:layout_gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:id="@+id/live_location_icon_1" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_location_animation_1" app:tint="@color/liveLocationIconActiveTint"/>
+        <com.whatsapp.WaImageView android:id="@+id/live_location_icon_2" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_location_animation_2" app:tint="@color/liveLocationIconActiveTint"/>
+        <com.whatsapp.WaImageView android:id="@+id/live_location_icon_3" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_live_location_animation_3" app:tint="@color/liveLocationIconActiveTint"/>
+    </FrameLayout>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/link_color" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/live_location_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/conversation_live_location_label_padding_right"/>
+</LinearLayout>

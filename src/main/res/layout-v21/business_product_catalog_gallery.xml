@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/business_catalog_grid" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:layout_gravity="top" android:id="@+id/transition_clipper_top" android:layout_width="match_parent" android:layout_height="0dp" android:transitionName="@string/transition_clipper_top"/>
+    <View android:layout_gravity="bottom" android:id="@+id/transition_clipper_bottom" android:layout_width="match_parent" android:layout_height="0dp" android:transitionName="@string/transition_clipper_bottom"/>
+    <FrameLayout android:id="@+id/business_catalog_host" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

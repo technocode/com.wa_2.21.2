@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <SurfaceView android:id="@+id/surface_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.whatsapp.WaImageView android:id="@+id/video_call_participant_photo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/avatar_contact_call" android:scaleType="centerCrop"/>
+    <com.whatsapp.WaImageView android:id="@+id/frame_overlay" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <FrameLayout android:id="@+id/mute_layout" android:visibility="gone" android:layout_width="100dp" android:layout_height="100dp">
+        <com.whatsapp.WaImageView android:id="@+id/mute_image" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/videocall_mute" android:alpha="0.9"/>
+    </FrameLayout>
+    <com.whatsapp.WaImageView android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/camera_off_image" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="@dimen/call_pip_mode_icon_margin" android:src="@drawable/videocall_video_off" android:alpha="0.9"/>
+    <FrameLayout android:gravity="center" android:id="@+id/status_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/video_status_container" android:background="@drawable/video_call_status_background" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/status" android:padding="@dimen/call_cancel_button_touch_padding" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:text="@string/voip_pip_peer_muted" android:fontFamily="sans-serif-medium"/>
+            <com.whatsapp.WaImageButton android:id="@+id/video_call_status_button" android:background="@null" android:padding="@dimen/call_cancel_button_touch_padding" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="-8dp" android:scaleType="centerInside" android:tint="@color/btn_disabled" android:contentDescription="@string/cancel" android:layout_marginStart="-8dp" app:srcCompat="@drawable/ic_cancel_black_24dp"/>
+        </LinearLayout>
+    </FrameLayout>
+    <View android:id="@+id/dark_overlay" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0"/>
+</merge>

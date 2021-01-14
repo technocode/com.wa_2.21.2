@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="bottom" android:orientation="horizontal" android:id="@+id/voice_note_draft_layout" android:paddingLeft="8dp" android:paddingRight="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.WaImageButton android:id="@+id/voice_note_draft_discard_btn" android:layout_width="44dp" android:layout_height="47dp" android:src="@drawable/ic_trash" android:scaleType="center" android:contentDescription="@string/voice_note_draft_delete_label" app:tint="@color/voice_note_cancel" style="@style/ActionBarButtonStyle"/>
+    <com.whatsapp.WaImageButton android:id="@+id/voice_note_draft_playback_btn" android:layout_width="44dp" android:layout_height="47dp" android:scaleType="center" app:tint="@color/audioControlButtonTint" style="@style/ActionBarButtonStyle"/>
+    <FrameLayout android:paddingLeft="4dp" android:paddingRight="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.whatsapp.VoiceNoteSeekBar android:layout_gravity="center" android:id="@+id/voice_note_draft_seekbar" android:layout_width="match_parent" android:layout_height="47dp" app:vnsbProgressColor="@color/voice_note_preview_scrubber_gray" app:vnsbThumbSize="12dp" app:vnsbTrackWidth="3dp" style="@style/VoiceNoteSeekBar"/>
+    </FrameLayout>
+    <com.whatsapp.WaTextView android:textSize="15sp" android:textColor="@color/voice_note_recording_text" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/voice_note_draft_time" android:layout_width="wrap_content" android:layout_height="47dp" android:layout_marginRight="10dp" android:lines="1" android:singleLine="true"/>
+</LinearLayout>

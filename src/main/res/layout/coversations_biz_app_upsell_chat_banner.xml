@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:background="@color/chat_banner_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/conversations_row_height">
+    <FrameLayout android:layout_width="@dimen/contact_selector_width" android:layout_height="match_parent">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:layout_width="32dp" android:layout_height="39dp" android:src="@drawable/ic_business_description" android:scaleType="fitCenter" android:tint="@color/chat_banner_icon"/>
+    </FrameLayout>
+    <com.whatsapp.TextEmojiLabel android:textSize="15sp" android:textColor="@color/chat_banner_text" android:id="@+id/smb_upsell_chat_banner_description" android:paddingTop="12dp" android:paddingRight="@dimen/list_row_padding" android:paddingBottom="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/Text"/>
+    <FrameLayout android:layout_width="52dp" android:layout_height="match_parent">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/close" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_close" android:tint="@color/chat_banner_close" android:contentDescription="@string/close"/>
+    </FrameLayout>
+</LinearLayout>

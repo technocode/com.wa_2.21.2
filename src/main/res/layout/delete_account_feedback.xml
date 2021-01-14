@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="24dp" android:paddingRight="24dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:gravity="left" android:id="@+id/delete_reason_prompt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="16dp" android:text="@string/delete_account_reason_instructions" android:lineSpacingExtra="3dp"/>
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:textColorHint="@color/settings_item_subtitle_text" android:gravity="start" android:id="@+id/select_delete_reason" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-4dp" android:layout_marginBottom="16dp" android:hint="@string/delete_account_reason_select_option" android:singleLine="true" android:inputType="none" app:backgroundTint="@color/settings_delete_account_spinner_tint" style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+            <com.whatsapp.WaEditText android:textSize="16sp" android:textColor="@color/settings_item_title_text" android:textColorHint="@color/settings_item_subtitle_text" android:gravity="top" android:id="@+id/delete_reason_additional_comments_edittext" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="-4dp" android:layout_marginBottom="16dp" android:hint="@string/delete_account_additional_comments_hint" android:maxLines="4" android:maxLength="500"/>
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@+id/bottom_button_container" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.components.Button android:layout_gravity="center_horizontal" android:id="@+id/delete_account_submit" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/settings_delete_account" style="@style/WA.Button.Error"/>
+    </FrameLayout>
+</LinearLayout>

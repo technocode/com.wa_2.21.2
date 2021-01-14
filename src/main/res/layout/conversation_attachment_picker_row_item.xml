@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" style="@style/AttachPickerItem">
+    <com.whatsapp.components.button.ThumbnailButton android:id="@+id/icon" whatsapp:tbtnForegroundOnly="true" whatsapp:tbtnRadius="-1dp" style="@style/AttachPickerIcon"/>
+    <com.whatsapp.text.CondensedTextView android:id="@+id/text" style="@style/AttachPickerLabel"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/apk/res-auto" android:id="@+id/contact_photo_layout" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.components.button.ThumbnailButton android:layout_gravity="center" android:id="@+id/contact_photo" android:background="@color/black_alpha_38" android:layout_width="@dimen/call_avatar_view_photo" android:layout_height="@dimen/call_avatar_view_photo" android:layout_margin="@dimen/call_avatar_view_elevation" android:src="@drawable/avatar_contact_call" android:scaleType="fitCenter" tools:elevation="6dp"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ListView android:id="@android:id/list" android:background="@color/settings_background" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/card_h_padding" android:layout_marginRight="@dimen/card_h_padding" android:listSelector="@drawable/selector_orange_gradient" android:drawSelectorOnTop="true" android:cacheColorHint="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:choiceMode="none" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:transitionGroup="true"/>
+    <FrameLayout android:gravity="center_vertical" android:id="@+id/header" android:layout_width="match_parent" android:layout_height="wrap_content" android:transitionGroup="true" android:elevation="2dp">
+        <com.whatsapp.WaImageView android:id="@+id/picture" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:contentDescription="@string/profile_photo"/>
+        <View android:layout_gravity="bottom" android:id="@+id/bottom_shade" android:layout_width="wrap_content" android:layout_height="96dp"/>
+        <View android:layout_gravity="top" android:id="@+id/top_shade" android:layout_width="wrap_content" android:layout_height="48dp"/>
+        <View android:id="@+id/photo_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ProgressBar android:layout_gravity="center" android:id="@+id/photo_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmallInverse"/>
+        <FrameLayout android:layout_gravity="bottom" android:id="@+id/subject_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:layout_marginRight="0dp"/>
+        <com.whatsapp.BidiToolbar android:id="@+id/toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/Toolbar.Popup" app:theme="@style/Toolbar"/>
+        <FrameLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/parallax_image_layout_upper_right_container" android:visibility="gone" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginTop="@dimen/grid_space_1x"/>
+    </FrameLayout>
+</merge>

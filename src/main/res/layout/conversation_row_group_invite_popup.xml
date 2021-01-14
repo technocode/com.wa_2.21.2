@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.WaFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:id="@+id/invite_layout" android:background="@drawable/link_preview_background" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp" android:foreground="@drawable/balloon_incoming_frame" whatsapp:waflForegroundTint="@color/bubble_color_incoming">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/small_list_avatar_padding" android:paddingTop="8dp" android:paddingRight="@dimen/list_row_padding" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.components.button.ThumbnailButton android:id="@+id/avatar" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="@dimen/small_list_avatar_padding" android:src="@drawable/avatar_contact" android:scaleType="fitCenter" android:contentDescription="@string/contact_profile_photo" whatsapp:tbtnForegroundOnly="false" whatsapp:tbtnRadius="@dimen/small_avatar_radius"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:clipChildren="false" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.whatsapp.TextEmojiLabel android:textSize="16sp" android:textColor="@color/list_item_title" android:ellipsize="end" android:id="@+id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <com.whatsapp.TextEmojiLabel android:id="@+id/instructions" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/group_invite"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.whatsapp.WaFrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/group_call_details_row">
+    <com.whatsapp.WaImageView android:id="@+id/contact_photo" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:contentDescription="@string/profile_photo"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="32dp" android:layout_weight="1">
+        <com.whatsapp.TextEmojiLabel android:id="@+id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="sans-serif" style="@style/ListItemTitle"/>
+        <com.whatsapp.WaTextView android:textColor="@color/red_error" android:id="@+id/participant_call_log_result" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <com.whatsapp.WaImageButton android:id="@+id/call_btn" android:background="@drawable/selector_orange_gradient" android:layout_width="50dp" android:layout_height="match_parent" android:src="@drawable/ic_action_call" android:contentDescription="@string/audio_call" app:tint="@color/primary_light"/>
+    <com.whatsapp.WaImageButton android:id="@+id/video_call_btn" android:background="@drawable/selector_orange_gradient" android:layout_width="50dp" android:layout_height="match_parent" android:layout_marginRight="4dp" android:src="@drawable/ic_action_videocall" android:contentDescription="@string/video_call" app:tint="@color/primary_light"/>
+</LinearLayout>

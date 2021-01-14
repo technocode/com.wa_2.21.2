@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="one">‎%d ಪ್ರಯತ್ನ ಉಳಿದಿದೆ</item>
+        <item quantity="other">‎%d ಪ್ರಯತ್ನಗಳು ಉಳಿದಿವೆ</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="one">ಬಾಕಿಯಿರುವ ವಿನಂತಿ</item>
+        <item quantity="other">ಬಾಕಿಯಿರುವ ವಿನಂತಿಗಳು</item>
+    </plurals>
+    <plurals name="upi_mandate_payment_request_status_time_remaining_to_approve">
+        <item quantity="other">ಈ ವಿನಂತಿಯನ್ನು ಅನುಮೋದಿಸಲು ನಿಮಗೆ %1$s ಸಮಯವಿದೆ</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‎%s ಅವರು ಜಾಯಿನ್ ಆಗುವವರೆಗೆ ನೀವು ಈ ಕಾಲ್‌ಗೆ ಜನರನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+        <item quantity="other">ಬೇರೆ ಯಾರಾದರೂ ಜಾಯಿನ್ ಆಗುವವರೆಗೆ ನೀವು ಈ ಕಾಲ್‌ಗೆ ಜನರನ್ನು ಸೇರಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">ಗರಿಷ್ಠ %d ವ್ಯಕ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ಕಾಲ್ ಆರಂಭವಾದ ನಂತರ ಅವರು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಜಾಯಿನ್ ಆಗಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ.&lt;a href=learn_more_link&gt;ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ&lt;/a&gt;</item>
+        <item quantity="other">ಗರಿಷ್ಠ %d ಜನರನ್ನು ಆಯ್ಕೆ ಮಾಡಿ. ಕಾಲ್ ಆರಂಭವಾದ ನಂತರ ಅವರು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಜಾಯಿನ್ ಆಗಲು ಸಾಧ್ಯವಾಗುತ್ತದೆ. &lt;a href=learn_more_link&gt;ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ&lt;/a&gt;</item>
+    </plurals>
+</resources>

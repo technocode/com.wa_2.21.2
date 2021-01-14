@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProgressBar xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:id="@+id/change_photo_progress" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" style="?android:attr/progressBarStyleSmallInverse"/>

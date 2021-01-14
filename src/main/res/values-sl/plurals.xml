@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">V ta klic ne morete dodajati oseb, dokler se %s ne vključi.</item>
+        <item quantity="other">V ta klic ne morete dodajati oseb, dokler se nekdo drug ne vključi.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Izberite največ %d osebo. V klic se bo lahko vključila kadar koli po njegovem začetku. &lt;a href=learn_more_link&gt;Več o tem&lt;/a&gt;</item>
+        <item quantity="two">Izberite največ %d osebi. V klic se bosta lahko vključili kadar koli po njegovem začetku. &lt;a href=learn_more_link&gt;Več o tem&lt;/a&gt;</item>
+        <item quantity="few">Izberite največ %d osebe. V klic se bodo lahko vključile kadar koli po njegovem začetku. &lt;a href=learn_more_link&gt;Več o tem&lt;/a&gt;</item>
+        <item quantity="other">Izberite največ %d oseb. V klic se bodo lahko vključile kadar koli po njegovem začetku. &lt;a href=learn_more_link&gt;Več o tem&lt;/a&gt;</item>
+    </plurals>
+</resources>

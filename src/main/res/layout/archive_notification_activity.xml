@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.components.WaSwitchView android:id="@+id/notify_new_message_switch_view" android:paddingLeft="24dp" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:waSwitchDescriptionId="@string/archive_notify_new_messages_info" whatsapp:waSwitchSubTitleStyle="?attr/settingsSubtitleText" whatsapp:waSwitchTitleId="@string/archive_notify_new_messages_title" whatsapp:waSwitchTitleStyle="?attr/settingsTitleText"/>
+    <com.whatsapp.components.WaSwitchView android:id="@+id/auto_hide_switch_view" android:layout_width="match_parent" android:layout_height="wrap_content" whatsapp:waSwitchDescriptionId="@string/archive_auto_hide_inactive_chats_info" whatsapp:waSwitchTitleId="@string/archive_auto_hide_inactive_chats_title"/>
+</LinearLayout>

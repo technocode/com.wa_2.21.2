@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="22dp" android:paddingTop="15dp" android:paddingRight="22dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:id="@+id/auth_description" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/instrumentation_auth_request_wa_permissions" android:lineSpacingExtra="6dp" style="@style/SettingsTitleText"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="18dp" android:src="@drawable/ic_attachment_contact" android:tint="@color/permissions_icon" android:alpha="0.42"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/instrumentation_auth_wa_permission_contacts" style="@style/SettingsTitleText"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:layout_width="16dp" android:layout_height="14dp" android:layout_marginRight="16dp" android:src="@drawable/ic_action_message" android:tint="@color/permissions_icon" android:alpha="0.42"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/instrumentation_auth_wa_permission_messages" style="@style/SettingsTitleText"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:background="@drawable/notification_circle" android:layout_width="14.5dp" android:layout_height="14.5dp" android:layout_marginRight="17.5dp" android:text="1" app:fontFamily="sans-serif-medium"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/instrumentation_auth_wa_permission_notifications" style="@style/SettingsTitleText"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center_vertical" android:layout_width="14dp" android:layout_height="14dp" android:layout_marginRight="18dp" android:src="@drawable/ic_call_answer_normal" android:tint="@color/permissions_icon" android:alpha="0.42"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/instrumentation_auth_wa_permission_call_log" style="@style/SettingsTitleText"/>
+        </LinearLayout>
+        <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/hint_text" android:id="@+id/auth_privacy_disclosure_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="38dp" android:layout_marginBottom="38dp" android:text="@string/instrumentation_auth_privacy_disclosure" android:lineSpacingExtra="6dp"/>
+        <com.whatsapp.components.Button android:id="@+id/auth_button_next" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/instrumentation_auth_next" style="@style/WA.Button"/>
+    </LinearLayout>
+</ScrollView>

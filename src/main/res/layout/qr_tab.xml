@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="?attr/selectableItemBackground" android:minHeight="48dp" style="@style/Widget.AppCompat.Light.ActionBar.TabView">
+    <com.whatsapp.WaTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/qr_tab_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:height="48dp" style="@style/Widget.AppCompat.Light.ActionBar.TabText"/>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/conversation_row_margin_large" android:minHeight="30dp">
+        <include layout="@layout/conversation_row_quoted_frame"/>
+        <include layout="@layout/conversation_row_web_page_preview_frame"/>
+        <com.whatsapp.WaFrameLayout android:id="@+id/media_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="7dp" android:foreground="@drawable/balloon_outgoing_frame" app:waflForegroundTint="@color/bubble_color_outgoing">
+            <include layout="@layout/conversation_row_view_once_media_container"/>
+        </com.whatsapp.WaFrameLayout>
+        <com.whatsapp.components.TextAndDateLayout android:layout_gravity="left" android:paddingRight="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/conversation_row_view_once_expired_text"/>
+            <include layout="@layout/conversation_row_date_wrapper_right"/>
+        </com.whatsapp.components.TextAndDateLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/forward" android:contentDescription="@string/conversation_menu_forward" style="@style/ForwardButton"/>
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.BidiToolbar android:id="@+id/wabloks_screen_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetLeft="0dp" app:contentInsetStartWithNavigation="0dp"/>
+    <LinearLayout android:id="@+id/bloks_background_layout" android:background="@color/bloks_activity_background" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/wabloks_screen_toolbar">
+        <FrameLayout android:id="@+id/bloks_fragment_container" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@+id/bloks_progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

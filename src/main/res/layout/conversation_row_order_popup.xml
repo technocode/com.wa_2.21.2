@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.WaFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:id="@+id/invite_layout" android:background="@drawable/link_preview_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:foreground="@drawable/balloon_incoming_frame" whatsapp:waflForegroundTint="@color/bubble_color_incoming">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/conversation_row_order_preview"/>
+        <com.whatsapp.TextEmojiLabel android:textAppearance="@style/WA.TextAppearance.ConversationRowMessage" android:layout_gravity="left" android:id="@+id/message_text" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</com.whatsapp.WaFrameLayout>

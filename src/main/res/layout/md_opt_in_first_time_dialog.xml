@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.whatsapp.WaImageView android:background="@color/lab_icon_tint" android:padding="30dp" android:layout_width="match_parent" android:layout_height="136dp" android:src="@drawable/lab_stars"/>
+    <com.whatsapp.WaTextView android:textSize="20sp" android:textColor="@color/primary_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp" android:text="@string/md_opt_in_first_time_title" whatsapp:fontFamily="sans-serif-medium"/>
+    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/secondary_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="10dp" android:layout_marginRight="24dp" android:text="@string/md_opt_in_first_time_description"/>
+</LinearLayout>

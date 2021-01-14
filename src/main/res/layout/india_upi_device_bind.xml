@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/hero_sms" android:layout_width="137dp" android:layout_height="137dp" android:layout_marginTop="46dp" android:src="@drawable/ic_hero_sms" android:contentDescription="@string/payment_logo"/>
+        <com.whatsapp.WaTextView android:textSize="23sp" android:textColor="@color/primary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_device_bind_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="40dp" android:layout_marginRight="36dp" android:text="@string/payments_device_bind_title_text" android:lineSpacingExtra="6dp" app:fontFamily="sans-serif-light"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/dual_sim_picker" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp">
+            <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="#ff787878" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_sms_education_dual_sim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36dp" android:layout_marginTop="24dp" android:layout_marginRight="36dp" android:layout_marginBottom="24dp" android:lineSpacingExtra="6dp"/>
+            <View android:background="@drawable/payments_divider_gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="56dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/sim_1_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/sim1_drawable_container" android:background="@drawable/circle_shade_big" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="16dp">
+                    <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/sim1_drawable" android:layout_width="25dp" android:layout_height="25dp" android:scaleType="centerInside" android:contentDescription="@string/sim_1_with_placeholder"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/sim_1" android:layout_width="0dp" android:layout_height="56dp" android:layout_weight="1">
+                    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/list_item_title" android:id="@+id/sim1_label" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_sub_title" android:id="@+id/carrier_name_sim1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/payments_divider_gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="56dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/sim_2_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/sim2_drawable_container" android:background="@drawable/circle_shade_big" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="16dp">
+                    <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/sim2_drawable" android:layout_width="40dp" android:layout_height="40dp" android:scaleType="centerInside" android:contentDescription="@string/sim_2_with_placeholder"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/sim_2" android:layout_width="0dp" android:layout_height="56dp" android:layout_weight="1">
+                    <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/list_item_title" android:id="@+id/sim2_label" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_sub_title" android:id="@+id/carrier_name_sim2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@drawable/payments_divider_gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="56dp"/>
+        </LinearLayout>
+        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/secondary_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/payments_device_bind_desc" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginLeft="36dp" android:layout_marginTop="36dp" android:layout_marginRight="36dp" android:layout_marginBottom="36dp" android:layout_weight="1" android:lineSpacingExtra="6dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.components.Button android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/payments_sms_education_accept" android:layout_marginBottom="35dp" android:text="@string/payments_sms_education_accept_text" style="@style/WA.Button"/>
+            <ProgressBar android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35dp" style="?android:attr/progressBarStyleInverse"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

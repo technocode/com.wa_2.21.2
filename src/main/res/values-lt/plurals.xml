@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Jūs negalite pridėti žmonių prie šio skambučio, kol prie jo neprisijungė %s.</item>
+        <item quantity="other">Jūs negalite pridėti žmonių prie šio skambučio, kol prie jo neprisijungė kiti.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Pasirinkite iki %d asmens. Skambučiui prasidėjus jis galės bet kuriuo prisijungti prie skambučio. &lt;a href=learn_more_link&gt;Sužinokite daugiau&lt;/a&gt;</item>
+        <item quantity="other">Pasirinkite iki %d asmenų. Skambučiui prasidėjus jie galės bet kuriuo prisijungti prie skambučio. &lt;a href=learn_more_link&gt;Sužinokite daugiau&lt;/a&gt;</item>
+    </plurals>
+</resources>

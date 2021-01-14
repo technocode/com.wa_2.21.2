@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/main_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:minHeight="30dp">
+        <com.whatsapp.components.TextAndDateLayout android:paddingRight="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.TextEmojiLabel android:textSize="@dimen/conversation_text_row_tv" android:textStyle="italic" android:textColor="@color/conversationRowRevokedText" android:layout_gravity="left" android:id="@+id/message_text" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="2dp" app:drawableTint="@color/conversationRowRevokeIconTint"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/date_wrapper" android:paddingRight="5dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/WA.TextAppearance.ConversationRowDate"/>
+                <com.whatsapp.WaImageView android:id="@+id/status" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </com.whatsapp.components.TextAndDateLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.whatsapp.WaTextView android:id="@+id/two_fa_help_dialog_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/two_factor_auth_reset_info"/>
+    </ScrollView>
+    <androidx.appcompat.widget.ButtonBarLayout android:gravity="bottom|right|center_vertical|center_horizontal|center|end" android:orientation="vertical" android:paddingLeft="12dp" android:paddingTop="4dp" android:paddingRight="12dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaButton android:id="@android:id/button1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/two_factor_auth_send_email_label" style="?attr/buttonBarPositiveButtonStyle"/>
+        <com.whatsapp.WaButton android:id="@android:id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="?attr/buttonBarNegativeButtonStyle"/>
+        <Space android:id="@+id/spacer" android:visibility="invisible" android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <com.whatsapp.WaButton android:id="@android:id/button3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/two_factor_auth_reset_account_label" style="?attr/buttonBarNeutralButtonStyle"/>
+    </androidx.appcompat.widget.ButtonBarLayout>
+</LinearLayout>

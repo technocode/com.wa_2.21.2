@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@+id/conversation_row_root" android:layout_width="317dp" android:layout_height="wrap_content" android:layout_marginLeft="40dp">
+        <include layout="@layout/conversation_row_quoted_frame"/>
+        <include layout="@layout/conversation_row_web_page_preview_frame"/>
+        <RelativeLayout android:paddingLeft="7dp" android:layout_width="match_parent" android:layout_height="62dp">
+            <com.whatsapp.search.views.itemviews.VoiceNoteProfileAvatarView android:id="@+id/conversation_row_voice_note_profile_avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" whatsapp:micOverlay_background="@drawable/mic_background_outgoing" whatsapp:micOverlay_backgroundTint="@color/selector_outgoing_balloon" whatsapp:micOverlay_marginLeft="38dp" whatsapp:profileFrame_paddingBottom="2dp" whatsapp:profileFrame_paddingTop="2dp" whatsapp:profileView_layoutSize="48dp"/>
+            <com.whatsapp.search.views.itemviews.AudioPlayerView android:id="@+id/conversation_row_audio_player_view" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/conversation_row_voice_note_profile_avatar" android:layout_centerVertical="true" whatsapp:playButton_size="54dp" whatsapp:progressSpinner_size="44dp" whatsapp:seekbarContainer_paddingRight="8dp"/>
+            <com.whatsapp.search.views.itemviews.AudioPlayerMetadataView android:paddingLeft="54dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/conversation_row_audio_player_view" android:layout_alignRight="@+id/conversation_row_audio_player_view" android:layout_alignParentBottom="true" whatsapp:dateWrapper_paddingRight="7dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/forward" style="@style/ForwardButton"/>
+</merge>

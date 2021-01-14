@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/location_selector_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/location_search_holder" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaEditText android:id="@+id/search_location_text" android:background="@color/white" android:paddingRight="24dp" android:hint="@string/search_location_hint" android:drawableLeft="@drawable/ic_current_location" style="@style/SearchToolbarTextView"/>
+            <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/clear_search_location_text" android:padding="4dp" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_backup_cancel" android:contentDescription="@string/clear"/>
+            <ProgressBar android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/search_location_progress_bar" android:padding="4dp" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" style="?android:attr/progressBarStyleSmallInverse"/>
+        </FrameLayout>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/search_location_result" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.whatsapp.WaTextView android:textSize="16sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/search_informative_text" android:padding="4dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <View android:id="@+id/shadow" android:background="@drawable/downward_shadow" android:layout_width="match_parent" android:layout_height="4dp" app:layout_anchor="@+id/search_location_text"/>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

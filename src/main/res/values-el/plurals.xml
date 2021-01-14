@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Δεν μπορείτε να προσθέσετε άτομα σε αυτήν την κλήση μέχρι να μπει ο χρήστης %s.</item>
+        <item quantity="other">Δεν μπορείτε να προσθέσετε άτομα σε αυτήν την κλήση μέχρι να μπει κάποιος άλλος.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Επιλέξτε έως %d άτομο. Θα μπορεί να μπει στην κλήση οποιαδήποτε στιγμή αφότου αυτή ξεκινήσει. &lt;a href=learn_more_link&gt;Μάθετε περισσότερα&lt;/a&gt;</item>
+        <item quantity="other">Επιλέξτε έως %d άτομα. Θα μπορούν να μπουν στην κλήση οποιαδήποτε στιγμή αφότου αυτή ξεκινήσει. &lt;a href=learn_more_link&gt;Μάθετε περισσότερα&lt;/a&gt;</item>
+    </plurals>
+</resources>

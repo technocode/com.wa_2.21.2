@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40dp">
+        <LinearLayout android:id="@+id/sticker_bubble_header" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/conversation_row_quoted_frame"/>
+            <include layout="@layout/conversation_row_web_page_preview_frame"/>
+        </LinearLayout>
+        <include layout="@layout/sticker_outgoing"/>
+    </LinearLayout>
+</merge>

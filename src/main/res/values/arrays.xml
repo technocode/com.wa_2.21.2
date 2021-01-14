@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="autodownload">
+        <item>@string/settings_autodownload_images</item>
+        <item>@string/settings_autodownload_audio</item>
+        <item>@string/settings_autodownload_videos</item>
+        <item>@string/settings_autodownload_documents</item>
+    </array>
+    <array name="autodownload_cellular_defaults">
+        <item>@null</item>
+    </array>
+    <array name="autodownload_roaming_defaults">
+    </array>
+    <array name="autodownload_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="autodownload_wifi_defaults">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_prefixes">
+        <item>SM-G95</item>
+        <item>SM-G96</item>
+        <item>SM-G97</item>
+        <item>SM-N95</item>
+        <item>SM-N96</item>
+        <item>SM-N97</item>
+        <item>SM-A20</item>
+    </array>
+    <array name="crypto_fingerprint_fallback_vendors">
+        <item>samsung</item>
+    </array>
+    <array name="default_statuses">
+        <item>@string/status_default_available</item>
+        <item>@string/status_default_busy</item>
+        <item>@string/status_default_at_school</item>
+        <item>@string/status_default_at_movies</item>
+        <item>@string/status_default_at_work</item>
+        <item>@string/status_default_battery_die</item>
+        <item>@string/status_default_cannot_talk</item>
+        <item>@string/status_default_in_meeting</item>
+        <item>@string/status_default_at_gym</item>
+        <item>@string/status_default_sleeping</item>
+        <item>@string/status_default_urgent</item>
+    </array>
+    <array name="font_size">
+        <item>@string/font_small</item>
+        <item>@string/font_medium</item>
+        <item>@string/font_large</item>
+    </array>
+    <array name="font_size_values">
+        <item>-1</item>
+        <item>@null</item>
+        <item>1</item>
+    </array>
+    <array name="group_participant_name_colors">
+        <item>@color/group_olive</item>
+        <item>@color/group_light_purple</item>
+        <item>@color/group_orange</item>
+        <item>@color/group_blue</item>
+        <item>@color/group_sand</item>
+        <item>@color/group_navy</item>
+        <item>@color/group_pink</item>
+        <item>@color/group_army_green</item>
+        <item>@color/group_dark_purple</item>
+        <item>@color/group_brown</item>
+        <item>@color/group_watermelon</item>
+        <item>@color/group_green</item>
+        <item>@color/group_salmon</item>
+        <item>@color/group_iris</item>
+        <item>@color/group_jazzberry_jam</item>
+        <item>@color/group_sky_blue</item>
+        <item>@color/group_kenyan</item>
+        <item>@color/group_vermilion</item>
+        <item>@color/group_royal_purple</item>
+        <item>@color/group_ruddy</item>
+    </array>
+    <array name="hide_fingerprint_instantly_prefixes">
+        <item>SM-G97</item>
+        <item>SC-03L</item>
+        <item>SC-04L</item>
+        <item>SC-05L</item>
+        <item>SCV41</item>
+        <item>SCV42</item>
+        <item>SM-N97</item>
+        <item>SC-01M</item>
+        <item>SCV45</item>
+    </array>
+    <array name="led_color_values">
+        <item>000000</item>
+        <item>FFFFFF</item>
+        <item>FF0000</item>
+        <item>FFFF00</item>
+        <item>00FF00</item>
+        <item>00FFFF</item>
+        <item>0000FF</item>
+        <item>FF00FF</item>
+    </array>
+    <array name="night_solid_color_wallpaper_values">
+        <item>26</item>
+        <item>24</item>
+        <item>17</item>
+        <item>19</item>
+        <item>10</item>
+        <item>21</item>
+    </array>
+    <array name="popup_mode">
+        <item>@string/popup_notification_mode_none</item>
+        <item>@string/popup_notification_mode_screen_on</item>
+        <item>@string/popup_notification_mode_screen_off</item>
+        <item>@string/popup_notification_mode_always</item>
+    </array>
+    <array name="popup_mode_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>3</item>
+        <item>2</item>
+    </array>
+    <array name="solid_color_wallpaper_colors">
+        <item>@color/wallpaper_color_cinder_black</item>
+        <item>@color/wallpaper_color_midnight_express</item>
+        <item>@color/wallpaper_color_mandarian_orange</item>
+        <item>@color/wallpaper_color_buccaneer_brown</item>
+        <item>@color/wallpaper_color_breaker_bay</item>
+        <item>@color/wallpaper_color_fjord_gray</item>
+        <item>@color/wallpaper_color_tory_blue</item>
+        <item>@color/wallpaper_color_pelorus_blue</item>
+        <item>@color/wallpaper_color_seagull_blue</item>
+        <item>@color/wallpaper_color_downy_green</item>
+        <item>@color/wallpaper_color_cruise_green</item>
+        <item>@color/wallpaper_color_scandal_green</item>
+        <item>@color/wallpaper_color_monte_carlo_green</item>
+        <item>@color/wallpaper_color_cape_honey_yellow</item>
+        <item>@color/wallpaper_color_canary_yellow</item>
+        <item>@color/wallpaper_color_radical_red</item>
+        <item>@color/wallpaper_color_bittersweet_orange</item>
+        <item>@color/wallpaper_color_rose_bud</item>
+        <item>@color/wallpaper_color_flamingo_red</item>
+        <item>@color/wallpaper_color_caramel_yellow</item>
+        <item>@color/wallpaper_color_tusk_green</item>
+        <item>@color/wallpaper_color_orinoco_green</item>
+        <item>@color/wallpaper_color_brook_green</item>
+        <item>@color/wallpaper_color_hawkes_blue</item>
+        <item>@color/wallpaper_color_quartz_blue</item>
+        <item>@color/wallpaper_color_very_light_gray</item>
+        <item>@color/wallpaper_color_solitude_gray</item>
+    </array>
+    <array name="solid_color_wallpaperv2_colors">
+        <item>@color/wallpaper_color_cruise_green</item>
+        <item>@color/wallpaper_color_scandal_green</item>
+        <item>@color/wallpaper_color_monte_carlo_green</item>
+        <item>@color/wallpaper_color_hawkes_blue</item>
+        <item>@color/wallpaper_color_downy_green</item>
+        <item>@color/wallpaper_color_seagull_blue</item>
+        <item>@color/wallpaper_color_quartz_blue</item>
+        <item>@color/wallpaper_color_very_light_gray</item>
+        <item>@color/wallpaper_color_orinoco_green</item>
+        <item>@color/wallpaper_color_tusk_green</item>
+        <item>@color/wallpaper_color_cape_honey_yellow</item>
+        <item>@color/wallpaper_color_caramel_yellow</item>
+        <item>@color/wallpaper_color_rose_bud</item>
+        <item>@color/wallpaper_color_bittersweet_orange</item>
+        <item>@color/wallpaper_color_radical_red</item>
+        <item>@color/wallpaper_color_mandarian_orange</item>
+        <item>@color/wallpaper_color_flamingo_red</item>
+        <item>@color/wallpaper_color_buccaneer_brown</item>
+        <item>@color/wallpaper_color_breaker_bay</item>
+        <item>@color/wallpaper_color_pelorus_blue</item>
+        <item>@color/wallpaper_color_tory_blue</item>
+        <item>@color/wallpaper_color_fjord_gray</item>
+        <item>@color/wallpaper_color_cinder_black</item>
+        <item>@color/wallpaper_color_midnight_express</item>
+        <item>@color/wallpaper_color_solitude_gray</item>
+        <item>@color/wallpaper_color_canary_yellow</item>
+        <item>@color/wallpaper_color_brook_green</item>
+    </array>
+    <array name="vibrate_lengths">
+        <item>@string/vibrate_length_off</item>
+        <item>@string/vibrate_length_default</item>
+        <item>@string/vibrate_length_short</item>
+        <item>@string/vibrate_length_long</item>
+    </array>
+    <array name="vibrate_values">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="wallpaper_doodle_tint_colors">
+        <item>@color/wallpaper_doodle_tint_color_cruise_green</item>
+        <item>@color/wallpaper_doodle_tint_color_scandal_green</item>
+        <item>@color/wallpaper_doodle_tint_color_monte_carlo_green</item>
+        <item>@color/wallpaper_doodle_tint_color_hawkes_blue</item>
+        <item>@color/wallpaper_doodle_tint_color_downy_green</item>
+        <item>@color/wallpaper_doodle_tint_color_seagull_blue</item>
+        <item>@color/wallpaper_doodle_tint_color_quartz_blue</item>
+        <item>@color/wallpaper_doodle_tint_color_very_light_gray</item>
+        <item>@color/wallpaper_doodle_tint_color_orinoco_green</item>
+        <item>@color/wallpaper_doodle_tint_color_tusk_green</item>
+        <item>@color/wallpaper_doodle_tint_color_cape_honey_yellow</item>
+        <item>@color/wallpaper_doodle_tint_color_caramel_yellow</item>
+        <item>@color/wallpaper_doodle_tint_color_rose_bud</item>
+        <item>@color/wallpaper_doodle_tint_color_bittersweet_orange</item>
+        <item>@color/wallpaper_doodle_tint_color_radical_red</item>
+        <item>@color/wallpaper_doodle_tint_color_mandarian_orange</item>
+        <item>@color/wallpaper_doodle_tint_color_flamingo_red</item>
+        <item>@color/wallpaper_doodle_tint_color_buccaneer_brown</item>
+        <item>@color/wallpaper_doodle_tint_color_breaker_bay</item>
+        <item>@color/wallpaper_doodle_tint_color_pelorus_blue</item>
+        <item>@color/wallpaper_doodle_tint_color_tory_blue</item>
+        <item>@color/wallpaper_doodle_tint_color_fjord_gray</item>
+        <item>@color/wallpaper_doodle_tint_color_cinder_black</item>
+        <item>@color/wallpaper_doodle_tint_color_midnight_express</item>
+        <item>@color/wallpaper_doodle_tint_color_solitude_gray</item>
+        <item>@color/wallpaper_doodle_tint_color_canary_yellow</item>
+        <item>@color/wallpaper_doodle_tint_color_brook_green</item>
+    </array>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/floating_layout" android:focusable="true" android:focusableInTouchMode="true" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="match_parent" class="com.whatsapp.util.FloatingChildLayout">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@android:id/content" android:background="@color/primary_surface" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+            <com.whatsapp.WaImageView android:id="@+id/picture" android:layout_width="@dimen/quick_contact_profile_photo_size" android:layout_height="@dimen/quick_contact_profile_photo_size" android:src="@drawable/avatar_contact_large" android:scaleType="centerCrop" android:contentDescription="@string/profile_photo"/>
+            <FrameLayout android:background="@color/black_alpha_20" android:layout_width="@dimen/quick_contact_profile_photo_size" android:layout_height="wrap_content">
+                <com.whatsapp.TextEmojiLabel android:textSize="18dp" android:textColor="@color/white" android:ellipsize="end" android:gravity="left" android:id="@+id/name" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </FrameLayout>
+        </FrameLayout>
+        <include layout="@layout/smb_label_scroller_stub"/>
+        <View android:id="@+id/quick_contact_divider" style="@style/SectionDivider.Heavy"/>
+        <com.whatsapp.WaTextView android:textColor="@color/secondary_text" android:gravity="center" android:id="@+id/invite_btn" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/invite" android:textAllCaps="true" style="@style/ActionBarButtonStyle"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/buttons" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageButton android:ellipsize="end" android:id="@+id/message_btn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_message" android:layout_weight="0.5" android:contentDescription="@string/message_contact" app:tint="@color/primary_light" style="@style/ActionBarButtonStyle"/>
+            <com.whatsapp.WaImageButton android:ellipsize="end" android:id="@+id/audio_call_btn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_call" android:layout_weight="0.5" android:contentDescription="@string/audio_call" app:tint="@color/primary_light" style="@style/ActionBarButtonStyle"/>
+            <com.whatsapp.WaImageButton android:ellipsize="end" android:id="@+id/video_call_btn" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_videocall" android:layout_weight="0.5" android:contentDescription="@string/video_call" app:tint="@color/primary_light" style="@style/ActionBarButtonStyle"/>
+            <com.whatsapp.WaImageButton android:ellipsize="end" android:id="@+id/info_btn" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/ic_action_info" android:layout_weight="0.5" android:contentDescription="@string/info" app:tint="@color/primary_light" style="@style/ActionBarButtonStyle"/>
+        </LinearLayout>
+        <com.whatsapp.WaButton android:textColor="@color/primary_light" android:gravity="center" android:id="@+id/direction_btn" android:background="@color/quickContactDirectionButtonBackground" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/get_direction" android:textAllCaps="true" style="@style/ActionBarButtonStyle"/>
+    </LinearLayout>
+</view>

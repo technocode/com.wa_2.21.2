@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="one">‎%d முயற்சி மீதமுள்ளது</item>
+        <item quantity="other">‎%d முயற்சிகள் மீதமுள்ளன</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="one">நிலுவையிலுள்ள கோரிக்கை</item>
+        <item quantity="other">நிலுவையிலுள்ள கோரிக்கைகள்</item>
+    </plurals>
+    <plurals name="upi_mandate_payment_request_status_time_remaining_to_approve">
+        <item quantity="one">இந்த கோரிக்கைக்கு ஒப்புதல் அளிக்க உங்களுக்கு %1$s உள்ளது</item>
+        <item quantity="other">இந்த கோரிக்கைக்கு ஒப்புதல் அளிக்க உங்களுக்கு %1$s உள்ளன</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">‎%s சேரும் வரை, இந்த அழைப்பில் வேறு யாரையும் உங்களால் சேர்க்க முடியாது.</item>
+        <item quantity="other">வேறொருவர் சேரும் வரை, இந்த அழைப்பில் வேறு யாரையும் உங்களால் சேர்க்க முடியாது.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">‎%d நபர் வரை சேர்க்கலாம். அழைப்பு தொடங்கிய பிறகு எப்போது வேண்டுமானாலும் அவரால் சேர முடியும். &lt;a href=learn_more_link&gt;மேலும் அறிக&lt;/a&gt;</item>
+        <item quantity="other">‎%d பேர் வரை சேர்க்கலாம். அழைப்பு தொடங்கிய பிறகு எப்போது வேண்டுமானாலும் அவர்களால் சேர முடியும். &lt;a href=learn_more_link&gt;மேலும் அறிக&lt;/a&gt;</item>
+    </plurals>
+</resources>

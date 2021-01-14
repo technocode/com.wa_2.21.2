@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/scanned_qr_code_layout" android:paddingLeft="16dp" android:paddingTop="16dp" android:paddingRight="16dp" android:paddingBottom="16dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="@dimen/scan_qr_title_text_size" android:textColor="@color/primary_text" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:fontFamily="sans-serif-medium"/>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/details_row" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:minHeight="72dp">
+        <com.whatsapp.components.button.ThumbnailButton android:enabled="false" android:id="@+id/profile_picture" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:layout_marginRight="22dp" android:scaleType="fitCenter" app:tbtnForegroundOnly="false" app:tbtnRadius="@dimen/small_avatar_radius"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/contact_info" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.whatsapp.TextEmojiLabel android:textSize="@dimen/scan_qr_title_text_size" android:textColor="@color/list_item_title_v2" android:id="@+id/result_title" android:padding="@dimen/scan_qr_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.whatsapp.TextEmojiLabel android:textSize="@dimen/scan_qr_subtitle_text_size" android:textColor="@color/list_item_sub_title_v2" android:id="@+id/result_subtitle" android:padding="@dimen/scan_qr_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.whatsapp.components.Button android:layout_gravity="center_horizontal" android:id="@+id/positive_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" style="@style/WA.Button"/>
+</LinearLayout>

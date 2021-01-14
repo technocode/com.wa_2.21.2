@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/tab_height">
+    <LinearLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_info_live_location"/>
+        <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_light" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/live_location_share_back_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/live_location_share_back_header_text"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/conversation_row_margin_large" android:minHeight="30dp">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/conversation_row_participant_header"/>
+        <include layout="@layout/conversation_row_quoted_frame"/>
+        <include layout="@layout/conversation_row_web_page_preview_frame"/>
+        <com.whatsapp.WaFrameLayout android:id="@+id/media_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="7dp" android:foreground="@drawable/balloon_incoming_frame" app:waflForegroundTint="@color/bubble_color_incoming">
+            <include layout="@layout/conversation_row_view_once_media_container"/>
+        </com.whatsapp.WaFrameLayout>
+        <com.whatsapp.components.TextAndDateLayout android:layout_gravity="left" android:paddingRight="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/conversation_row_view_once_expired_text"/>
+            <LinearLayout android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/date_wrapper" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:id="@+id/date" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/WA.TextAppearance.ConversationRowDate"/>
+            </LinearLayout>
+        </com.whatsapp.components.TextAndDateLayout>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:id="@+id/forward" android:contentDescription="@string/conversation_menu_forward" style="@style/ForwardButton"/>
+</merge>

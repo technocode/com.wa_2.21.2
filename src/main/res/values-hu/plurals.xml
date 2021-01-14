@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Addig nem vehetsz fel további személyeket a hívásba, amíg %s nem csatlakozik.</item>
+        <item quantity="other">Addig nem vehetsz fel további személyeket a hívásba, amíg valaki más nem csatlakozik.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Válassz ki legfeljebb %d személyt. Ő a hívás kezdete után bármikor csatlakozhat. &lt;a href=learn_more_link&gt;További információk&lt;/a&gt;</item>
+        <item quantity="other">Válassz ki legfeljebb %d személyt. Ők a hívás kezdete után bármikor csatlakozhatnak. &lt;a href=learn_more_link&gt;További információk&lt;/a&gt;</item>
+    </plurals>
+</resources>

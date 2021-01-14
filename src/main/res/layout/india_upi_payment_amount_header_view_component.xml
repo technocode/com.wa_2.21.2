@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:textSize="13sp" android:textColor="@color/payments_currency_amount_text_color" android:gravity="center_horizontal" android:id="@+id/payment_amount_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/product_margin_16dp" android:singleLine="true"/>
+    <Space android:id="@+id/space" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/product_margin_8dp"/>
+    <com.whatsapp.WaTextView android:textSize="56sp" android:textColor="@color/payments_currency_amount_text_color" android:gravity="center_horizontal" android:id="@+id/payment_amount_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:singleLine="true"/>
+</LinearLayout>

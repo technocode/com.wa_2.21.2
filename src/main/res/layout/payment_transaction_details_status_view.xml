@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="@dimen/payment_settings_default_margin" android:layout_marginRight="@dimen/payment_settings_default_margin" style="@style/CardSeparator"/>
+    <RelativeLayout android:layout_gravity="center" android:padding="@dimen/payment_settings_default_margin" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/status_icon" android:background="@drawable/payment_filled_circle_background" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="@dimen/payment_settings_default_margin" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/status_icon" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/settings_item_subtitle_text" android:id="@+id/transaction_status" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" app:fontFamily="sans-serif-medium" style="@style/ListItemTitle"/>
+                <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/list_item_sub_title" android:gravity="right" android:layout_gravity="right" android:id="@+id/transaction_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_settings_default_margin" style="@style/ListItemTitle"/>
+            </LinearLayout>
+            <com.whatsapp.TextEmojiLabel android:textColor="@color/settings_item_title_text" android:gravity="left" android:id="@+id/status_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="false" style="@style/ListItemTitle"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

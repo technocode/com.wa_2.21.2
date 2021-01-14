@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Не можете да додате особе у овај позив док се не придружи контакт %s.</item>
+        <item quantity="other">Не можете да додате особе у овај позив док се не придружи неко други.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Изаберите до једне особе. Моћи ће да се придружи позиву било када након што започне. &lt;a href=learn_more_link&gt;Сазнајте више&lt;/a&gt;</item>
+        <item quantity="few">Изаберите до %d особе. Моћи ће да се придруже позиву било када након што започне. &lt;a href=learn_more_link&gt;Сазнајте више&lt;/a&gt;</item>
+        <item quantity="other">Изаберите до %d особа. Моћи ће да се придруже позиву било када након што започне. &lt;a href=learn_more_link&gt;Сазнајте више&lt;/a&gt;</item>
+    </plurals>
+</resources>

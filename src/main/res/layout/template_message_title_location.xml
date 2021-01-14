@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/map_frame" android:paddingLeft="@dimen/conversation_template_row_image_title_padding" android:paddingTop="@dimen/conversation_template_row_image_title_padding" android:paddingRight="@dimen/conversation_template_row_image_title_padding" android:paddingBottom="@dimen/conversation_template_row_title_padding_small" android:layout_width="match_parent" android:layout_height="@dimen/conversation_row_location_map_height">
+    <com.whatsapp.WaImageView android:id="@+id/thumb" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <com.whatsapp.location.WaMapView android:id="@+id/map_holder" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.whatsapp.WaButton android:id="@+id/thumb_button" android:background="@drawable/selector_orange_gradient" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/location_button"/>
+    <com.whatsapp.WaFrameLayout android:background="@drawable/balloon_incoming_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:waflBackgroundTint="@color/bubble_color_incoming"/>
+    <ProgressBar android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/progress_bar" android:visibility="gone" android:layout_width="@dimen/conversation_row_location_progress_bar_size" android:layout_height="@dimen/conversation_row_location_progress_bar_size" android:layout_margin="8dp"/>
+</FrameLayout>

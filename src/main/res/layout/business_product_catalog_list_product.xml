@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:background="@drawable/selector_orange_gradient" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/catalog_item_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.components.button.ThumbnailButton android:id="@+id/catalog_list_product_image" style="@style/ProductImageThumbnail"/>
+        <ViewStub android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/corner_indicator_stub" android:inflatedId="@+id/corner_indicator" android:layout_width="@dimen/selection_check_image_size" android:layout_height="@dimen/selection_check_image_size" android:layout_marginLeft="8dp"/>
+        <com.whatsapp.SelectionCheckView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/selection_check" android:layout_width="@dimen/selection_check_image_size" android:layout_height="@dimen/selection_check_image_size"/>
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="20dp">
+        <com.whatsapp.TextEmojiLabel android:id="@+id/catalog_list_product_title" android:duplicateParentState="true" style="@style/ProductTitle"/>
+        <com.whatsapp.TextEmojiLabel android:textSize="14sp" android:textColor="@color/selector_product_catalog_secondary_text" android:ellipsize="end" android:id="@+id/catalog_list_product_description" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+        <com.whatsapp.WaTextView android:id="@+id/catalog_list_product_price" android:duplicateParentState="true" style="@style/ProductPrice"/>
+    </LinearLayout>
+</LinearLayout>

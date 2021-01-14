@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/small_list_avatar_padding" android:paddingRight="@dimen/list_row_padding" android:layout_width="match_parent" android:layout_height="@dimen/small_list_row_height">
+        <com.whatsapp.WaImageView android:id="@+id/avatar" style="@style/ContactPhoto.SmallList"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.TextEmojiLabel android:gravity="left" android:id="@+id/name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="@style/ListItemTitle"/>
+                <com.whatsapp.TextEmojiLabel android:id="@+id/owner" android:visibility="gone" style="@style/GroupMemberStatus.Admin"/>
+            </LinearLayout>
+            <com.whatsapp.TextEmojiLabel android:layout_gravity="right" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="@drawable/divider_gray" android:layout_width="match_parent" android:layout_height="0dp"/>
+</LinearLayout>

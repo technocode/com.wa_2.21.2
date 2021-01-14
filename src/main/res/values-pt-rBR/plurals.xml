@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="payment_pin_retry_attempts">
+        <item quantity="one">Tentativa restante: %d</item>
+        <item quantity="other">Tentativas restantes: %d</item>
+    </plurals>
+    <plurals name="payments_settings_payment_requests">
+        <item quantity="one">Solicitação pendente</item>
+        <item quantity="other">Solicitações pendentes</item>
+    </plurals>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Você não pode adicionar pessoas até que %s entre na chamada.</item>
+        <item quantity="other">Você não pode adicionar pessoas até que um participante entre na chamada.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Escolha até %d pessoa que poderá entrar a qualquer momento após o início da chamada. &lt;a href=learn_more_link&gt;Saiba mais&lt;/a&gt;</item>
+        <item quantity="other">Escolha até %d pessoas que poderão entrar a qualquer momento após o início da chamada. &lt;a href=learn_more_link&gt;Saiba mais&lt;/a&gt;</item>
+    </plurals>
+</resources>

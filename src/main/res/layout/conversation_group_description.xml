@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="48dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaTextView android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/group_description" style="@style/FlatCardTitle"/>
+        <com.whatsapp.text.ReadMoreTextView android:textColor="@color/conversation_info_text" android:id="@+id/group_description_text" android:layout_width="match_parent" android:layout_height="wrap_content" app:rmtvLines="2" app:rmtvLinkColor="@color/link_color" app:rmtvText="@string/read_more"/>
+    </LinearLayout>
+    <com.whatsapp.WaImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/group_description_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:contentDescription="@string/close" style="@style/ActionBarButtonStyle"/>
+    <View android:layout_gravity="bottom" style="@style/SectionDivider.Heavy"/>
+</merge>

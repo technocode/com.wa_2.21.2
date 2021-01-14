@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/row_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:id="@+id/call_type_icon" android:layout_width="24dp" android:layout_height="24dp" android:layout_margin="24dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:id="@+id/call_type" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="?attr/listItemTitle"/>
+                <com.whatsapp.WaTextView android:id="@+id/call_duration" android:paddingTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="?attr/listItemSubtitle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:id="@+id/call_date" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" style="?attr/listItemSubtitle"/>
+                <com.whatsapp.WaTextView android:id="@+id/call_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" style="?attr/listItemSubtitle"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

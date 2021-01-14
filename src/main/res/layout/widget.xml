@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/header" android:background="@color/primary" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="48dp">
+        <ImageView android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="2dp" android:src="@drawable/actionbar_logo" android:contentDescription="@string/localized_app_name"/>
+        <LinearLayout android:gravity="start" android:orientation="vertical" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="end" android:id="@+id/title" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/localized_app_name" android:singleLine="true" style="@style/Theme.ActionBar.TitleTextStyle"/>
+            <TextView android:ellipsize="end" android:id="@+id/subtitle" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3dp" android:singleLine="true" style="@style/Theme.ActionBar.SubtitleTextStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@+id/list_view_widget" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@drawable/divider_gray" android:dividerHeight="0.5dp"/>
+    <TextView android:textSize="20sp" android:textColor="?android:attr/textColorSecondaryNoDisable" android:gravity="center" android:id="@+id/empty_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="@string/no_unread_messages"/>
+</LinearLayout>

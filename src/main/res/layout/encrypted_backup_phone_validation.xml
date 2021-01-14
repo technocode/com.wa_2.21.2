@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.whatsapp.WaLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/gdrive_enc_backup_content_right_margin" android:paddingRight="@dimen/gdrive_enc_backup_content_right_margin" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+            <com.whatsapp.WaImageView android:id="@+id/encrypted_backup_phone_validation_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:src="@drawable/ic_wa_locked" app:tint="?attr/settingsIconColor"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.whatsapp.WaTextView android:layout_gravity="center_vertical" android:id="@+id/encrypted_backup_enabled_phone_validation_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/encrypted_backup_enabled_phone_validation_description" style="?attr/settingsSectionSubtitleText"/>
+                <com.whatsapp.WaTextView android:id="@+id/encrypted_backup_phone_validation_phone_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:text="@string/encrypted_backup_phone_validation_phone_label" style="@style/BackupSettingsLabelText"/>
+                <fragment android:name="com.whatsapp.MatchPhoneNumberFragment" android:id="@+id/encrypted_backup_match_phone_number_fragment" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.whatsapp.components.Button android:layout_gravity="left" android:id="@+id/encrypted_backup_phone_enable" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:text="@string/encrypted_backup_phone_validation_action" style="@style/WA.Button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.whatsapp.components.Button android:gravity="center" android:id="@+id/encrypted_backup_phone_change_password" android:layout_width="match_parent" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:text="@string/encrypted_backup_phone_change_password" style="@style/WA.Button"/>
+    <com.whatsapp.components.Button android:textColor="@color/encrypted_backup_disable_text_button" android:gravity="center" android:id="@+id/encrypted_backup_phone_disable" android:layout_width="match_parent" android:layout_marginBottom="16dp" android:text="@string/encrypted_backup_phone_disable" style="@style/WA.Button.Secondary"/>
+</com.whatsapp.WaLinearLayout>

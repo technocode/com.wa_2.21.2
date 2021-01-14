@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:id="@+id/business_row_container" android:background="?android:attr/selectableItemBackground" android:paddingTop="16dp" android:paddingBottom="16dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/contact_selector" android:focusable="false" android:clickable="false" android:layout_width="@dimen/contact_selector_width" android:layout_height="@dimen/conversations_row_height" android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <com.whatsapp.components.button.ThumbnailButton android:layout_gravity="center" android:id="@+id/business_thumbnail" android:layout_width="@dimen/small_avatar_size" android:layout_height="@dimen/small_avatar_size" android:scaleType="fitCenter" whatsapp:tbtnForegroundOnly="false" whatsapp:tbtnRadius="@dimen/small_avatar_radius"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contact_details" android:paddingRight="@dimen/list_row_padding" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/contact_selector" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp">
+            <com.whatsapp.TextEmojiLabel android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/business_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemTitle"/>
+        </LinearLayout>
+        <com.whatsapp.TextEmojiLabel android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/business_phone_number" android:paddingRight="7dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaTextView android:id="@+id/business_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.whatsapp.WaTextView android:id="@+id/business_vertical_separator" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contacts_help_bullet"/>
+            <com.whatsapp.WaTextView android:ellipsize="end" android:id="@+id/business_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+        <com.whatsapp.WaTextView android:ellipsize="end" android:id="@+id/business_description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

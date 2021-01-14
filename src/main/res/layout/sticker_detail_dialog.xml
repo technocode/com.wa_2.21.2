@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/sticker_detail_container" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/progress_view" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="35dp" android:layout_marginTop="50dp" android:layout_marginRight="35dp" android:layout_marginBottom="45dp"/>
+    <com.whatsapp.stickers.StickerView android:layout_gravity="center_horizontal" android:id="@+id/sticker_view" android:visibility="gone" android:layout_width="@dimen/conversation_row_sticker_size" android:layout_height="@dimen/conversation_row_sticker_size" android:layout_marginTop="15dp" android:layout_marginBottom="10dp" android:src="@drawable/sticker_store_error"/>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/sticker_info_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+        <com.whatsapp.WaTextView android:textColor="@color/primary_text" android:id="@+id/sticker_pack_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.whatsapp.WaTextView android:id="@+id/bullet_sticker_info" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ConversationDocumentInfoBullet"/>
+        <com.whatsapp.WaTextView android:textColor="@color/secondary_text" android:id="@+id/sticker_pack_publisher" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

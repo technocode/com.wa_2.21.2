@@ -1,0 +1,60 @@
+package X;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.List;
+import java.util.Map;
+
+/* renamed from: X.2lp  reason: invalid class name and case insensitive filesystem */
+public class C58382lp implements AnonymousClass2VX {
+    public byte A00;
+    public int A01 = 0;
+    public int A02;
+    public int A03 = 0;
+    public long A04 = 0;
+    public long A05 = 0;
+    public long A06 = 0;
+    public AnonymousClass2VP A07;
+    public C58142lR A08;
+    public AnonymousClass2VS A09;
+    public AbstractC50672Vp A0A;
+    public AbstractC50682Vq A0B;
+    public C29011Wq A0C;
+    public C50722Vu A0D;
+    public C006703h A0E;
+    public AnonymousClass3WF A0F;
+    public AnonymousClass3WG A0G;
+    public AnonymousClass3WH A0H;
+    public AnonymousClass3WI A0I;
+    public AnonymousClass3An A0J;
+    public AnonymousClass3WK A0K;
+    public C006403e A0L;
+    public InputStream A0M;
+    public OutputStream A0N;
+    public String A0O;
+    public String A0P;
+    public String A0Q;
+    public List A0R;
+    public List A0S;
+    public List A0T;
+    public Map A0U;
+    public short A0V = 0;
+    public short A0W = 0;
+    public boolean A0X = false;
+    public boolean A0Y = false;
+    public boolean A0Z = false;
+    public boolean A0a;
+    public boolean A0b;
+    public boolean A0c = false;
+    public boolean A0d;
+    public boolean A0e;
+    public boolean A0f = false;
+    public boolean A0g;
+    public byte[] A0h;
+    public byte[] A0i;
+    public byte[] A0j;
+    public byte[] A0k;
+    public byte[] A0l;
+    public byte[] A0m;
+    public byte[] A0n;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/horizontal_padding" android:paddingTop="110dp" android:paddingRight="@dimen/horizontal_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.WaImageView android:layout_gravity="center" android:background="@drawable/teal_circle" android:padding="60dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/permission_contacts"/>
+            <com.whatsapp.WaTextView android:textSize="14sp" android:gravity="center" android:paddingTop="45dp" android:paddingBottom="33dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/permission_contacts_needed" style="@style/Text"/>
+            <com.whatsapp.components.Button android:layout_gravity="center" android:id="@+id/button_open_permission_settings" android:layout_marginBottom="20dp" android:text="@string/permission_settings_open" style="@style/WA.Button"/>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

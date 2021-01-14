@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:whatsapp="http://schemas.android.com/apk/res-auto" android:id="@+id/invite_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/filler" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/background" android:background="@drawable/bottom_sheet_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/invite_container" android:layout_alignBottom="@+id/invite_container"/>
+    <FrameLayout android:id="@+id/invite_container" android:paddingTop="16dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="180dp">
+            <com.whatsapp.WaTextView android:textColor="@color/secondary_text" android:id="@+id/progress_text" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verifying_group_invite"/>
+            <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.whatsapp.WaTextView android:textSize="16sp" android:textColor="@color/primary_text" android:gravity="center" android:id="@+id/error_text" android:padding="16dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/register_try_again_later" android:layout_weight="1"/>
+            <com.whatsapp.WaButton android:layout_gravity="right" android:id="@+id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/group_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.whatsapp.TextEmojiLabel android:textSize="18sp" android:textColor="@color/primary_text" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" whatsapp:fontFamily="sans-serif-medium"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/group_details_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                    <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:id="@+id/group_creator" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+                    <com.whatsapp.text.ReadMoreTextView android:textSize="14sp" android:textColor="@color/secondary_text" android:gravity="center_horizontal" android:id="@+id/group_description_preview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" whatsapp:rmtvLines="2" whatsapp:rmtvLinkColor="@color/link_color" whatsapp:rmtvText="@string/read_more"/>
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/participants_no_known_contacts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+                        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/secondary_text" android:id="@+id/participant_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <com.whatsapp.WaTextView android:textColor="@color/secondary_text" android:id="@+id/bullet_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ConversationDocumentInfoBullet"/>
+                        <com.whatsapp.WaTextView android:textSize="14sp" android:textColor="@color/secondary_text" android:id="@+id/no_known_contacts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_known_contacts_invite"/>
+                    </LinearLayout>
+                    <com.whatsapp.WaTextView android:textSize="12sp" android:textColor="@color/secondary_text" android:id="@+id/participants_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+                    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="left" android:id="@+id/group_participants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="16dp"/>
+                </LinearLayout>
+            </ScrollView>
+            <View style="@style/SectionDivider.Heavy"/>
+            <com.whatsapp.WaTextView android:textStyle="italic" android:textColor="@color/secondary_text" android:layout_gravity="left" android:id="@+id/invite_expiration_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:drawableLeft="@drawable/invite_expiration_icon" android:drawablePadding="2dp" whatsapp:drawableTint="@color/viewGroupInviteExpirationIconTint"/>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp">
+                <com.whatsapp.WaButton android:id="@+id/invite_ignore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+                <com.whatsapp.WaButton android:id="@+id/invite_accept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="@string/join_group_by_link" style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/group_photo_container" android:background="@drawable/circular_avatar_background" android:visibility="gone" android:layout_width="@dimen/invite_link_group_image_size" android:layout_height="@dimen/invite_link_group_image_size" android:layout_marginTop="-29dp" android:layout_alignTop="@+id/invite_container" android:layout_centerHorizontal="true">
+        <com.whatsapp.components.button.ThumbnailButton android:enabled="false" android:id="@+id/group_photo" android:layout_width="@dimen/invite_link_group_image_size" android:layout_height="@dimen/invite_link_group_image_size" android:src="@drawable/avatar_group" android:scaleType="fitCenter" whatsapp:tbtnBorderColor="@color/primary_surface" whatsapp:tbtnBorderSize="2dp" whatsapp:tbtnForegroundOnly="false" whatsapp:tbtnRadius="@dimen/small_avatar_radius"/>
+    </FrameLayout>
+</RelativeLayout>

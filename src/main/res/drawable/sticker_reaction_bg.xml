@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:insetTop="2dp" android:insetBottom="2dp">
+    <shape android:shape="rectangle">
+        <solid android:color="@color/sticker_reaction_bg"/>
+        <corners android:topLeftRadius="16dp" android:topRightRadius="16dp" android:bottomLeftRadius="16dp" android:bottomRightRadius="16dp"/>
+    </shape>
+</inset>

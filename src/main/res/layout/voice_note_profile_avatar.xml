@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/picture_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:id="@+id/picture" android:layout_width="62dp" android:layout_height="62dp" android:src="@drawable/avatar_contact" android:scaleType="fitCenter"/>
+        <com.whatsapp.WaImageView android:id="@+id/picture_in_group" android:paddingLeft="7dp" android:paddingTop="9dp" android:paddingRight="9dp" android:paddingBottom="9dp" android:visibility="gone" android:layout_width="70dp" android:layout_height="72dp" android:scaleType="fitCenter"/>
+    </FrameLayout>
+    <com.whatsapp.WaImageView android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:id="@+id/mic_overlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mic_played" android:scaleType="fitCenter"/>
+</merge>

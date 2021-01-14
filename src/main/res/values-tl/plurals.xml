@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="one">Hindi ka makakapagdagdag ng mga tao sa tawag na ito hangga&apos;t hindi sumasali si %s.</item>
+        <item quantity="other">Hindi ka makakapagdagdag ng mga tao sa tawag na ito hangga&apos;t walang ibang sumasali.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="one">Pumili ng hanggang %d tao. Makakasali sila sa tawag anumang oras pagkatapos nitong magsimula. &lt;a href=learn_more_link&gt;Alamin pa&lt;/a&gt;</item>
+        <item quantity="other">Pumili ng hanggang %d na tao. Makakasali sila sa tawag anumang oras pagkatapos nitong magsimula. &lt;a href=learn_more_link&gt;Alamin pa&lt;/a&gt;</item>
+    </plurals>
+</resources>

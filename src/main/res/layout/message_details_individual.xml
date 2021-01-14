@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/card_h_padding" android:paddingTop="@dimen/card_v_padding" android:paddingRight="@dimen/card_h_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="no">
+    <com.whatsapp.WaLinearLayout android:orientation="vertical" android:background="@drawable/panel" android:layout_width="match_parent" android:layout_height="match_parent" android:importantForAccessibility="yes" app:wallBackgroundTint="@color/background_panel_tint">
+        <FrameLayout android:id="@+id/section_played" android:paddingLeft="@dimen/card_h_padding" android:paddingRight="@dimen/card_h_padding" android:layout_width="match_parent" android:layout_height="@dimen/group_participant_row_height">
+            <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.whatsapp.WaImageView android:layout_width="22dp" android:layout_height="wrap_content" android:src="@drawable/msg_status_mic" app:tint="@color/msgStatusReadTint"/>
+                    <com.whatsapp.WaTextView android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_played" style="@style/ListItemTitle"/>
+                </LinearLayout>
+                <com.whatsapp.WaTextView android:layout_gravity="left" android:id="@+id/date_time_played" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+            </LinearLayout>
+            <View style="@style/CardSeparator"/>
+        </FrameLayout>
+        <FrameLayout android:paddingLeft="@dimen/card_h_padding" android:paddingRight="@dimen/card_h_padding" android:layout_width="match_parent" android:layout_height="@dimen/group_participant_row_height">
+            <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.whatsapp.WaImageView android:layout_width="22dp" android:layout_height="wrap_content" android:src="@drawable/msg_status_client" app:tint="@color/msgStatusReadTint"/>
+                    <com.whatsapp.WaTextView android:id="@+id/title_read" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_read" style="@style/ListItemTitle"/>
+                </LinearLayout>
+                <com.whatsapp.WaTextView android:layout_gravity="left" android:id="@+id/date_time_read" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+            </LinearLayout>
+            <View style="@style/CardSeparator"/>
+        </FrameLayout>
+        <FrameLayout android:paddingLeft="@dimen/card_h_padding" android:paddingRight="@dimen/card_h_padding" android:layout_width="match_parent" android:layout_height="@dimen/group_participant_row_height">
+            <LinearLayout android:gravity="left" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.whatsapp.WaImageView android:layout_width="22dp" android:layout_height="wrap_content" android:src="@drawable/msg_status_client" app:tint="@color/msgStatusTint"/>
+                    <com.whatsapp.WaTextView android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_delivered" style="@style/ListItemTitle"/>
+                </LinearLayout>
+                <com.whatsapp.WaTextView android:layout_gravity="left" android:id="@+id/date_time_delivered" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+            </LinearLayout>
+            <View android:id="@+id/delivered_separator" style="@style/CardSeparator"/>
+        </FrameLayout>
+        <include android:id="@+id/forwarded_container" layout="@layout/message_details_forward_count_header"/>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingLeft="@dimen/card_h_padding" android:paddingRight="@dimen/card_h_padding" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/group_participant_row_height">
+            <com.whatsapp.WaTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_sent" style="@style/ListItemTitle"/>
+            <com.whatsapp.WaTextView android:layout_gravity="left" android:id="@+id/date_time_sent" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ListItemSubtitle"/>
+        </LinearLayout>
+    </com.whatsapp.WaLinearLayout>
+</FrameLayout>

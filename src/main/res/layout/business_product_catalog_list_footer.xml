@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/product_footer_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ProgressBar android:layout_gravity="center" android:id="@+id/catalog_list_footer_loading_spinner" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/catalog_list_footer_end_of_results" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp">
+        <com.whatsapp.WaTextView android:textSize="16sp" android:gravity="center" android:id="@+id/catalog_list_footer_end_of_results_title" android:padding="16dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.whatsapp.components.Button android:layout_gravity="center_horizontal" android:id="@+id/end_of_results_button" android:visibility="gone" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" style="@style/WA.Button"/>
+        <ViewStub android:id="@+id/product_list_hint_stub" android:visibility="gone" android:inflatedId="@+id/product_list_hint" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

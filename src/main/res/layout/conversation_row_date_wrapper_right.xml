@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/date_wrapper" android:paddingRight="5dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.whatsapp.WaTextView android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/WA.TextAppearance.ConversationRowDate"/>
+    <com.whatsapp.WaImageView android:id="@+id/status" android:paddingLeft="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

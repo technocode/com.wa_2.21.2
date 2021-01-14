@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/conversations_archive_nux" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.whatsapp.WaImageView android:layout_gravity="center" android:id="@+id/archived_row_image" android:paddingTop="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/archive_illustration" android:scaleType="center" app:tint="@color/ephemeral_nux_timer"/>
+        <com.whatsapp.WaImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/archive_nux_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:contentDescription="@string/close" app:tint="@color/icon_close_archive_nux" style="@style/ActionBarButtonStyle"/>
+    </FrameLayout>
+    <com.whatsapp.WaTextView android:textSize="22sp" android:gravity="center_horizontal" android:id="@+id/archive_nux_title" android:paddingLeft="52dp" android:paddingTop="21dp" android:paddingRight="52dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/archive_nux_title" android:singleLine="false" style="@style/ListItemTitle"/>
+    <com.whatsapp.WaTextView android:gravity="center_horizontal" android:id="@+id/archive_nux_sub_title" android:paddingLeft="52dp" android:paddingTop="6dp" android:paddingRight="52dp" android:paddingBottom="27dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/archive_nux_sub_title" android:singleLine="false" android:lineSpacingMultiplier="1.1" style="@style/ListItemSubtitle"/>
+    <View android:layout_width="match_parent" style="@style/SectionDivider"/>
+</LinearLayout>

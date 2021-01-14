@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/primary_surface" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/action_buttons_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/payment_settings_default_margin" android:layout_marginRight="@dimen/payment_settings_default_margin">
+        <com.whatsapp.WaTextView android:textSize="16sp" android:gravity="center_horizontal" android:id="@+id/short_description_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:singleLine="false" style="@style/ListItemTitle"/>
+        <com.whatsapp.components.ButtonGroupView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" app:orientation="vertical">
+            <com.whatsapp.components.Button android:id="@+id/request_decline_button" android:layout_marginRight="@dimen/payment_settings_default_margin" android:text="@string/payments_decline_request" style="@style/WA.Button.Secondary"/>
+            <com.whatsapp.components.Button android:id="@+id/request_pay_button" android:text="@string/payments_pay_request" style="@style/WA.Button"/>
+            <com.whatsapp.components.Button android:id="@+id/request_cancel_button" android:visibility="gone" android:text="@string/payments_cancel_request" style="@style/WA.Button.Secondary"/>
+            <com.whatsapp.components.Button android:id="@+id/retry_withdrawal_button" android:visibility="gone" android:text="@string/payments_retry_withdrawal" style="@style/WA.Button.Secondary"/>
+        </com.whatsapp.components.ButtonGroupView>
+    </LinearLayout>
+</FrameLayout>

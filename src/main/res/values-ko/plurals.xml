@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="voip_joinable_can_not_join_call_before_connected">
+        <item quantity="other">‎%s님이 참여할때까지 사람들을 추가할 수 없습니다.</item>
+    </plurals>
+    <plurals name="voip_joinable_new_group_call_warning">
+        <item quantity="other">최대 %d명의 사람들을 선택하세요. 통화가 시작되면 언제든지 참여할 수 있습니다. &lt;a href=learn_more_link&gt;더 알아보기&lt;/a&gt;</item>
+    </plurals>
+</resources>
